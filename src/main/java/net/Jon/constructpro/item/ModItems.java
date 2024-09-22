@@ -18,7 +18,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FossilizedAmber = ITEMS.register("fossilizedamber",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CelestialDiamond = ITEMS.register("celestialdiamond",
+    public static final RegistryObject<Item> Celestial = ITEMS.register("celestial",
             () -> new Item(new Item.Properties()));
 
 

@@ -49,7 +49,7 @@ public class ConstructPro {
            event.accept(ModItems.starlite);
            event.accept(ModItems.CrimsonQuartz);
            event.accept(ModItems.FossilizedAmber);
-           event.accept(ModItems.CelestialDiamond);
+           event.accept(ModItems.Celestial);
         }
     }
 
