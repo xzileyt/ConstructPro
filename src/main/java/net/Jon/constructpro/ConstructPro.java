@@ -1,6 +1,7 @@
 package net.Jon.constructpro;
 
 import com.mojang.logging.LogUtils;
+import net.Jon.constructpro.block.ModBlocks;
 import net.Jon.constructpro.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,7 @@ public class ConstructPro {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,6 +52,10 @@ public class ConstructPro {
            event.accept(ModItems.CrimsonQuartz);
            event.accept(ModItems.FossilizedAmber);
            event.accept(ModItems.Celestial);
+           event.accept(ModItems.Molten);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.celestial_block);
         }
     }
 

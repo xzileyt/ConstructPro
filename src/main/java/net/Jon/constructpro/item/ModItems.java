@@ -20,6 +20,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> Celestial = ITEMS.register("celestial",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Molten = ITEMS.register("molten",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

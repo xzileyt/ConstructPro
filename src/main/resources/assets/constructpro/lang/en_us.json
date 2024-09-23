@@ -2,5 +2,8 @@
   "item.constructpro.starlite": "starlite",
   "item.constructpro.crimsonquartz": "Crimson Quartz",
   "item.constructpro.fossilizedamber": "Fossilized Amber",
-  "item.constructpro.celestial": "Celestial Diamond"
+  "item.constructpro.celestial": "Celestial Diamond",
+  "item.constructpro.molten": "Molten Ore",
+
+  "block.constructpro.celestial_block": "Block of celestial diamonds"
 }
