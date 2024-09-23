@@ -1,13 +1,15 @@
 package net.Jon.constructpro.item.custom;
 
+import net.Jon.constructpro.block.ModBlocks;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.InteractionResultHolder; // Correct import
-import net.minecraft.world.InteractionHand; // Correct import
-import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.core.BlockPos;
 
 import java.util.HashMap;
@@ -23,12 +25,13 @@ public class GeoAnalyzer extends Item {
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
         if (!world.isClientSide) {
             BlockPos playerPos = player.blockPosition();
-            analyzeOres(world, playerPos, player);
+            String foundOres = analyzeOres(world, playerPos);
+            player.sendSystemMessage(Component.translatable("Ore Analysis Complete! Found ores: " + foundOres));
         }
-        return InteractionResultHolder.success(player.getItemInHand(hand)); // Return the correct InteractionResultHolder
+        return InteractionResultHolder.success(player.getItemInHand(hand));
     }
 
-    private void analyzeOres(Level world, BlockPos pos, Player player) {
+    private String analyzeOres(Level world, BlockPos pos) {
         int radius = 10; // Example radius
         Map<String, Integer> oreCounts = new HashMap<>();
 
@@ -38,23 +41,42 @@ public class GeoAnalyzer extends Item {
                     BlockPos currentPos = pos.offset(x, y, z);
                     Block block = world.getBlockState(currentPos).getBlock();
                     if (isOre(block)) {
-                        String blockName = block.getDescriptionId(); // Get block name
+                        String blockName = block.getDescriptionId();
                         oreCounts.put(blockName, oreCounts.getOrDefault(blockName, 0) + 1);
                     }
                 }
             }
         }
 
-        player.sendSystemMessage(Component.translatable("Ore Analysis: " + oreCounts.toString())); // Send message to player
+        // Convert oreCounts to a readable string
+        StringBuilder result = new StringBuilder();
+        for (Map.Entry<String, Integer> entry : oreCounts.entrySet()) {
+            result.append(entry.getKey()).append(": ").append(entry.getValue()).append(", ");
+        }
+
+        // Remove trailing comma and space
+        if (!result.isEmpty()) {
+            result.setLength(result.length() - 2);
+        }
+
+        return result.toString(); // Return the found ores as a string
     }
 
     private boolean isOre(Block block) {
-        return block == net.minecraft.world.level.block.Blocks.DIAMOND_ORE ||
-                block == net.minecraft.world.level.block.Blocks.IRON_ORE ||
-                block == net.minecraft.world.level.block.Blocks.GOLD_ORE ||
-                block == net.minecraft.world.level.block.Blocks.REDSTONE_ORE ||
-                block == net.minecraft.world.level.block.Blocks.LAPIS_ORE ||
-                block == net.minecraft.world.level.block.Blocks.EMERALD_ORE;
+        return block == Blocks.DIAMOND_ORE ||
+                block == Blocks.IRON_ORE ||
+                block == Blocks.GOLD_ORE ||
+                block == Blocks.REDSTONE_ORE ||
+                block == Blocks.LAPIS_ORE ||
+                block == Blocks.EMERALD_ORE ||
+                block == ModBlocks.celestial_ore.get() ||
+                block == ModBlocks.celestial_deepslate_ore.get() ||
+                block == ModBlocks.starlite_ore.get() ||
+                block == ModBlocks.starlite_deepslate_ore.get() ||
+                block == ModBlocks.molten_ore.get() ||
+                block == ModBlocks.celestial_ore.get() ||
+                block == ModBlocks.fossilized_amber_ore.get() ||
+                block == ModBlocks.crimson_quartz_ore.get();
     }
 
     @Override

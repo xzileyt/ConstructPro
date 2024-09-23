@@ -51,11 +51,11 @@ public class ConstructPro {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-           event.accept(ModItems.starlite);
-           event.accept(ModItems.CrimsonQuartz);
-           event.accept(ModItems.FossilizedAmber);
-           event.accept(ModItems.Celestial);
-           event.accept(ModItems.Molten);
+            event.accept(ModItems.starlite);
+            event.accept(ModItems.CrimsonQuartz);
+            event.accept(ModItems.FossilizedAmber);
+            event.accept(ModItems.Celestial);
+            event.accept(ModItems.Molten);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.celestial_block);
