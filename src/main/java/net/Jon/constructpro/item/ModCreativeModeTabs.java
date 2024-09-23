@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.starlite.get());
 
                         output.accept(ModItems.Chisel.get());
+                        output.accept(ModItems.TROWEL.get());
 
                     }).build());
 
