@@ -23,7 +23,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> celestial_block = registerBlock("celestial_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+                    .strength(4f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> crimson_quartz_block = registerBlock("crimson_quartz_block",
             () -> new Block(BlockBehaviour.Properties.of()

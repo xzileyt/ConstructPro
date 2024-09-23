@@ -10,6 +10,8 @@
     "constructpro:celestial_ore",
     "constructpro:celestial_deepslate_ore",
     "constructpro:molten_ore",
-    "constructpro:fossilized_amber_ore"
+    "constructpro:fossilized_amber_ore",
+    "constructpro:crimson_quartz_block",
+    "constructpro:fossilize_amber_block"
   ]
 }
