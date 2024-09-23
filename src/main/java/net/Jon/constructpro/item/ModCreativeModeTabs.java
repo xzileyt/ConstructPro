@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FossilizedAmber.get());
                         output.accept(ModItems.starlite.get());
 
+                        output.accept(ModItems.Chisel.get());
+
                     }).build());
 
 
