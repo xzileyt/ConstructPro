@@ -34,7 +34,14 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.celestial_block.get());
                         output.accept(ModBlocks.crimson_quartz_block.get());
+                        output.accept(ModBlocks.crimson_quartz_ore.get());
                         output.accept(ModBlocks.fossilize_amber_block.get());
+                        output.accept(ModBlocks.starlite_ore.get());
+                        output.accept(ModBlocks.starlite_deepslate_ore.get());
+                        output.accept(ModBlocks.celestial_ore.get());
+                        output.accept(ModBlocks.celestial_deepslate_ore.get());
+                        output.accept(ModBlocks.molten_ore.get());
+                        output.accept(ModBlocks.fossilized_amber_ore.get());
 
                     }).build());
 

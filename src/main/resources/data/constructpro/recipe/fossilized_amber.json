@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "constructpro:fossilize_amber_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "constructpro:fossilizedamber"
+  }
+}

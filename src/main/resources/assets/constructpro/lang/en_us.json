@@ -7,7 +7,14 @@
 
   "block.constructpro.celestial_block": "Block of celestial diamonds",
   "block.constructpro.crimson_quartz_block": "Block of Crimson Quartz",
+  "block.constructpro.crimson_quartz_ore": "Crimson Quartz ore",
+  "block.constructpro.starlite_ore": "Starlite ore",
+  "block.constructpro.starlite_deepslate_ore": "Starlite deepslate ore",
+  "block.constructpro.celestial_ore": "Celestial ore",
+  "block.constructpro.celestial_deepslate_ore": "celestial deepslate ore",
   "block.constructpro.fossilize_amber_block": "Block of Fossilized Amber",
+  "block.constructpro.molten_ore": "Molten Ore",
+  "block.constructpro.fossilized_amber_ore": "Fossilized Amber",
 
   "creativetab.ConstructPro.constructpro_items": "ConstructPro Items",
   "creativetab.ConstructPro.constructpro_blocks": "ConstructPro Blocks"

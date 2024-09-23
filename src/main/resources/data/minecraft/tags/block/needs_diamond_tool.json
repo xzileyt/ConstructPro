@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "constructpro:starlite_ore",
+    "constructpro:starlite_deepslate_ore",
+    "constructpro:molten_ore",
+    "constructpro:fossilized_amber_ore"
+  ]
+}
