@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.Chisel.get());
                         output.accept(ModItems.TROWEL.get());
+                        output.accept(ModItems.GEO_ANALYZER.get());
 
                     }).build());
 

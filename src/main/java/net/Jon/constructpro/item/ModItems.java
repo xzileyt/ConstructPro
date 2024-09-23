@@ -2,6 +2,7 @@ package net.Jon.constructpro.item;
 
 import net.Jon.constructpro.ConstructPro;
 import net.Jon.constructpro.item.custom.ChiselItem;
+import net.Jon.constructpro.item.custom.GeoAnalyzer;
 import net.Jon.constructpro.item.custom.TrowelItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,6 +29,9 @@ public class ModItems {
             () -> new ChiselItem(new Item.Properties().durability(32)));
     public static final RegistryObject<Item> TROWEL = ITEMS.register("trowel",
             () -> new TrowelItem(new Item.Properties().stacksTo(1).durability(250))); // Adjust properties as needed
+    public static final RegistryObject<Item> GEO_ANALYZER = ITEMS.register("geoanalyzer",
+            () -> new GeoAnalyzer(new Item.Properties()));
+
 
 
     public static void register(IEventBus eventBus) {
