@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "constructpro:block/fossilize_amber_block"
+  }
+}

@@ -5,5 +5,7 @@
   "item.constructpro.celestial": "Celestial Diamond",
   "item.constructpro.molten": "Molten Ore",
 
-  "block.constructpro.celestial_block": "Block of celestial diamonds"
+  "block.constructpro.celestial_block": "Block of celestial diamonds",
+  "block.constructpro.crimson_quartz_block": "Block of Crimson Quartz",
+  "block.constructpro.fossilize_amber_block": "Block of Fossilized Amber"
 }

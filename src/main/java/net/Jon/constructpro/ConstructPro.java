@@ -56,6 +56,8 @@ public class ConstructPro {
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.celestial_block);
+            event.accept(ModBlocks.crimson_quartz_block);
+            event.accept(ModBlocks.fossilize_amber_block);
         }
     }
 
