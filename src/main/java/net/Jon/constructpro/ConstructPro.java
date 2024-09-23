@@ -2,6 +2,7 @@ package net.Jon.constructpro;
 
 import com.mojang.logging.LogUtils;
 import net.Jon.constructpro.block.ModBlocks;
+import net.Jon.constructpro.item.ModCreativeModeTabs;
 import net.Jon.constructpro.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,6 +32,8 @@ public class ConstructPro {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
