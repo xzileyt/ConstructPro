@@ -9,6 +9,8 @@
   "item.constructpro.trowel": "Trowel",
   "item.constructpro.geoanalyzer": "Geo Analyzer",
 
+  "item.constructpro.eternal_steak": "Eternal Steak",
+
   "block.constructpro.celestial_block": "Block of celestial diamonds",
   "block.constructpro.crimson_quartz_block": "Block of Crimson Quartz",
   "block.constructpro.crimson_quartz_ore": "Crimson Quartz ore",
@@ -19,6 +21,15 @@
   "block.constructpro.fossilize_amber_block": "Block of Fossilized Amber",
   "block.constructpro.molten_ore": "Molten Ore",
   "block.constructpro.fossilized_amber_ore": "Fossilized Amber",
+
+  "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
+  "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.GeoAnalyzer.shift_down": "This Item detect ore around the player",
+  "tooltip.constructpro.GeoAnalyzer": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.Trowel.shift_down": "This Item randomly places blocks from the hotbar",
+  "tooltip.constructpro.Trowel": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.EternalSteak.shift_down": "This Item is an unlimited use steak",
+  "tooltip.constructpro.EternalSteak": "Press §eShift§r for more Information!",
 
   "creativetab.ConstructPro.constructpro_items": "ConstructPro Items",
   "creativetab.ConstructPro.constructpro_blocks": "ConstructPro Blocks"

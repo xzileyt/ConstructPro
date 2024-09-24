@@ -28,6 +28,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TROWEL.get());
                         output.accept(ModItems.GEO_ANALYZER.get());
 
+                        output.accept(ModItems.ETERNAL_STEAK.get());
+
                     }).build());
 
 
