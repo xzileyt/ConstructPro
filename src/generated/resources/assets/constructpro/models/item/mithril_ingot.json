@@ -1,3 +1,6 @@
 {
-  "parent": "constructpro:block/mithril_ingot"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "constructpro:item/mithril_ingot"
+  }
 }

@@ -1,3 +1,6 @@
 {
-  "parent": "constructpro:block/raw_mithril_ore"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "constructpro:item/raw_mithril_ore"
+  }
 }
