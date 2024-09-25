@@ -31,21 +31,28 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.celestial_block.get());
         dropSelf(ModBlocks.crimson_quartz_block.get());
         dropSelf(ModBlocks.fossilize_amber_block.get());
+        dropSelf(ModBlocks.mithril_block.get());
 
         this.add(ModBlocks.celestial_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.Celestial.get(), 2, 6));
+                block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.Celestial.get(), 2, 4));
         this.add(ModBlocks.celestial_deepslate_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.celestial_deepslate_ore.get(), ModItems.Celestial.get(), 2, 6));
+                block -> createMultipleOreDrops(ModBlocks.celestial_deepslate_ore.get(), ModItems.Celestial.get(), 2, 4));
         this.add(ModBlocks.crimson_quartz_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.crimson_quartz_ore.get(), ModItems.CrimsonQuartz.get(), 2, 3));
         this.add(ModBlocks.fossilized_amber_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.fossilized_amber_ore.get(), ModItems.FossilizedAmber.get(), 2, 6));
+                block -> createMultipleOreDrops(ModBlocks.fossilized_amber_ore.get(), ModItems.FossilizedAmber.get(), 2, 4));
         this.add(ModBlocks.molten_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.molten_ore.get(), ModItems.Molten.get(), 1, 2));
         this.add(ModBlocks.starlite_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.starlite_ore.get(), ModItems.starlite.get(), 1, 2));
         this.add(ModBlocks.starlite_deepslate_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.starlite_deepslate_ore.get(), ModItems.starlite.get(), 2, 6));
+                block -> createMultipleOreDrops(ModBlocks.starlite_deepslate_ore.get(), ModItems.starlite.get(), 2, 4));
+        this.add(ModBlocks.raw_mithril_block.get(),
+                block -> createMultipleOreDrops(ModBlocks.raw_mithril_block.get(), ModItems.raw_mithril_ore.get(), 1, 1));
+        this.add(ModBlocks.mithril_ore.get(),
+                block -> createMultipleOreDrops(ModBlocks.mithril_ore.get(), ModItems.raw_mithril_ore.get(), 2, 4));
+        this.add(ModBlocks.deepslate_mithril_ore.get(),
+                block -> createMultipleOreDrops(ModBlocks.deepslate_mithril_ore.get(), ModItems.raw_mithril_ore.get(), 2, 4));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

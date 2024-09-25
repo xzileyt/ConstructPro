@@ -31,12 +31,16 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> Molten = ITEMS.register("molten",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> raw_mithril_ore = ITEMS.register("raw_mithril_ore",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> mithril_ingot = ITEMS.register("mithril_ingot",
+            () -> new Item(new Item.Properties()));
+
+
     public static final RegistryObject<Item> Chisel = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(32)));
-
     public static final RegistryObject<Item> TROWEL = ITEMS.register("trowel",
             () -> new TrowelItem(new Item.Properties().stacksTo(1).durability(250)));
-
     public static final RegistryObject<Item> GEO_ANALYZER = ITEMS.register("geoanalyzer",
             () -> new GeoAnalyzer(new Item.Properties()));
 

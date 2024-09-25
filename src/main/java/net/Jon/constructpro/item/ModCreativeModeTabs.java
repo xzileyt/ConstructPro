@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.Molten.get());
                         output.accept(ModItems.FossilizedAmber.get());
                         output.accept(ModItems.starlite.get());
+                        output.accept(ModItems.raw_mithril_ore.get());
+                        output.accept(ModItems.mithril_ingot.get());
 
                         output.accept(ModItems.Chisel.get());
                         output.accept(ModItems.TROWEL.get());
@@ -48,6 +50,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.celestial_deepslate_ore.get());
                         output.accept(ModBlocks.molten_ore.get());
                         output.accept(ModBlocks.fossilized_amber_ore.get());
+                        output.accept(ModBlocks.raw_mithril_block.get());
+                        output.accept(ModBlocks.mithril_ore.get());
+                        output.accept(ModBlocks.deepslate_mithril_ore.get());
+                        output.accept(ModBlocks.mithril_block.get());
 
                     }).build());
 

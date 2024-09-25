@@ -4,6 +4,8 @@
   "item.constructpro.fossilizedamber": "Fossilized Amber",
   "item.constructpro.celestial": "Celestial Diamond",
   "item.constructpro.molten": "Molten Ore",
+  "item.constructpro.raw_mithril_ore": "Raw Mithril",
+  "item.constructpro.mithril_ingot": "Mithril Ingot",
 
   "item.constructpro.chisel": "Chisel",
   "item.constructpro.trowel": "Trowel",
@@ -21,6 +23,10 @@
   "block.constructpro.fossilize_amber_block": "Block of Fossilized Amber",
   "block.constructpro.molten_ore": "Molten Ore",
   "block.constructpro.fossilized_amber_ore": "Fossilized Amber",
+  "block.constructpro.mithril_block": "Block of Mithril",
+  "block.constructpro.raw_mithril_block": "Block of raw Mithril",
+  "block.constructpro.mithril_ore": "Mithril ore",
+  "block.constructpro.deepslate_mithril_ore": "Deepslate Mithril ore",
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",

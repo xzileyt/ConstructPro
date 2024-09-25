@@ -18,6 +18,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.celestial_block);
         blockWithItem(ModBlocks.crimson_quartz_block);
         blockWithItem(ModBlocks.fossilize_amber_block);
+        blockWithItem(ModBlocks.raw_mithril_block);
+        blockWithItem(ModBlocks.mithril_block);
 
         blockWithItem(ModBlocks.celestial_ore);
         blockWithItem(ModBlocks.celestial_deepslate_ore);
@@ -26,6 +28,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.molten_ore);
         blockWithItem(ModBlocks.starlite_ore);
         blockWithItem(ModBlocks.starlite_deepslate_ore);
+        blockWithItem(ModBlocks.mithril_ore);
+        blockWithItem(ModBlocks.deepslate_mithril_ore);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

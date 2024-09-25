@@ -56,11 +56,26 @@ public class ConstructPro {
             event.accept(ModItems.FossilizedAmber);
             event.accept(ModItems.Celestial);
             event.accept(ModItems.Molten);
+            event.accept(ModItems.raw_mithril_ore);
+            event.accept(ModItems.mithril_ingot);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.celestial_block);
             event.accept(ModBlocks.crimson_quartz_block);
             event.accept(ModBlocks.fossilize_amber_block);
+            event.accept(ModBlocks.mithril_block);
+        }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.celestial_ore);
+            event.accept(ModBlocks.celestial_deepslate_ore);
+            event.accept(ModBlocks.molten_ore);
+            event.accept(ModBlocks.fossilized_amber_ore);
+            event.accept(ModBlocks.crimson_quartz_ore);
+            event.accept(ModBlocks.starlite_ore);
+            event.accept(ModBlocks.starlite_deepslate_ore);
+            event.accept(ModBlocks.raw_mithril_block.get());
+            event.accept(ModBlocks.mithril_ore.get());
+            event.accept(ModBlocks.deepslate_mithril_ore.get());
         }
     }
 

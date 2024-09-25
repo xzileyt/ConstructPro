@@ -21,6 +21,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ConstructPro.MOD_ID);
 
+    // Blocks
     public static final RegistryObject<Block> celestial_block = registerBlock("celestial_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
@@ -33,6 +34,12 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> mithril_block = registerBlock("mithril_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
+
+    // Ores
     public static final RegistryObject<Block> crimson_quartz_ore = registerBlock("crimson_quartz_ore",
             () -> new DropExperienceBlock((UniformInt.of(2,4)),BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
@@ -60,6 +67,20 @@ public class ModBlocks {
     public static final RegistryObject<Block> fossilized_amber_ore = registerBlock("fossilized_amber_ore",
             () -> new DropExperienceBlock((UniformInt.of(1,7)),BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> raw_mithril_block = registerBlock("raw_mithril_block",
+            () -> new DropExperienceBlock((UniformInt.of(1,7)),BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> mithril_ore = registerBlock("mithril_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,7)),BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> deepslate_mithril_ore = registerBlock("deepslate_mithril_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,7)),BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

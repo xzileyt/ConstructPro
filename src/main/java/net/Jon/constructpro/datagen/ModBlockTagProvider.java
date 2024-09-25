@@ -20,10 +20,22 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.celestial_block.get())
                 .add(ModBlocks.crimson_quartz_block.get())
-                .add(ModBlocks.fossilize_amber_block.get());
+                .add(ModBlocks.fossilize_amber_block.get())
+                .add(ModBlocks.crimson_quartz_ore.get())
+                .add(ModBlocks.molten_ore.get())
+                .add(ModBlocks.starlite_deepslate_ore.get())
+                .add(ModBlocks.starlite_ore.get())
+                .add(ModBlocks.celestial_ore.get())
+                .add(ModBlocks.celestial_deepslate_ore.get())
+                .add(ModBlocks.raw_mithril_block.get())
+                .add(ModBlocks.mithril_ore.get())
+                .add(ModBlocks.deepslate_mithril_ore.get())
+                .add(ModBlocks.mithril_block.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.molten_ore.get());
+                .add(ModBlocks.molten_ore.get())
+                .add(ModBlocks.mithril_ore.get())
+                .add(ModBlocks.deepslate_mithril_ore.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.crimson_quartz_ore.get())
