@@ -33,6 +33,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.fossilize_amber_block.get());
         dropSelf(ModBlocks.mithril_block.get());
         dropSelf(ModBlocks.lavenderwood_planks.get());
+        dropSelf(ModBlocks.LAVENDER_STAIRS.get());
+        this.add(ModBlocks.LAVENDERWOOD_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LAVENDERWOOD_SLAB.get()));
+        this.add(ModBlocks.LAVENDERWOOD_DOOR.get(),
+                block -> createDoorTable(ModBlocks.LAVENDERWOOD_DOOR.get()));
+        dropSelf(ModBlocks.LAVENDERWOOD_TRAPDOOR.get());
+        dropSelf(ModBlocks.LAVENDERWOOD_BUTTON.get());
+        dropSelf(ModBlocks.LAVENDERWOOD_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.LAVENDERWOOD_FENCE.get());
+        dropSelf(ModBlocks.LAVENDERWOOD_FENCE_GATE.get());
+        dropSelf(ModBlocks.LAVENDERWOOD_WALL.get());
 
         this.add(ModBlocks.celestial_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.Celestial.get(), 2, 4));

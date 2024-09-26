@@ -65,6 +65,15 @@ public class ConstructPro {
             event.accept(ModBlocks.fossilize_amber_block);
             event.accept(ModBlocks.mithril_block);
             event.accept(ModBlocks.lavenderwood_planks);
+            event.accept(ModBlocks.LAVENDER_STAIRS);
+            event.accept(ModBlocks.LAVENDERWOOD_BUTTON);
+            event.accept(ModBlocks.LAVENDERWOOD_SLAB);
+            event.accept(ModBlocks.LAVENDERWOOD_DOOR);
+            event.accept(ModBlocks.LAVENDERWOOD_FENCE);
+            event.accept(ModBlocks.LAVENDERWOOD_FENCE_GATE);
+            event.accept(ModBlocks.LAVENDERWOOD_TRAPDOOR);
+            event.accept(ModBlocks.LAVENDERWOOD_PRESSURE_PLATE);
+            event.accept(ModBlocks.LAVENDERWOOD_WALL);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

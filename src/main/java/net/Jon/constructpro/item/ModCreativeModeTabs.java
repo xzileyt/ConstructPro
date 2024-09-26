@@ -67,6 +67,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.deepslate_mithril_ore.get());
                         output.accept(ModBlocks.mithril_block.get());
                         output.accept(ModBlocks.lavenderwood_planks.get());
+                        output.accept(ModBlocks.LAVENDER_STAIRS.get());
+                        output.accept(ModBlocks.LAVENDERWOOD_SLAB.get());
+                        output.accept(ModBlocks.LAVENDERWOOD_TRAPDOOR.get());
+                        output.accept(ModBlocks.LAVENDERWOOD_DOOR.get());
+                        output.accept(ModBlocks.LAVENDERWOOD_BUTTON.get());
+                        output.accept(ModBlocks.LAVENDERWOOD_FENCE.get());
+                        output.accept(ModBlocks.LAVENDERWOOD_FENCE_GATE.get());
+                        output.accept(ModBlocks.LAVENDERWOOD_PRESSURE_PLATE.get());
 
                     }).build());
 

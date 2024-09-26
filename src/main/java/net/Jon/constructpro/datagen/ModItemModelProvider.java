@@ -1,6 +1,7 @@
 package net.Jon.constructpro.datagen;
 
 import net.Jon.constructpro.ConstructPro;
+import net.Jon.constructpro.block.ModBlocks;
 import net.Jon.constructpro.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -30,7 +31,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.mithril_ingot.get());
 
         // Building blocks
+        buttonItem(ModBlocks.LAVENDERWOOD_BUTTON, ModBlocks.lavenderwood_planks);
+        fenceItem(ModBlocks.LAVENDERWOOD_FENCE, ModBlocks.lavenderwood_planks);
+        wallItem(ModBlocks.LAVENDERWOOD_WALL, ModBlocks.lavenderwood_planks);
 
+        simpleBlockItem(ModBlocks.LAVENDERWOOD_DOOR);
 
         // Tools
         basicItem(ModItems.Chisel.get());

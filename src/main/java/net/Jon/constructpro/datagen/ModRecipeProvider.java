@@ -76,6 +76,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pRecipeOutput, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.mithril_ingot.get(), 0.25f,200,"mithril");
         oreBlasting(pRecipeOutput, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.mithril_ingot.get(), 0.25f,100,"mithril");
+
+        stairBuilder(ModBlocks.LAVENDER_STAIRS.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
+                .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAVENDERWOOD_SLAB.get(), ModBlocks.lavenderwood_planks.get());
+        buttonBuilder(ModBlocks.LAVENDERWOOD_BUTTON.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
+                .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.LAVENDERWOOD_PRESSURE_PLATE.get(), ModBlocks.lavenderwood_planks.get());
+        fenceBuilder(ModBlocks.LAVENDERWOOD_FENCE.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
+                .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.LAVENDERWOOD_FENCE_GATE.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
+                .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAVENDERWOOD_WALL.get(), ModBlocks.lavenderwood_planks.get());
+        doorBuilder(ModBlocks.LAVENDERWOOD_DOOR.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
+                .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.LAVENDERWOOD_TRAPDOOR.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
+                .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
+
     }
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                       float pExperience, int pCookingTIme, String pGroup) {

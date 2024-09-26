@@ -53,5 +53,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_CELESTIAL_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_CELESTIAL_TOOL);
+
+        tag(BlockTags.FENCES).add(ModBlocks.LAVENDERWOOD_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.LAVENDERWOOD_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.LAVENDERWOOD_WALL.get());
+
     }
 }

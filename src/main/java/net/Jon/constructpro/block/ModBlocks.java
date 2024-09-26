@@ -5,10 +5,10 @@ import net.Jon.constructpro.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -38,9 +38,30 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
 
+    // Building blocks
     public static final RegistryObject<Block> lavenderwood_planks = registerBlock("lavenderwood_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<StairBlock> LAVENDER_STAIRS = registerBlock("lavenderwood_stairs",
+            () -> new StairBlock(ModBlocks.lavenderwood_planks.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<PressurePlateBlock> LAVENDERWOOD_PRESSURE_PLATE = registerBlock("lavenderwood_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<ButtonBlock> LAVENDERWOOD_BUTTON = registerBlock("lavenderwood_button",
+            () -> new ButtonBlock(BlockSetType.OAK,1, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noCollission()));
+    public static final RegistryObject<FenceBlock> LAVENDERWOOD_FENCE = registerBlock("lavenderwood_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<FenceGateBlock> LAVENDERWOOD_FENCE_GATE = registerBlock("lavenderwood_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<WallBlock> LAVENDERWOOD_WALL = registerBlock("lavenderwood_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<DoorBlock> LAVENDERWOOD_DOOR = registerBlock("lavenderwood_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+    public static final RegistryObject<TrapDoorBlock> LAVENDERWOOD_TRAPDOOR = registerBlock("lavenderwood_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+    public static final RegistryObject<SlabBlock> LAVENDERWOOD_SLAB = registerBlock("lavenderwood_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
 
     // Ores
