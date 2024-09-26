@@ -10,6 +10,7 @@
   "item.constructpro.chisel": "Chisel",
   "item.constructpro.trowel": "Trowel",
   "item.constructpro.geoanalyzer": "Geo Analyzer",
+  "item.constructpro.terrain_leveler": "Terrain Leveler",
 
   "item.constructpro.eternal_steak": "Eternal Steak",
 
@@ -27,6 +28,7 @@
   "block.constructpro.raw_mithril_block": "Block of raw Mithril",
   "block.constructpro.mithril_ore": "Mithril ore",
   "block.constructpro.deepslate_mithril_ore": "Deepslate Mithril ore",
+  "block.constructpro.lavenderwood_planks": "Lavenderwood planks",
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",
@@ -36,6 +38,8 @@
   "tooltip.constructpro.Trowel": "Press §eShift§r for more Information!",
   "tooltip.constructpro.EternalSteak.shift_down": "This Item is an unlimited use steak",
   "tooltip.constructpro.EternalSteak": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.TerrainLeveler.shift_down": "This tool levels the terrain with different modes [Right click air to change modes]",
+  "tooltip.constructpro.TerrainLeveler": "Press §eShift§r for more Information!",
 
   "creativetab.ConstructPro.constructpro_items": "ConstructPro Items",
   "creativetab.ConstructPro.constructpro_blocks": "ConstructPro Blocks"

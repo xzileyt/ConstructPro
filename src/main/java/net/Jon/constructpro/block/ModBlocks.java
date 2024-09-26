@@ -38,6 +38,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> lavenderwood_planks = registerBlock("lavenderwood_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
 
     // Ores
     public static final RegistryObject<Block> crimson_quartz_ore = registerBlock("crimson_quartz_ore",

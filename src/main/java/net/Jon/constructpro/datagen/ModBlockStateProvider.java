@@ -15,12 +15,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        // Ore blocks
         blockWithItem(ModBlocks.celestial_block);
         blockWithItem(ModBlocks.crimson_quartz_block);
         blockWithItem(ModBlocks.fossilize_amber_block);
         blockWithItem(ModBlocks.raw_mithril_block);
         blockWithItem(ModBlocks.mithril_block);
 
+        // Wood
+        blockWithItem(ModBlocks.lavenderwood_planks);
+
+        // Ores
         blockWithItem(ModBlocks.celestial_ore);
         blockWithItem(ModBlocks.celestial_deepslate_ore);
         blockWithItem(ModBlocks.crimson_quartz_ore);

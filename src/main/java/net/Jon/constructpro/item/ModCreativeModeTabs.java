@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.Chisel.get());
                         output.accept(ModItems.TROWEL.get());
                         output.accept(ModItems.GEO_ANALYZER.get());
+                        output.accept(ModItems.TerrainLeveler.get());
 
                         output.accept(ModItems.ETERNAL_STEAK.get());
 
@@ -54,6 +55,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.mithril_ore.get());
                         output.accept(ModBlocks.deepslate_mithril_ore.get());
                         output.accept(ModBlocks.mithril_block.get());
+                        output.accept(ModBlocks.lavenderwood_planks.get());
 
                     }).build());
 

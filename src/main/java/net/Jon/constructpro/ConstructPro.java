@@ -64,6 +64,7 @@ public class ConstructPro {
             event.accept(ModBlocks.crimson_quartz_block);
             event.accept(ModBlocks.fossilize_amber_block);
             event.accept(ModBlocks.mithril_block);
+            event.accept(ModBlocks.lavenderwood_planks);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
@@ -76,6 +77,12 @@ public class ConstructPro {
             event.accept(ModBlocks.raw_mithril_block.get());
             event.accept(ModBlocks.mithril_ore.get());
             event.accept(ModBlocks.deepslate_mithril_ore.get());
+        }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.Chisel.get());
+            event.accept(ModItems.GEO_ANALYZER.get());
+            event.accept(ModItems.TROWEL.get());
+            event.accept(ModItems.TerrainLeveler.get());
         }
     }
 

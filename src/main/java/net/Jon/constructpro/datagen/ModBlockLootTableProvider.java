@@ -32,6 +32,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.crimson_quartz_block.get());
         dropSelf(ModBlocks.fossilize_amber_block.get());
         dropSelf(ModBlocks.mithril_block.get());
+        dropSelf(ModBlocks.lavenderwood_planks.get());
 
         this.add(ModBlocks.celestial_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.Celestial.get(), 2, 4));
