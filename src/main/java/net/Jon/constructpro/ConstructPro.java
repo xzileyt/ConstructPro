@@ -84,6 +84,11 @@ public class ConstructPro {
             event.accept(ModItems.TROWEL.get());
             event.accept(ModItems.TerrainLeveler.get());
             event.accept(ModItems.TerrainSmoother.get());
+            event.accept(ModItems.CELESTIAL_SWORD.get());
+            event.accept(ModItems.CELESTIAL_PICKAXE.get());
+            event.accept(ModItems.CELESTIAL_AXE.get());
+            event.accept(ModItems.CELESTIAL_SHOVEL.get());
+            event.accept(ModItems.CELESTIAL_HOE.get());
         }
     }
 

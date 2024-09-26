@@ -18,6 +18,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Molten.get()))
                     .title(Component.translatable("creativetab.ConstructPro.constructpro_items"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        // Ores
                         output.accept(ModItems.Celestial.get());
                         output.accept(ModItems.CrimsonQuartz.get());
                         output.accept(ModItems.Molten.get());
@@ -26,12 +27,21 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.raw_mithril_ore.get());
                         output.accept(ModItems.mithril_ingot.get());
 
+                        // Landscaping Tools
                         output.accept(ModItems.Chisel.get());
                         output.accept(ModItems.TROWEL.get());
                         output.accept(ModItems.GEO_ANALYZER.get());
                         output.accept(ModItems.TerrainLeveler.get());
                         output.accept(ModItems.TerrainSmoother.get());
 
+                        // Tools
+                        output.accept(ModItems.CELESTIAL_SWORD.get());
+                        output.accept(ModItems.CELESTIAL_PICKAXE.get());
+                        output.accept(ModItems.CELESTIAL_AXE.get());
+                        output.accept(ModItems.CELESTIAL_SHOVEL.get());
+                        output.accept(ModItems.CELESTIAL_HOE.get());
+
+                        // Food items
                         output.accept(ModItems.ETERNAL_STEAK.get());
 
                     }).build());

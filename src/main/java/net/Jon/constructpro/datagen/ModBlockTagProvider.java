@@ -2,6 +2,7 @@ package net.Jon.constructpro.datagen;
 
 import net.Jon.constructpro.ConstructPro;
 import net.Jon.constructpro.block.ModBlocks;
+import net.Jon.constructpro.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -43,5 +44,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.starlite_ore.get())
                 .add(ModBlocks.celestial_ore.get())
                 .add(ModBlocks.celestial_deepslate_ore.get());
+
+        tag(ModTags.Blocks.NEEDS_CELESTIAL_TOOL)
+                .add(ModBlocks.starlite_ore.get())
+                .add(ModBlocks.starlite_deepslate_ore.get())
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_CELESTIAL_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_CELESTIAL_TOOL);
     }
 }

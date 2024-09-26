@@ -4,9 +4,7 @@ import net.Jon.constructpro.ConstructPro;
 import net.Jon.constructpro.item.custom.*;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +17,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ConstructPro.MOD_ID);
 
+    // Ore
     public static final RegistryObject<Item> starlite = ITEMS.register("starlite",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CrimsonQuartz = ITEMS.register("crimsonquartz",
@@ -34,7 +33,7 @@ public class ModItems {
     public static final RegistryObject<Item> mithril_ingot = ITEMS.register("mithril_ingot",
             () -> new Item(new Item.Properties()));
 
-
+    // Tools
     public static final RegistryObject<Item> Chisel = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(32)));
     public static final RegistryObject<Item> TROWEL = ITEMS.register("trowel",
@@ -45,8 +44,23 @@ public class ModItems {
             () -> new TerrainLeveler(new Item.Properties()));
     public static final RegistryObject<Item> TerrainSmoother = ITEMS.register("terrain_smoother",
             () -> new ItemLandSmoother(new Item.Properties()));
+    public static final RegistryObject<Item> CELESTIAL_SWORD = ITEMS.register("celestial_sword",
+            () -> new SwordItem(ModToolTiers.CELESTIAL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.CELESTIAL, 3, -2.4f))));
+    public static final RegistryObject<Item> CELESTIAL_PICKAXE = ITEMS.register("celestial_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.CELESTIAL, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.CELESTIAL, 1, -2.8f))));
+    public static final RegistryObject<Item> CELESTIAL_SHOVEL = ITEMS.register("celestial_shovel",
+            () -> new ShovelItem(ModToolTiers.CELESTIAL, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.CELESTIAL, 1.5f, -3.0f))));
+    public static final RegistryObject<Item> CELESTIAL_AXE = ITEMS.register("celestial_axe",
+            () -> new AxeItem(ModToolTiers.CELESTIAL, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.CELESTIAL, 6, -3.2f))));
+    public static final RegistryObject<Item> CELESTIAL_HOE = ITEMS.register("celestial_hoe",
+            () -> new HoeItem(ModToolTiers.CELESTIAL, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.CELESTIAL, 0, -3.0f))));
 
-
+    // Food items
     public static final RegistryObject<Item> ETERNAL_STEAK = ITEMS.register("eternal_steak",
             () -> new EternalSteakItem(new Item.Properties().stacksTo(1).food(
                     new FoodProperties.Builder()
