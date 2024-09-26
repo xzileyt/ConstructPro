@@ -38,8 +38,8 @@
   "tooltip.constructpro.Trowel": "Press §eShift§r for more Information!",
   "tooltip.constructpro.EternalSteak.shift_down": "This Item is an unlimited use steak",
   "tooltip.constructpro.EternalSteak": "Press §eShift§r for more Information!",
-  "tooltip.constructpro.TerrainLeveler.shift_down": "This tool levels the terrain with different modes [Right click air to change modes]",
-  "tooltip.constructpro.TerrainLeveler": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.terrain_leveler.shift_down": "This tool levels the terrain with different modes [Right click air to change modes]",
+  "tooltip.constructpro.terrain_leveler": "Press §eShift§r for more Information!",
 
   "creativetab.ConstructPro.constructpro_items": "ConstructPro Items",
   "creativetab.ConstructPro.constructpro_blocks": "ConstructPro Blocks"
