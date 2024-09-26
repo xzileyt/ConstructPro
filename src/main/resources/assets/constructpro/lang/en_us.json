@@ -11,6 +11,7 @@
   "item.constructpro.trowel": "Trowel",
   "item.constructpro.geoanalyzer": "Geo Analyzer",
   "item.constructpro.terrain_leveler": "Terrain Leveler",
+  "item.constructpro.terrain_smoother": "Terrain Smoother [WIP]",
 
   "item.constructpro.eternal_steak": "Eternal Steak",
 
@@ -40,6 +41,8 @@
   "tooltip.constructpro.EternalSteak": "Press §eShift§r for more Information!",
   "tooltip.constructpro.terrain_leveler.shift_down": "This tool levels the terrain with different modes [Right click air to change modes]",
   "tooltip.constructpro.terrain_leveler": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.terrain_smoother.shift_down": "This tool smooths the terrain",
+  "tooltip.constructpro.terrain_smoother": "Press §eShift§r for more Information!",
 
   "creativetab.ConstructPro.constructpro_items": "ConstructPro Items",
   "creativetab.ConstructPro.constructpro_blocks": "ConstructPro Blocks"

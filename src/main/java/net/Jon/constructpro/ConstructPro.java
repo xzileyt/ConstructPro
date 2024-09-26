@@ -83,6 +83,7 @@ public class ConstructPro {
             event.accept(ModItems.GEO_ANALYZER.get());
             event.accept(ModItems.TROWEL.get());
             event.accept(ModItems.TerrainLeveler.get());
+            event.accept(ModItems.TerrainSmoother.get());
         }
     }
 

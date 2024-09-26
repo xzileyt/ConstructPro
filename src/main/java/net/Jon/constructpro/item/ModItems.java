@@ -1,10 +1,7 @@
 package net.Jon.constructpro.item;
 
 import net.Jon.constructpro.ConstructPro;
-import net.Jon.constructpro.item.custom.ChiselItem;
-import net.Jon.constructpro.item.custom.GeoAnalyzer;
-import net.Jon.constructpro.item.custom.TrowelItem;
-import net.Jon.constructpro.item.custom.TerrainLeveler;
+import net.Jon.constructpro.item.custom.*;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
@@ -46,6 +43,8 @@ public class ModItems {
             () -> new GeoAnalyzer(new Item.Properties()));
     public static final RegistryObject<Item> TerrainLeveler = ITEMS.register("terrain_leveler",
             () -> new TerrainLeveler(new Item.Properties()));
+    public static final RegistryObject<Item> TerrainSmoother = ITEMS.register("terrain_smoother",
+            () -> new ItemLandSmoother(new Item.Properties()));
 
 
     public static final RegistryObject<Item> ETERNAL_STEAK = ITEMS.register("eternal_steak",
