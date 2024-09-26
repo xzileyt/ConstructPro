@@ -1,6 +1,7 @@
 package net.Jon.constructpro.block;
 
 import net.Jon.constructpro.ConstructPro;
+import net.Jon.constructpro.block.custom.PurpleLampBlock;
 import net.Jon.constructpro.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -62,6 +63,10 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
     public static final RegistryObject<SlabBlock> LAVENDERWOOD_SLAB = registerBlock("lavenderwood_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp",
+            () -> new PurpleLampBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .lightLevel(state -> state.getValue(PurpleLampBlock.CLICKED) ? 15 : 0)));
 
 
     // Ores

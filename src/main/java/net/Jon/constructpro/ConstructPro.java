@@ -2,6 +2,7 @@ package net.Jon.constructpro;
 
 import com.mojang.logging.LogUtils;
 import net.Jon.constructpro.block.ModBlocks;
+import net.Jon.constructpro.component.ModDataComponentTypes;
 import net.Jon.constructpro.item.ModCreativeModeTabs;
 import net.Jon.constructpro.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -37,6 +38,8 @@ public class ConstructPro {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -74,6 +77,7 @@ public class ConstructPro {
             event.accept(ModBlocks.LAVENDERWOOD_TRAPDOOR);
             event.accept(ModBlocks.LAVENDERWOOD_PRESSURE_PLATE);
             event.accept(ModBlocks.LAVENDERWOOD_WALL);
+            event.accept(ModBlocks.PURPLE_LAMP);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

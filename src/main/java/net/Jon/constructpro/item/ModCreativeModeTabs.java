@@ -75,6 +75,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LAVENDERWOOD_FENCE.get());
                         output.accept(ModBlocks.LAVENDERWOOD_FENCE_GATE.get());
                         output.accept(ModBlocks.LAVENDERWOOD_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.PURPLE_LAMP.get());
 
                     }).build());
 

@@ -44,6 +44,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LAVENDERWOOD_FENCE.get());
         dropSelf(ModBlocks.LAVENDERWOOD_FENCE_GATE.get());
         dropSelf(ModBlocks.LAVENDERWOOD_WALL.get());
+        dropSelf(ModBlocks.PURPLE_LAMP.get());
 
         this.add(ModBlocks.celestial_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.Celestial.get(), 2, 4));

@@ -2,11 +2,14 @@ package net.Jon.constructpro.datagen;
 
 import net.Jon.constructpro.ConstructPro;
 import net.Jon.constructpro.block.ModBlocks;
+import net.Jon.constructpro.block.custom.PurpleLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -43,7 +46,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.LAVENDERWOOD_FENCE_GATE);
         blockItem(ModBlocks.LAVENDERWOOD_TRAPDOOR, "_bottom");
 
-
+        // Building Blocks
+        customLamp();
 
 
         // Ores
@@ -56,6 +60,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.starlite_deepslate_ore);
         blockWithItem(ModBlocks.mithril_ore);
         blockWithItem(ModBlocks.deepslate_mithril_ore);
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.PURPLE_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(PurpleLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("purple_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(ConstructPro.MOD_ID, "block/" + "purple_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("purple_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(ConstructPro.MOD_ID, "block/" + "purple_lamp_off")))};
+            }
+        });
+        simpleBlockItem(ModBlocks.PURPLE_LAMP.get(), models().cubeAll("purple_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(ConstructPro.MOD_ID, "block/" + "purple_lamp_on")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
