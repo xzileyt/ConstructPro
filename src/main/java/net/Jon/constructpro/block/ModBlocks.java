@@ -43,65 +43,88 @@ public class ModBlocks {
     public static final RegistryObject<Block> lavenderwood_planks = registerBlock("lavenderwood_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<StairBlock> LAVENDER_STAIRS = registerBlock("lavenderwood_stairs",
             () -> new StairBlock(ModBlocks.lavenderwood_planks.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<PressurePlateBlock> LAVENDERWOOD_PRESSURE_PLATE = registerBlock("lavenderwood_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<ButtonBlock> LAVENDERWOOD_BUTTON = registerBlock("lavenderwood_button",
             () -> new ButtonBlock(BlockSetType.OAK,1, BlockBehaviour.Properties.of().strength(3f)
                     .requiresCorrectToolForDrops().noCollission()));
+
     public static final RegistryObject<FenceBlock> LAVENDERWOOD_FENCE = registerBlock("lavenderwood_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<FenceGateBlock> LAVENDERWOOD_FENCE_GATE = registerBlock("lavenderwood_fence_gate",
             () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<WallBlock> LAVENDERWOOD_WALL = registerBlock("lavenderwood_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<DoorBlock> LAVENDERWOOD_DOOR = registerBlock("lavenderwood_door",
             () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
     public static final RegistryObject<TrapDoorBlock> LAVENDERWOOD_TRAPDOOR = registerBlock("lavenderwood_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
     public static final RegistryObject<SlabBlock> LAVENDERWOOD_SLAB = registerBlock("lavenderwood_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> BLACK_TUFF = registerBlock("black_tuff",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> BLUE_MUSHROOM_BLOCK = registerBlock("blue_mushroom_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> BROWN_MUSHROOM_BLOCK = registerBlock("brown_mushroom_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> CYAN_MUSHROOM_BLOCK = registerBlock("cyan_mushroom_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> GREEN_MUSHROOM_BLOCK = registerBlock("green_mushroom_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> LIGHT_BLUE_MUSHROOM_BLOCK = registerBlock("light_blue_mushroom_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> LIME_MUSHROOM_BLOCK = registerBlock("lime_mushroom_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> ORANGE_MUSHROOM_BLOCK = registerBlock("orange_mushroom_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> PINK_MUSHROOM_BLOCK = registerBlock("pink_mushroom_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> PURPLE_MUSHROOM_BLOCK = registerBlock("purple_mushroom_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> YELLOW_MUSHROOM_BLOCK = registerBlock("yellow_mushroom_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> COPPER_ANDESITE = registerBlock("copper_andesite",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> GREEN_TUFF = registerBlock("green_tuff",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> DARK_CALCITE = registerBlock("dark_calcite",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
