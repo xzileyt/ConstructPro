@@ -95,6 +95,12 @@ public class ConstructPro {
             event.accept(ModBlocks.GREEN_TUFF);
             event.accept(ModBlocks.DARK_CALCITE);
             event.accept(ModBlocks.COPPER_ANDESITE);
+            event.accept(ModBlocks.GREEN_GEM_BLOCK);
+            event.accept(ModBlocks.ORANGE_GEM_BLOCK);
+            event.accept(ModBlocks.PURPLE_GEM_BLOCK);
+            event.accept(ModBlocks.RED_GEM_BLOCK);
+            event.accept(ModBlocks.TEAL_GEM_BLOCK);
+            event.accept(ModBlocks.YELLOW_GEM_BLOCK);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

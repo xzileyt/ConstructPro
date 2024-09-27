@@ -60,6 +60,12 @@
   "block.constructpro.copper_andesite": "Copper Andesite",
   "block.constructpro.dark_calcite": "Dark Calcite",
   "block.constructpro.green_tuff": "Green Tuff",
+  "block.constructpro.green_gem_block": "Green Gem Block",
+  "block.constructpro.orange_gem_block": "Orange Gem Block",
+  "block.constructpro.purple_gem_block": "Purple Gem Block",
+  "block.constructpro.red_gem_block": "Red Gem Block",
+  "block.constructpro.teal_gem_block": "Teal Gem Block",
+  "block.constructpro.yellow_gem_block": "Yellow Gem Block",
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",

@@ -107,10 +107,53 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops()));
 
 
-
+    // Light Blocks
     public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp",
             () -> new PurpleLampBlock(BlockBehaviour.Properties.of().strength(3f)
                     .lightLevel(state -> state.getValue(PurpleLampBlock.CLICKED) ? 15 : 0)));
+
+    public static final RegistryObject<Block> GREEN_GEM_BLOCK = registerBlock("green_gem_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.3f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> ORANGE_GEM_BLOCK = registerBlock("orange_gem_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.3f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> PURPLE_GEM_BLOCK = registerBlock("purple_gem_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.3f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> YELLOW_GEM_BLOCK = registerBlock("yellow_gem_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.3f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> RED_GEM_BLOCK = registerBlock("red_gem_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.3f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> TEAL_GEM_BLOCK = registerBlock("teal_gem_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.3f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.AMETHYST)));
+
 
 
     // Ores
