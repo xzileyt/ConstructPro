@@ -2,6 +2,7 @@ package net.Jon.constructpro.item;
 
 import net.Jon.constructpro.ConstructPro;
 import net.Jon.constructpro.item.custom.*;
+import net.Jon.constructpro.util.ModTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -10,8 +11,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =

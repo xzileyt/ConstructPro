@@ -28,6 +28,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        // Blocks
         dropSelf(ModBlocks.celestial_block.get());
         dropSelf(ModBlocks.crimson_quartz_block.get());
         dropSelf(ModBlocks.fossilize_amber_block.get());
@@ -45,7 +46,23 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LAVENDERWOOD_FENCE_GATE.get());
         dropSelf(ModBlocks.LAVENDERWOOD_WALL.get());
         dropSelf(ModBlocks.PURPLE_LAMP.get());
+        dropSelf(ModBlocks.BLACK_TUFF.get());
+        dropSelf(ModBlocks.BLUE_MUSHROOM_BLOCK.get());
+        dropSelf(ModBlocks.BROWN_MUSHROOM_BLOCK.get());
+        dropSelf(ModBlocks.CYAN_MUSHROOM_BLOCK.get());
+        dropSelf(ModBlocks.LIGHT_BLUE_MUSHROOM_BLOCK.get());
+        dropSelf(ModBlocks.LIME_MUSHROOM_BLOCK.get());
+        dropSelf(ModBlocks.GREEN_MUSHROOM_BLOCK.get());
+        dropSelf(ModBlocks.ORANGE_MUSHROOM_BLOCK.get());
+        dropSelf(ModBlocks.PINK_MUSHROOM_BLOCK.get());
+        dropSelf(ModBlocks.PURPLE_MUSHROOM_BLOCK.get());
+        dropSelf(ModBlocks.YELLOW_MUSHROOM_BLOCK.get());
+        dropSelf(ModBlocks.DARK_CALCITE.get());
+        dropSelf(ModBlocks.GREEN_TUFF.get());
+        dropSelf(ModBlocks.COPPER_ANDESITE.get());
 
+
+        // Ores
         this.add(ModBlocks.celestial_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.Celestial.get(), 2, 4));
         this.add(ModBlocks.celestial_deepslate_ore.get(),

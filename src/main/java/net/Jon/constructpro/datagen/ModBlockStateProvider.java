@@ -48,7 +48,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         // Building Blocks
         customLamp();
-
+        blockWithItem(ModBlocks.BLACK_TUFF);
+        blockWithItem(ModBlocks.BLUE_MUSHROOM_BLOCK);
+        blockWithItem(ModBlocks.BROWN_MUSHROOM_BLOCK);
+        blockWithItem(ModBlocks.CYAN_MUSHROOM_BLOCK);
+        blockWithItem(ModBlocks.GREEN_MUSHROOM_BLOCK);
+        blockWithItem(ModBlocks.LIGHT_BLUE_MUSHROOM_BLOCK);
+        blockWithItem(ModBlocks.LIME_MUSHROOM_BLOCK);
+        blockWithItem(ModBlocks.ORANGE_MUSHROOM_BLOCK);
+        blockWithItem(ModBlocks.PINK_MUSHROOM_BLOCK);
+        blockWithItem(ModBlocks.PURPLE_MUSHROOM_BLOCK);
+        blockWithItem(ModBlocks.YELLOW_MUSHROOM_BLOCK);
+        blockWithItem(ModBlocks.COPPER_ANDESITE);
+        blockWithItem(ModBlocks.DARK_CALCITE);
+        blockWithItem(ModBlocks.GREEN_TUFF);
 
         // Ores
         blockWithItem(ModBlocks.celestial_ore);

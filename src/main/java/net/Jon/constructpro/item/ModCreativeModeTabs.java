@@ -76,6 +76,20 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LAVENDERWOOD_FENCE_GATE.get());
                         output.accept(ModBlocks.LAVENDERWOOD_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.PURPLE_LAMP.get());
+                        output.accept(ModBlocks.BLACK_TUFF.get());
+                        output.accept(ModBlocks.BLUE_MUSHROOM_BLOCK.get());
+                        output.accept(ModBlocks.BROWN_MUSHROOM_BLOCK.get());
+                        output.accept(ModBlocks.CYAN_MUSHROOM_BLOCK.get());
+                        output.accept(ModBlocks.GREEN_MUSHROOM_BLOCK.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_MUSHROOM_BLOCK.get());
+                        output.accept(ModBlocks.LIME_MUSHROOM_BLOCK.get());
+                        output.accept(ModBlocks.ORANGE_MUSHROOM_BLOCK.get());
+                        output.accept(ModBlocks.PINK_MUSHROOM_BLOCK.get());
+                        output.accept(ModBlocks.PURPLE_MUSHROOM_BLOCK.get());
+                        output.accept(ModBlocks.YELLOW_MUSHROOM_BLOCK.get());
+                        output.accept(ModBlocks.COPPER_ANDESITE.get());
+                        output.accept(ModBlocks.GREEN_TUFF.get());
+                        output.accept(ModBlocks.DARK_CALCITE.get());
 
                     }).build());
 

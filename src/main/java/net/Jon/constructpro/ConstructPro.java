@@ -41,6 +41,9 @@ public class ConstructPro {
 
         ModDataComponentTypes.register(modEventBus);
 
+        // Register enchantments
+
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
@@ -78,6 +81,20 @@ public class ConstructPro {
             event.accept(ModBlocks.LAVENDERWOOD_PRESSURE_PLATE);
             event.accept(ModBlocks.LAVENDERWOOD_WALL);
             event.accept(ModBlocks.PURPLE_LAMP);
+            event.accept(ModBlocks.BLACK_TUFF);
+            event.accept(ModBlocks.BLUE_MUSHROOM_BLOCK);
+            event.accept(ModBlocks.BROWN_MUSHROOM_BLOCK);
+            event.accept(ModBlocks.CYAN_MUSHROOM_BLOCK);
+            event.accept(ModBlocks.GREEN_MUSHROOM_BLOCK);
+            event.accept(ModBlocks.LIGHT_BLUE_MUSHROOM_BLOCK);
+            event.accept(ModBlocks.LIME_MUSHROOM_BLOCK);
+            event.accept(ModBlocks.ORANGE_MUSHROOM_BLOCK);
+            event.accept(ModBlocks.PINK_MUSHROOM_BLOCK);
+            event.accept(ModBlocks.PURPLE_MUSHROOM_BLOCK);
+            event.accept(ModBlocks.YELLOW_MUSHROOM_BLOCK);
+            event.accept(ModBlocks.GREEN_TUFF);
+            event.accept(ModBlocks.DARK_CALCITE);
+            event.accept(ModBlocks.COPPER_ANDESITE);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
