@@ -21,7 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         // Ores
-        basicItem(ModItems.Celestial.get());
+        basicItem(ModItems.CELESTIAL.get());
         basicItem(ModItems.CrimsonQuartz.get());
         basicItem(ModItems.Molten.get());
         basicItem(ModItems.starlite.get());
@@ -36,6 +36,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.LAVENDERWOOD_WALL, ModBlocks.lavenderwood_planks);
 
         simpleBlockItem(ModBlocks.LAVENDERWOOD_DOOR);
+
+        // Wood logs
+
 
         // Tools
         basicItem(ModItems.Chisel.get());

@@ -70,9 +70,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.Celestial.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.CELESTIAL.get(), 2, 4));
         this.add(ModBlocks.celestial_deepslate_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.celestial_deepslate_ore.get(), ModItems.Celestial.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.celestial_deepslate_ore.get(), ModItems.CELESTIAL.get(), 2, 4));
         this.add(ModBlocks.crimson_quartz_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.crimson_quartz_ore.get(), ModItems.CrimsonQuartz.get(), 2, 3));
         this.add(ModBlocks.fossilized_amber_ore.get(),

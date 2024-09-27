@@ -46,6 +46,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.LAVENDERWOOD_FENCE_GATE);
         blockItem(ModBlocks.LAVENDERWOOD_TRAPDOOR, "_bottom");
 
+
+        // Wood Logs
+
+
+
+
         // Building Blocks
         customLamp();
         blockWithItem(ModBlocks.BLACK_TUFF);

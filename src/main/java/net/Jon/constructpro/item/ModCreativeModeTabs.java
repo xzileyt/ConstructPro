@@ -19,7 +19,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.ConstructPro.constructpro_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         // Ores
-                        output.accept(ModItems.Celestial.get());
+                        output.accept(ModItems.CELESTIAL.get());
                         output.accept(ModItems.CrimsonQuartz.get());
                         output.accept(ModItems.Molten.get());
                         output.accept(ModItems.FossilizedAmber.get());
@@ -40,6 +40,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CELESTIAL_AXE.get());
                         output.accept(ModItems.CELESTIAL_SHOVEL.get());
                         output.accept(ModItems.CELESTIAL_HOE.get());
+
+                        // Combat items
+
 
                         // Food items
                         output.accept(ModItems.ETERNAL_STEAK.get());

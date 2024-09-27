@@ -5,8 +5,8 @@ import net.Jon.constructpro.block.ModBlocks;
 import net.Jon.constructpro.component.ModDataComponentTypes;
 import net.Jon.constructpro.item.ModCreativeModeTabs;
 import net.Jon.constructpro.item.ModItems;
+// Added this import statement for ModArmorMaterials
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -20,47 +20,39 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(ConstructPro.MOD_ID)
 public class ConstructPro {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "constructpro";
-    // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public ConstructPro() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
         ModCreativeModeTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         ModDataComponentTypes.register(modEventBus);
 
-        // Register enchantments
+        // Register armor materials
 
 
-        // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        // Common setup code
     }
 
-    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        // Add items to creative tabs
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.starlite);
             event.accept(ModItems.CrimsonQuartz);
             event.accept(ModItems.FossilizedAmber);
-            event.accept(ModItems.Celestial);
+            event.accept(ModItems.CELESTIAL);
             event.accept(ModItems.Molten);
             event.accept(ModItems.raw_mithril_ore);
             event.accept(ModItems.mithril_ingot);
@@ -128,19 +120,16 @@ public class ConstructPro {
         }
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-
+        // Server starting logic
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    @Mod.EventBusSubscriber(modid = ConstructPro.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+    public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            // Client setup code
         }
     }
 }

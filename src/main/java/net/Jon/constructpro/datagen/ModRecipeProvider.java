@@ -6,6 +6,7 @@ import net.Jon.constructpro.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -26,11 +27,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
-                .define('A', ModItems.Celestial.get())
-                .unlockedBy(getHasName(ModItems.Celestial.get()), has(ModItems.Celestial.get()))
+                .define('A', ModItems.CELESTIAL.get())
+                .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
                 .save(pRecipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.Celestial.get(), 9)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CELESTIAL.get(), 9)
                 .requires(ModBlocks.celestial_block.get())
                 .unlockedBy(getHasName(ModBlocks.celestial_block.get()), has(ModBlocks.celestial_block.get()))
                 .save(pRecipeOutput);
@@ -92,6 +93,51 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
         trapdoorBuilder(ModBlocks.LAVENDERWOOD_TRAPDOOR.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
                 .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIAL_PICKAXE.get())
+                .pattern("MMM")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.CELESTIAL.get()) // Replace with your desired material
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIAL_AXE.get())
+                .pattern("MM ")
+                .pattern("MS ")
+                .pattern(" S ")
+                .define('M', ModItems.CELESTIAL.get()) // Replace with your desired material
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIAL_SHOVEL.get())
+                .pattern(" M ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.CELESTIAL.get()) // Replace with your desired material
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIAL_HOE.get())
+                .pattern("MM ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.CELESTIAL.get()) // Replace with your desired material
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIAL_SWORD.get())
+                .pattern(" M ")
+                .pattern(" M ")
+                .pattern(" S ")
+                .define('M', ModItems.CELESTIAL.get()) // Replace with your desired material
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
 
     }
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
