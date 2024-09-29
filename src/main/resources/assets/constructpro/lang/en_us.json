@@ -73,6 +73,7 @@
   "block.constructpro.teal_gem_block": "Teal Gem Block",
   "block.constructpro.yellow_gem_block": "Yellow Gem Block",
 
+
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",
   "tooltip.constructpro.GeoAnalyzer.shift_down": "This Item detect ore around the player",

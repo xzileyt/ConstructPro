@@ -94,6 +94,7 @@ public class ConstructPro {
             event.accept(ModBlocks.RED_GEM_BLOCK);
             event.accept(ModBlocks.TEAL_GEM_BLOCK);
             event.accept(ModBlocks.YELLOW_GEM_BLOCK);
+
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

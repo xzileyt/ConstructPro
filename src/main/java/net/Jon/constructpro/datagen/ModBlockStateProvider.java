@@ -46,12 +46,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.LAVENDERWOOD_FENCE_GATE);
         blockItem(ModBlocks.LAVENDERWOOD_TRAPDOOR, "_bottom");
 
-
-        // Wood Logs
-
-
-
-
         // Building Blocks
         customLamp();
         blockWithItem(ModBlocks.BLACK_TUFF);
@@ -75,6 +69,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.YELLOW_GEM_BLOCK);
         blockWithItem(ModBlocks.PURPLE_GEM_BLOCK);
 
+
         // Ores
         blockWithItem(ModBlocks.celestial_ore);
         blockWithItem(ModBlocks.celestial_deepslate_ore);
@@ -85,11 +80,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.starlite_deepslate_ore);
         blockWithItem(ModBlocks.mithril_ore);
         blockWithItem(ModBlocks.deepslate_mithril_ore);
+
     }
 
     private void customLamp() {
         getVariantBuilder(ModBlocks.PURPLE_LAMP.get()).forAllStates(state -> {
-            if(state.getValue(PurpleLampBlock.CLICKED)) {
+            if (state.getValue(PurpleLampBlock.CLICKED)) {
                 return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("purple_lamp_on",
                         ResourceLocation.fromNamespaceAndPath(ConstructPro.MOD_ID, "block/" + "purple_lamp_on")))};
             } else {
@@ -100,6 +96,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(ModBlocks.PURPLE_LAMP.get(), models().cubeAll("purple_lamp_on",
                 ResourceLocation.fromNamespaceAndPath(ConstructPro.MOD_ID, "block/" + "purple_lamp_on")));
     }
+
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

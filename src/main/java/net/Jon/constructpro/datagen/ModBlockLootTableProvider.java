@@ -68,6 +68,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.YELLOW_GEM_BLOCK.get());
 
 
+
         // Ores
         this.add(ModBlocks.celestial_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.CELESTIAL.get(), 2, 4));

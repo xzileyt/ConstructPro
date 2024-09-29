@@ -18,6 +18,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Molten.get()))
                     .title(Component.translatable("creativetab.ConstructPro.constructpro_items"))
                     .displayItems((itemDisplayParameters, output) -> {
+
                         // Ores
                         output.accept(ModItems.CELESTIAL.get());
                         output.accept(ModItems.CrimsonQuartz.get());
@@ -105,6 +106,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RED_GEM_BLOCK.get());
                         output.accept(ModBlocks.TEAL_GEM_BLOCK.get());
                         output.accept(ModBlocks.YELLOW_GEM_BLOCK.get());
+
 
                     }).build());
 

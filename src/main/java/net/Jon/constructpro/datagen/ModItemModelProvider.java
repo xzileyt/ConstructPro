@@ -34,8 +34,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.LAVENDERWOOD_BUTTON, ModBlocks.lavenderwood_planks);
         fenceItem(ModBlocks.LAVENDERWOOD_FENCE, ModBlocks.lavenderwood_planks);
         wallItem(ModBlocks.LAVENDERWOOD_WALL, ModBlocks.lavenderwood_planks);
-
         simpleBlockItem(ModBlocks.LAVENDERWOOD_DOOR);
+
 
         // Wood logs
 

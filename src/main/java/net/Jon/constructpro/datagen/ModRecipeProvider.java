@@ -3,12 +3,14 @@ package net.Jon.constructpro.datagen;
 import net.Jon.constructpro.ConstructPro;
 import net.Jon.constructpro.block.ModBlocks;
 import net.Jon.constructpro.item.ModItems;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -58,6 +60,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_purple_dye", has(Items.PURPLE_DYE))
                 .unlockedBy("has_redstone_lamp", has(Items.REDSTONE_LAMP))
                 .save(pRecipeOutput);
+
+
 
 
         // Ore blocks
@@ -231,6 +235,35 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('M', ModItems.Molten.get())
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.Molten.get()), has(ModItems.Molten.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Chisel.get())
+                .pattern("  M")
+                .pattern(" S ")
+                .pattern("S  ")
+                .define('M', Items.STONE)
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(Items.STONE), has(Items.STONE))
+                .save(pRecipeOutput);
+
+        // Items
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GEO_ANALYZER.get())
+                .pattern("GGG")
+                .pattern("IDI")
+                .pattern("GGG")
+                .define('G', Items.GLASS) // Assuming you want to use glass as a material
+                .define('I', Items.IRON_INGOT) // Assuming you want to use iron ingot as a material
+                .define('D', Items.REDSTONE_BLOCK)
+                .unlockedBy(getHasName(Items.REDSTONE_BLOCK), has(Items.REDSTONE_BLOCK))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ETERNAL_STEAK.get())
+                .pattern("SSS")
+                .pattern("SBS")
+                .pattern("SSS")
+                .define('B', Items.BEEF)
+                .define('S', Items.GOLD_BLOCK)
+                .unlockedBy(getHasName(Items.BEEF), has(Items.BEEF))
                 .save(pRecipeOutput);
 
     }
