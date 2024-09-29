@@ -4,13 +4,17 @@ import net.Jon.constructpro.ConstructPro;
 import net.Jon.constructpro.item.custom.*;
 import net.Jon.constructpro.util.ModTags;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.Properties;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -58,6 +62,17 @@ public class ModItems {
     public static final RegistryObject<Item> CELESTIAL_HOE = ITEMS.register("celestial_hoe",
             () -> new HoeItem(ModToolTiers.CELESTIAL, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.CELESTIAL, 0, -3.0f))));
+    public static final RegistryObject<Item> CELESTIAL_HAMMER = ITEMS.register("celestial_hammer",
+            () -> new HammerItem(ModToolTiers.CELESTIAL, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.CELESTIAL, 7, -3.5f))));
+
+
+
+    // Armor
+
+
+
+
 
     // Food items
     public static final RegistryObject<Item> ETERNAL_STEAK = ITEMS.register("eternal_steak",

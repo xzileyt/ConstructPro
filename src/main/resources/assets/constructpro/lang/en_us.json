@@ -18,6 +18,7 @@
   "item.constructpro.celestial_axe": "Celestial Axe",
   "item.constructpro.celestial_shovel": "Celestial Shovel",
   "item.constructpro.celestial_hoe": "Celestial Hoe",
+  "item.constructpro.celestial_hammer": "Celestial Hammer",
 
   "item.constructpro.eternal_steak": "Eternal Steak",
 
@@ -79,6 +80,8 @@
   "tooltip.constructpro.terrain_leveler": "Press §eShift§r for more Information!",
   "tooltip.constructpro.terrain_smoother.shift_down": "This tool smooths the terrain",
   "tooltip.constructpro.terrain_smoother": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.celestial_hammer.shift_down": "This tool is unbreakable and breaks a 3x3 area",
+  "tooltip.constructpro.celestial_hammer": "Press §eShift§r for more Information!",
 
   "creativetab.ConstructPro.constructpro_items": "ConstructPro Items",
   "creativetab.ConstructPro.constructpro_blocks": "ConstructPro Blocks"

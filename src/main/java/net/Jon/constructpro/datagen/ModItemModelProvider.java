@@ -47,11 +47,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TerrainLeveler.get());
         basicItem(ModItems.TerrainSmoother.get());
 
-        basicItem(ModItems.CELESTIAL_SWORD.get());
-        basicItem(ModItems.CELESTIAL_PICKAXE.get());
-        basicItem(ModItems.CELESTIAL_AXE.get());
-        basicItem(ModItems.CELESTIAL_SHOVEL.get());
-        basicItem(ModItems.CELESTIAL_HOE.get());
+        handheldItem(ModItems.CELESTIAL_SWORD);
+        handheldItem(ModItems.CELESTIAL_PICKAXE);
+        handheldItem(ModItems.CELESTIAL_AXE);
+        handheldItem(ModItems.CELESTIAL_SHOVEL);
+        handheldItem(ModItems.CELESTIAL_HOE);
+        handheldItem(ModItems.CELESTIAL_HAMMER);
 
         // Food items
         basicItem(ModItems.ETERNAL_STEAK.get());

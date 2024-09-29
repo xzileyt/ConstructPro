@@ -20,6 +20,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+
 @Mod(ConstructPro.MOD_ID)
 public class ConstructPro {
     public static final String MOD_ID = "constructpro";
@@ -117,6 +118,7 @@ public class ConstructPro {
             event.accept(ModItems.CELESTIAL_AXE.get());
             event.accept(ModItems.CELESTIAL_SHOVEL.get());
             event.accept(ModItems.CELESTIAL_HOE.get());
+            event.accept(ModItems.CELESTIAL_HAMMER.get());
         }
     }
 

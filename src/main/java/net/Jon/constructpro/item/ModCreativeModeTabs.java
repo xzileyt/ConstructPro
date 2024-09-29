@@ -40,6 +40,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CELESTIAL_AXE.get());
                         output.accept(ModItems.CELESTIAL_SHOVEL.get());
                         output.accept(ModItems.CELESTIAL_HOE.get());
+                        output.accept(ModItems.CELESTIAL_HAMMER.get());
 
                         // Combat items
 
