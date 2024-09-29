@@ -47,6 +47,8 @@ public class ModItems {
             () -> new TerrainLeveler(new Item.Properties()));
     public static final RegistryObject<Item> TerrainSmoother = ITEMS.register("terrain_smoother",
             () -> new ItemLandSmoother(new Item.Properties()));
+
+    // Celestial tools
     public static final RegistryObject<Item> CELESTIAL_SWORD = ITEMS.register("celestial_sword",
             () -> new SwordItem(ModToolTiers.CELESTIAL, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTiers.CELESTIAL, 3, -2.4f))));
@@ -66,6 +68,22 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.CELESTIAL, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.CELESTIAL, 7, -3.5f))));
 
+    // Molten tools
+    public static final RegistryObject<Item> MOLTEN_SWORD = ITEMS.register("molten_sword",
+            () -> new SwordItem(ModToolTiers.Molten, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.Molten, 4, -2.2f))));
+    public static final RegistryObject<Item> MOLTEN_PICKAXE = ITEMS.register("molten_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.Molten, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.Molten, 2, -2.4f))));
+    public static final RegistryObject<Item> MOLTEN_AXE = ITEMS.register("molten_axe",
+            () -> new AxeItem(ModToolTiers.Molten, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.Molten, 7, -3f))));
+    public static final RegistryObject<Item> MOLTEN_SHOVEL = ITEMS.register("molten_shovel",
+            () -> new ShovelItem(ModToolTiers.Molten, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.Molten, 1.7f, -2.8f))));
+    public static final RegistryObject<Item> MOLTEN_HOE = ITEMS.register("molten_hoe",
+            () -> new HoeItem(ModToolTiers.Molten, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.Molten, 1, -2.7f))));
 
 
     // Armor
@@ -85,4 +103,5 @@ public class ModItems {
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
 }

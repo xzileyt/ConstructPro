@@ -53,6 +53,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.CELESTIAL_SHOVEL);
         handheldItem(ModItems.CELESTIAL_HOE);
         handheldItem(ModItems.CELESTIAL_HAMMER);
+        handheldItem(ModItems.MOLTEN_SWORD);
+        handheldItem(ModItems.MOLTEN_PICKAXE);
+        handheldItem(ModItems.MOLTEN_AXE);
+        handheldItem(ModItems.MOLTEN_SHOVEL);
+        handheldItem(ModItems.MOLTEN_HOE);
 
         // Food items
         basicItem(ModItems.ETERNAL_STEAK.get());

@@ -23,6 +23,44 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(RecipeOutput pRecipeOutput) {
         List<ItemLike> MITHRIL_SMELTABLES = List.of(ModItems.raw_mithril_ore.get());
 
+        // Blocks
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.COPPER_ANDESITE.get())
+                .requires(Items.COPPER_INGOT)
+                .requires(Items.ANDESITE)
+                .unlockedBy("has_copper", has(Items.COPPER_INGOT))
+                .unlockedBy("has_andesite", has(Items.ANDESITE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BLACK_TUFF.get())
+                .requires(Items.BLACK_DYE)
+                .requires(Items.TUFF)
+                .unlockedBy("has_black_dye", has(Items.BLACK_DYE))
+                .unlockedBy("has_tuff", has(Items.TUFF))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GREEN_TUFF.get())
+                .requires(Items.GREEN_DYE)
+                .requires(Items.TUFF)
+                .unlockedBy("has_green_dye", has(Items.GREEN_DYE))
+                .unlockedBy("has_tuff", has(Items.TUFF))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.DARK_CALCITE.get())
+                .requires(Items.BLACK_DYE)
+                .requires(Items.CALCITE)
+                .unlockedBy("has_black_dye", has(Items.BLACK_DYE))
+                .unlockedBy("has_calcite", has(Items.CALCITE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PURPLE_LAMP.get())
+                .requires(Items.PURPLE_DYE)
+                .requires(Items.REDSTONE_LAMP)
+                .unlockedBy("has_purple_dye", has(Items.PURPLE_DYE))
+                .unlockedBy("has_redstone_lamp", has(Items.REDSTONE_LAMP))
+                .save(pRecipeOutput);
+
+
+        // Ore blocks
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.celestial_block.get())
                 .pattern("AAA")
                 .pattern("AAA")
@@ -78,6 +116,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pRecipeOutput, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.mithril_ingot.get(), 0.25f,200,"mithril");
         oreBlasting(pRecipeOutput, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.mithril_ingot.get(), 0.25f,100,"mithril");
 
+        // Wood blocks
         stairBuilder(ModBlocks.LAVENDER_STAIRS.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
                 .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
         slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAVENDERWOOD_SLAB.get(), ModBlocks.lavenderwood_planks.get());
@@ -94,6 +133,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.LAVENDERWOOD_TRAPDOOR.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
                 .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
 
+        // Tools
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIAL_PICKAXE.get())
                 .pattern("MMM")
                 .pattern(" S ")
@@ -116,7 +156,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" M ")
                 .pattern(" S ")
                 .pattern(" S ")
-                .define('M', ModItems.CELESTIAL.get()) // Replace with your desired material
+                .define('M', ModItems.CELESTIAL.get())
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
                 .save(pRecipeOutput);
@@ -125,7 +165,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("MM ")
                 .pattern(" S ")
                 .pattern(" S ")
-                .define('M', ModItems.CELESTIAL.get()) // Replace with your desired material
+                .define('M', ModItems.CELESTIAL.get())
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
                 .save(pRecipeOutput);
@@ -134,9 +174,63 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" M ")
                 .pattern(" M ")
                 .pattern(" S ")
-                .define('M', ModItems.CELESTIAL.get()) // Replace with your desired material
+                .define('M', ModItems.CELESTIAL.get())
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIAL_HAMMER.get())
+                .pattern("MMM")
+                .pattern("MMM")
+                .pattern(" S ")
+                .define('M', ModItems.CELESTIAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MOLTEN_SWORD.get())
+                .pattern(" M ")
+                .pattern(" M ")
+                .pattern(" S ")
+                .define('M', ModItems.Molten.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Molten.get()), has(ModItems.Molten.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MOLTEN_PICKAXE.get())
+                .pattern("MMM")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.Molten.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Molten.get()), has(ModItems.Molten.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MOLTEN_AXE.get())
+                .pattern("MM ")
+                .pattern("MS ")
+                .pattern(" S ")
+                .define('M', ModItems.Molten.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Molten.get()), has(ModItems.Molten.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MOLTEN_SHOVEL.get())
+                .pattern(" M ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.Molten.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Molten.get()), has(ModItems.Molten.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MOLTEN_HOE.get())
+                .pattern("MM ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.Molten.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.Molten.get()), has(ModItems.Molten.get()))
                 .save(pRecipeOutput);
 
     }

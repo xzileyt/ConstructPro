@@ -119,6 +119,11 @@ public class ConstructPro {
             event.accept(ModItems.CELESTIAL_SHOVEL.get());
             event.accept(ModItems.CELESTIAL_HOE.get());
             event.accept(ModItems.CELESTIAL_HAMMER.get());
+            event.accept(ModItems.MOLTEN_SWORD.get());
+            event.accept(ModItems.MOLTEN_PICKAXE.get());
+            event.accept(ModItems.MOLTEN_AXE.get());
+            event.accept(ModItems.MOLTEN_SHOVEL.get());
+            event.accept(ModItems.MOLTEN_HOE.get());
         }
     }
 
