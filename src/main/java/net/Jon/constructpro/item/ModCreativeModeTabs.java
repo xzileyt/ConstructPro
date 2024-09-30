@@ -106,7 +106,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RED_GEM_BLOCK.get());
                         output.accept(ModBlocks.TEAL_GEM_BLOCK.get());
                         output.accept(ModBlocks.YELLOW_GEM_BLOCK.get());
-
+                        output.accept(ModBlocks.BLUE_GLOWSTONE.get());
+                        output.accept(ModBlocks.CYAN_GLOWSTONE.get());
+                        output.accept(ModBlocks.GREEN_GLOWSTONE.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_GLOWSTONE.get());
+                        output.accept(ModBlocks.PURPLE_GLOWSTONE.get());
+                        output.accept(ModBlocks.RED_GLOWSTONE.get());
 
                     }).build());
 

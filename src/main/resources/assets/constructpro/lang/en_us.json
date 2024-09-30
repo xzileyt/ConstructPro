@@ -72,7 +72,12 @@
   "block.constructpro.red_gem_block": "Red Gem Block",
   "block.constructpro.teal_gem_block": "Teal Gem Block",
   "block.constructpro.yellow_gem_block": "Yellow Gem Block",
-
+  "block.constructpro.blue_glowstone": "Blue Glowstone",
+  "block.constructpro.cyan_glowstone": "Cyan Glowstone",
+  "block.constructpro.green_glowstone": "Green Glowstone",
+  "block.constructpro.light_blue_glowstone": "Light Blue Glowstone",
+  "block.constructpro.purple_glowstone": "Purple Glowstone",
+  "block.constructpro.red_glowstone": "Red Glowstone",
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",

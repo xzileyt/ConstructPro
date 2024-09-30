@@ -66,7 +66,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RED_GEM_BLOCK.get());
         dropSelf(ModBlocks.TEAL_GEM_BLOCK.get());
         dropSelf(ModBlocks.YELLOW_GEM_BLOCK.get());
-
+        dropSelf(ModBlocks.BLUE_GLOWSTONE.get());
+        dropSelf(ModBlocks.CYAN_GLOWSTONE.get());
+        dropSelf(ModBlocks.GREEN_GLOWSTONE.get());
+        dropSelf(ModBlocks.LIGHT_BLUE_GLOWSTONE.get());
+        dropSelf(ModBlocks.PURPLE_GLOWSTONE.get());
+        dropSelf(ModBlocks.RED_GLOWSTONE.get());
 
 
         // Ores

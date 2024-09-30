@@ -14,7 +14,12 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
+import net.Jon.constructpro.block.custom.BlueGlowstoneBlock;
+import net.Jon.constructpro.block.custom.CyanGlowstoneBlock;
+import net.Jon.constructpro.block.custom.GreenGlowstoneBlock;
+import net.Jon.constructpro.block.custom.LightBlueGlowstoneBlock;
+import net.Jon.constructpro.block.custom.PurpleGlowstoneBlock;
+import net.Jon.constructpro.block.custom.RedGlowstoneBlock;
 
 
 import java.util.function.Supplier;
@@ -179,8 +184,47 @@ public class ModBlocks {
                     .noOcclusion()
                     .sound(SoundType.AMETHYST)));
 
+    public static final RegistryObject<Block> BLUE_GLOWSTONE = registerBlock("blue_glowstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.GLASS)));
 
+    public static final RegistryObject<Block> CYAN_GLOWSTONE = registerBlock("cyan_glowstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.GLASS)));
 
+    public static final RegistryObject<Block> GREEN_GLOWSTONE = registerBlock("green_glowstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.GLASS)));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_GLOWSTONE = registerBlock("light_blue_glowstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.GLASS)));
+
+    public static final RegistryObject<Block> PURPLE_GLOWSTONE = registerBlock("purple_glowstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.GLASS)));
+
+    public static final RegistryObject<Block> RED_GLOWSTONE = registerBlock("red_glowstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5f)
+                    .lightLevel(state -> 15)
+                    .noOcclusion()
+                    .sound(SoundType.GLASS)));
 
 
 

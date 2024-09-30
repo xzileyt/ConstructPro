@@ -68,7 +68,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RED_GEM_BLOCK);
         blockWithItem(ModBlocks.YELLOW_GEM_BLOCK);
         blockWithItem(ModBlocks.PURPLE_GEM_BLOCK);
-
+        blockWithItem(ModBlocks.BLUE_GLOWSTONE);
+        blockWithItem(ModBlocks.GREEN_GLOWSTONE);
+        blockWithItem(ModBlocks.CYAN_GLOWSTONE);
+        blockWithItem(ModBlocks.LIGHT_BLUE_GLOWSTONE);
+        blockWithItem(ModBlocks.PURPLE_GLOWSTONE);
+        blockWithItem(ModBlocks.RED_GLOWSTONE);
 
         // Ores
         blockWithItem(ModBlocks.celestial_ore);
