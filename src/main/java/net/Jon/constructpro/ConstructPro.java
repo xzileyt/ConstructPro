@@ -130,6 +130,7 @@ public class ConstructPro {
             event.accept(ModItems.MOLTEN_AXE.get());
             event.accept(ModItems.MOLTEN_SHOVEL.get());
             event.accept(ModItems.MOLTEN_HOE.get());
+            event.accept(ModItems.MEASUREMENT_TOOL.get());
         }
     }
 

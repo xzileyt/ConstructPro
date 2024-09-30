@@ -305,6 +305,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.STONE), has(Items.STONE))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MEASUREMENT_TOOL.get())
+                .pattern("III")
+                .pattern("GRG")
+                .pattern("III")
+                .define('I', Items.IRON_INGOT)
+                .define('R', Items.REDSTONE)
+                .define('G', Items.GOLD_NUGGET)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(pRecipeOutput);
+
         // Items
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GEO_ANALYZER.get())
                 .pattern("GGG")

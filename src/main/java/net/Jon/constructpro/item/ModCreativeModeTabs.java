@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GEO_ANALYZER.get());
                         output.accept(ModItems.TerrainLeveler.get());
                         output.accept(ModItems.TerrainSmoother.get());
+                        output.accept(ModItems.MEASUREMENT_TOOL.get());
 
                         // Tools
                         output.accept(ModItems.CELESTIAL_SWORD.get());

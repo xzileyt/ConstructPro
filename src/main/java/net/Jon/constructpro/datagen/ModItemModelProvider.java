@@ -46,6 +46,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.GEO_ANALYZER.get());
         basicItem(ModItems.TerrainLeveler.get());
         basicItem(ModItems.TerrainSmoother.get());
+        basicItem(ModItems.MEASUREMENT_TOOL.get());
 
         handheldItem(ModItems.CELESTIAL_SWORD);
         handheldItem(ModItems.CELESTIAL_PICKAXE);

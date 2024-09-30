@@ -47,6 +47,8 @@ public class ModItems {
             () -> new TerrainLeveler(new Item.Properties()));
     public static final RegistryObject<Item> TerrainSmoother = ITEMS.register("terrain_smoother",
             () -> new ItemLandSmoother(new Item.Properties()));
+    public static final RegistryObject<Item> MEASUREMENT_TOOL = ITEMS.register("measurement_tool",
+            () -> new MeasurementTool(new Item.Properties()));
 
     // Celestial tools
     public static final RegistryObject<Item> CELESTIAL_SWORD = ITEMS.register("celestial_sword",
