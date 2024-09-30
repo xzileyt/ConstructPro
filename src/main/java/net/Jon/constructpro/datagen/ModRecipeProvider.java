@@ -10,6 +10,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -61,7 +62,65 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_redstone_lamp", has(Items.REDSTONE_LAMP))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_GLOWSTONE.get(), 8)
+                .pattern("GCG")
+                .pattern("CLC")
+                .pattern("GCG")
+                .define('G', Items.GLOWSTONE_DUST)
+                .define('C', Items.BLUE_DYE) // Or use BLUE_DYE
+                .define('L', Blocks.GLOWSTONE)
+                .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE))
+                .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_GLOWSTONE.get(), 8)
+                .pattern("GCG")
+                .pattern("CLC")
+                .pattern("GCG")
+                .define('G', Items.GLOWSTONE_DUST)
+                .define('C', Items.CYAN_DYE) // Or use BLUE_DYE
+                .define('L', Blocks.GLOWSTONE)
+                .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_GLOWSTONE.get(), 8)
+                .pattern("GCG")
+                .pattern("CLC")
+                .pattern("GCG")
+                .define('G', Items.GLOWSTONE_DUST)
+                .define('C', Items.GREEN_DYE) // Or use BLUE_DYE
+                .define('L', Blocks.GLOWSTONE)
+                .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_GLOWSTONE.get(), 8)
+                .pattern("GCG")
+                .pattern("CLC")
+                .pattern("GCG")
+                .define('G', Items.GLOWSTONE_DUST)
+                .define('C', Items.LIGHT_BLUE_DYE) // Or use BLUE_DYE
+                .define('L', Blocks.GLOWSTONE)
+                .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_GLOWSTONE.get(), 8)
+                .pattern("GCG")
+                .pattern("CLC")
+                .pattern("GCG")
+                .define('G', Items.GLOWSTONE_DUST)
+                .define('C', Items.PURPLE_DYE) // Or use BLUE_DYE
+                .define('L', Blocks.GLOWSTONE)
+                .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_GLOWSTONE.get(), 8)
+                .pattern("GCG")
+                .pattern("CLC")
+                .pattern("GCG")
+                .define('G', Items.GLOWSTONE_DUST)
+                .define('C', Items.RED_DYE) // Or use BLUE_DYE
+                .define('L', Blocks.GLOWSTONE)
+                .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE))
+                .save(pRecipeOutput);
 
 
         // Ore blocks
@@ -263,7 +322,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SSS")
                 .define('B', Items.BEEF)
                 .define('S', Items.GOLD_BLOCK)
-                .unlockedBy(getHasName(Items.BEEF), has(Items.BEEF))
+                .unlockedBy(getHasName(Items.COOKED_BEEF), has(Items.COOKED_BEEF))
                 .save(pRecipeOutput);
 
     }
