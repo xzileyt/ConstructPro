@@ -25,6 +25,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput pRecipeOutput) {
         List<ItemLike> MITHRIL_SMELTABLES = List.of(ModItems.raw_mithril_ore.get());
+        List<ItemLike> AETHERIUM_SMELTABLES = List.of(ModItems.raw_aetherium_ore.get());
+        List<ItemLike> GLACIALITE_SMELTABLES = List.of(ModItems.raw_glacialite_ore.get());
+        List<ItemLike> NECROITE_SMELTABLES = List.of(ModItems.raw_necroite_ore.get());
+        List<ItemLike> PYROCLAST_SMELTABLES = List.of(ModItems.raw_pyroclast_ore.get());
+        List<ItemLike> SOLISITE_SMELTABLES = List.of(ModItems.raw_solisite_ore.get());
+        List<ItemLike> VOLCANIC_SMELTABLES = List.of(ModItems.raw_volcanic_ore.get());
 
         // Blocks
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.COPPER_ANDESITE.get())
@@ -176,8 +182,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.mithril_block.get()), has(ModBlocks.mithril_block.get()))
                 .save(pRecipeOutput);
 
+        // Ore smelting
         oreSmelting(pRecipeOutput, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.mithril_ingot.get(), 0.25f,200,"mithril");
         oreBlasting(pRecipeOutput, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.mithril_ingot.get(), 0.25f,100,"mithril");
+
+        oreSmelting(pRecipeOutput, AETHERIUM_SMELTABLES, RecipeCategory.MISC, ModItems.aetherium_ingot.get(), 0.25f,200,"aetherium");
+        oreBlasting(pRecipeOutput, AETHERIUM_SMELTABLES, RecipeCategory.MISC, ModItems.aetherium_ingot.get(), 0.25f,100,"aetherium");
+
+        oreSmelting(pRecipeOutput, GLACIALITE_SMELTABLES, RecipeCategory.MISC, ModItems.glacialite_ingot.get(), 0.25f,200,"glacialite");
+        oreBlasting(pRecipeOutput, GLACIALITE_SMELTABLES, RecipeCategory.MISC, ModItems.glacialite_ingot.get(), 0.25f,100,"glacialite");
+
+        oreSmelting(pRecipeOutput, NECROITE_SMELTABLES, RecipeCategory.MISC, ModItems.necroite_ingot.get(), 0.25f,200,"necroite");
+        oreBlasting(pRecipeOutput, NECROITE_SMELTABLES, RecipeCategory.MISC, ModItems.necroite_ingot.get(), 0.25f,100,"necroite");
+
+        oreSmelting(pRecipeOutput, PYROCLAST_SMELTABLES, RecipeCategory.MISC, ModItems.pyroclast_ingot.get(), 0.25f,200,"pyroclast");
+        oreBlasting(pRecipeOutput, PYROCLAST_SMELTABLES, RecipeCategory.MISC, ModItems.pyroclast_ingot.get(), 0.25f,100,"pyroclast");
+
+        oreSmelting(pRecipeOutput, SOLISITE_SMELTABLES, RecipeCategory.MISC, ModItems.solisite_ingot.get(), 0.25f,200,"solisite");
+        oreBlasting(pRecipeOutput, SOLISITE_SMELTABLES, RecipeCategory.MISC, ModItems.solisite_ingot.get(), 0.25f,100,"solisite");
+
+        oreSmelting(pRecipeOutput, VOLCANIC_SMELTABLES, RecipeCategory.MISC, ModItems.volcanic_ingot.get(), 0.25f,200,"volcanic");
+        oreBlasting(pRecipeOutput, VOLCANIC_SMELTABLES, RecipeCategory.MISC, ModItems.volcanic_ingot.get(), 0.25f,100,"volcanic");
 
         // Wood blocks
         stairBuilder(ModBlocks.LAVENDER_STAIRS.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
