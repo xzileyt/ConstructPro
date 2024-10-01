@@ -240,6 +240,62 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_calcite", has(Blocks.CALCITE))
                 .save(pRecipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_TUFF_BRICKS.get())
+                .requires(Items.GREEN_DYE)
+                .requires(Blocks.TUFF_BRICKS)
+                .unlockedBy("has_green_dye", has(Items.GREEN_DYE))
+                .unlockedBy("has_tuff_bricks", has(Blocks.TUFF_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_TUFF_BRICKS.get())
+                .requires(Items.LIGHT_BLUE_DYE)
+                .requires(Blocks.TUFF_BRICKS)
+                .unlockedBy("has_light_blue_dye", has(Items.LIGHT_BLUE_DYE))
+                .unlockedBy("has_tuff_bricks", has(Blocks.TUFF_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_TUFF_BRICKS.get())
+                .requires(Items.ORANGE_DYE)
+                .requires(Blocks.TUFF_BRICKS)
+                .unlockedBy("has_orange_dye", has(Items.ORANGE_DYE))
+                .unlockedBy("has_tuff_bricks", has(Blocks.TUFF_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_TUFF_BRICKS.get())
+                .requires(Items.PINK_DYE)
+                .requires(Blocks.TUFF_BRICKS)
+                .unlockedBy("has_pink_dye", has(Items.PINK_DYE))
+                .unlockedBy("has_tuff_bricks", has(Blocks.TUFF_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_TUFF_BRICKS.get())
+                .requires(Items.PURPLE_DYE)
+                .requires(Blocks.TUFF_BRICKS)
+                .unlockedBy("has_purple_dye", has(Items.PURPLE_DYE))
+                .unlockedBy("has_tuff_bricks", has(Blocks.TUFF_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_TUFF_BRICKS.get())
+                .requires(Items.RED_DYE)
+                .requires(Blocks.TUFF_BRICKS)
+                .unlockedBy("has_red_dye", has(Items.RED_DYE))
+                .unlockedBy("has_tuff_bricks", has(Blocks.TUFF_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_TUFF_BRICKS.get())
+                .requires(Items.WHITE_DYE)
+                .requires(Blocks.TUFF_BRICKS)
+                .unlockedBy("has_white_dye", has(Items.WHITE_DYE))
+                .unlockedBy("has_tuff_bricks", has(Blocks.TUFF_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_TUFF_BRICKS.get())
+                .requires(Items.YELLOW_DYE)
+                .requires(Blocks.TUFF_BRICKS)
+                .unlockedBy("has_yellow_dye", has(Items.YELLOW_DYE))
+                .unlockedBy("has_tuff_bricks", has(Blocks.TUFF_BRICKS))
+                .save(pRecipeOutput);
+
 
         // Ore blocks
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.celestial_block.get())

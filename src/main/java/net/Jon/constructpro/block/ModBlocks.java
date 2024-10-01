@@ -435,6 +435,37 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> GREEN_TUFF_BRICKS = registerBlock("green_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_TUFF_BRICKS = registerBlock("light_blue_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ORANGE_TUFF_BRICKS = registerBlock("orange_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PINK_TUFF_BRICKS = registerBlock("pink_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PURPLE_TUFF_BRICKS = registerBlock("purple_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RED_TUFF_BRICKS = registerBlock("red_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> WHITE_TUFF_BRICKS = registerBlock("white_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> YELLOW_TUFF_BRICKS = registerBlock("yellow_tuff_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
 
 
     // Light Blocks

@@ -215,6 +215,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RED_CALCITE.get());
                         output.accept(ModBlocks.TEAL_CALCITE.get());
                         output.accept(ModBlocks.YELLOW_CALCITE.get());
+                        output.accept(ModBlocks.GREEN_TUFF_BRICKS.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_TUFF_BRICKS.get());
+                        output.accept(ModBlocks.ORANGE_TUFF_BRICKS.get());
+                        output.accept(ModBlocks.PINK_TUFF_BRICKS.get());
+                        output.accept(ModBlocks.PURPLE_TUFF_BRICKS.get());
+                        output.accept(ModBlocks.RED_TUFF_BRICKS.get());
+                        output.accept(ModBlocks.WHITE_TUFF_BRICKS.get());
+                        output.accept(ModBlocks.YELLOW_TUFF_BRICKS.get());
 
                     }).build());
 
