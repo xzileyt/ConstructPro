@@ -202,6 +202,14 @@ public class ConstructPro {
             event.accept(ModBlocks.PURPLE_COBBLESTONE);
             event.accept(ModBlocks.RED_COBBLESTONE);
             event.accept(ModBlocks.YELLOW_COBBLESTONE);
+            event.accept(ModBlocks.BLUE_CALCITE);
+            event.accept(ModBlocks.GREEN_CALCITE);
+            event.accept(ModBlocks.ORANGE_CALCITE);
+            event.accept(ModBlocks.PINK_CALCITE);
+            event.accept(ModBlocks.PURPLE_CALCITE);
+            event.accept(ModBlocks.RED_CALCITE);
+            event.accept(ModBlocks.TEAL_CALCITE);
+            event.accept(ModBlocks.YELLOW_CALCITE);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

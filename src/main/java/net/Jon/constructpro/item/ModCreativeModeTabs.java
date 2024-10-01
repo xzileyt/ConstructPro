@@ -207,6 +207,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PURPLE_COBBLESTONE.get());
                         output.accept(ModBlocks.RED_COBBLESTONE.get());
                         output.accept(ModBlocks.YELLOW_COBBLESTONE.get());
+                        output.accept(ModBlocks.BLUE_CALCITE.get());
+                        output.accept(ModBlocks.GREEN_CALCITE.get());
+                        output.accept(ModBlocks.ORANGE_CALCITE.get());
+                        output.accept(ModBlocks.PINK_CALCITE.get());
+                        output.accept(ModBlocks.PURPLE_CALCITE.get());
+                        output.accept(ModBlocks.RED_CALCITE.get());
+                        output.accept(ModBlocks.TEAL_CALCITE.get());
+                        output.accept(ModBlocks.YELLOW_CALCITE.get());
 
                     }).build());
 

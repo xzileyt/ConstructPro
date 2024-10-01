@@ -158,6 +158,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.PURPLE_COBBLESTONE.get());
         dropSelf(ModBlocks.RED_COBBLESTONE.get());
         dropSelf(ModBlocks.YELLOW_COBBLESTONE.get());
+        dropSelf(ModBlocks.BLUE_CALCITE.get());
+        dropSelf(ModBlocks.GREEN_CALCITE.get());
+        dropSelf(ModBlocks.ORANGE_CALCITE.get());
+        dropSelf(ModBlocks.PINK_CALCITE.get());
+        dropSelf(ModBlocks.PURPLE_CALCITE.get());
+        dropSelf(ModBlocks.RED_CALCITE.get());
+        dropSelf(ModBlocks.TEAL_CALCITE.get());
+        dropSelf(ModBlocks.YELLOW_CALCITE.get());
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),

@@ -403,6 +403,37 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> BLUE_CALCITE = registerBlock("blue_calcite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GREEN_CALCITE = registerBlock("green_calcite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ORANGE_CALCITE = registerBlock("orange_calcite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PINK_CALCITE = registerBlock("pink_calcite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PURPLE_CALCITE = registerBlock("purple_calcite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RED_CALCITE = registerBlock("red_calcite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> TEAL_CALCITE = registerBlock("teal_calcite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> YELLOW_CALCITE = registerBlock("yellow_calcite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
 
 
 
