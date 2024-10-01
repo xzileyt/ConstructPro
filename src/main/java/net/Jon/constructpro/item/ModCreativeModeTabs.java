@@ -190,7 +190,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.charwood_FENCE.get());
                         output.accept(ModBlocks.charwood_FENCE_GATE.get());
                         output.accept(ModBlocks.charwood_PRESSURE_PLATE.get());
-
                         output.accept(ModBlocks.moonwood_planks.get());
                         output.accept(ModBlocks.moonwood_STAIRS.get());
                         output.accept(ModBlocks.moonwood_SLAB.get());
@@ -200,6 +199,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.moonwood_FENCE.get());
                         output.accept(ModBlocks.moonwood_FENCE_GATE.get());
                         output.accept(ModBlocks.moonwood_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.BLUE_COBBLESTONE.get());
+                        output.accept(ModBlocks.GREEN_GLOWSTONE.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_COBBLESTONE.get());
+                        output.accept(ModBlocks.ORANGE_COBBLESTONE.get());
+                        output.accept(ModBlocks.PINK_COBBLESTONE.get());
+                        output.accept(ModBlocks.PURPLE_COBBLESTONE.get());
+                        output.accept(ModBlocks.RED_COBBLESTONE.get());
+                        output.accept(ModBlocks.YELLOW_COBBLESTONE.get());
 
                     }).build());
 

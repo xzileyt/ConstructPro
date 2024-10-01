@@ -128,6 +128,62 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_glowstone", has(Blocks.GLOWSTONE))
                 .save(pRecipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_COBBLESTONE.get())
+                .requires(Items.BLUE_DYE)
+                .requires(Blocks.COBBLESTONE)
+                .unlockedBy("has_blue_dye", has(Items.BLUE_DYE))
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_COBBLESTONE.get())
+                .requires(Items.GREEN_DYE)
+                .requires(Blocks.COBBLESTONE)
+                .unlockedBy("has_green_dye", has(Items.GREEN_DYE))
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_COBBLESTONE.get())
+                .requires(Items.LIGHT_BLUE_DYE)
+                .requires(Blocks.COBBLESTONE)
+                .unlockedBy("has_light_blue_dye", has(Items.LIGHT_BLUE_DYE))
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_COBBLESTONE.get())
+                .requires(Items.ORANGE_DYE)
+                .requires(Blocks.COBBLESTONE)
+                .unlockedBy("has_orange_dye", has(Items.ORANGE_DYE))
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_COBBLESTONE.get())
+                .requires(Items.PINK_DYE)
+                .requires(Blocks.COBBLESTONE)
+                .unlockedBy("has_pink_dye", has(Items.PINK_DYE))
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_COBBLESTONE.get())
+                .requires(Items.PURPLE_DYE)
+                .requires(Blocks.COBBLESTONE)
+                .unlockedBy("has_purple_dye", has(Items.PURPLE_DYE))
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_COBBLESTONE.get())
+                .requires(Items.RED_DYE)
+                .requires(Blocks.COBBLESTONE)
+                .unlockedBy("has_red_dye", has(Items.RED_DYE))
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_COBBLESTONE.get())
+                .requires(Items.YELLOW_DYE)
+                .requires(Blocks.COBBLESTONE)
+                .unlockedBy("has_yellow_dye", has(Items.YELLOW_DYE))
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
 
         // Ore blocks
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.celestial_block.get())

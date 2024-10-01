@@ -150,6 +150,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.lumenwood_FENCE.get());
         dropSelf(ModBlocks.lumenwood_FENCE_GATE.get());
         dropSelf(ModBlocks.lumenwood_WALL.get());
+        dropSelf(ModBlocks.BLUE_COBBLESTONE.get());
+        dropSelf(ModBlocks.GREEN_COBBLESTONE.get());
+        dropSelf(ModBlocks.LIGHT_BLUE_COBBLESTONE.get());
+        dropSelf(ModBlocks.ORANGE_COBBLESTONE.get());
+        dropSelf(ModBlocks.PINK_COBBLESTONE.get());
+        dropSelf(ModBlocks.PURPLE_COBBLESTONE.get());
+        dropSelf(ModBlocks.RED_COBBLESTONE.get());
+        dropSelf(ModBlocks.YELLOW_COBBLESTONE.get());
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),

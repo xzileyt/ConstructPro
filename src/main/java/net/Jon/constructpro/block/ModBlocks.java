@@ -371,6 +371,38 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> BLUE_COBBLESTONE = registerBlock("blue_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GREEN_COBBLESTONE = registerBlock("green_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_COBBLESTONE = registerBlock("light_blue_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ORANGE_COBBLESTONE = registerBlock("orange_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PINK_COBBLESTONE = registerBlock("pink_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PURPLE_COBBLESTONE = registerBlock("purple_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RED_COBBLESTONE = registerBlock("red_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> YELLOW_COBBLESTONE = registerBlock("yellow_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
 
 
 

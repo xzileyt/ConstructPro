@@ -194,6 +194,14 @@ public class ConstructPro {
             event.accept(ModBlocks.moonwood_TRAPDOOR);
             event.accept(ModBlocks.moonwood_PRESSURE_PLATE);
             event.accept(ModBlocks.moonwood_WALL);
+            event.accept(ModBlocks.BLUE_COBBLESTONE);
+            event.accept(ModBlocks.GREEN_COBBLESTONE);
+            event.accept(ModBlocks.LIGHT_BLUE_COBBLESTONE);
+            event.accept(ModBlocks.ORANGE_COBBLESTONE);
+            event.accept(ModBlocks.PINK_COBBLESTONE);
+            event.accept(ModBlocks.PURPLE_COBBLESTONE);
+            event.accept(ModBlocks.RED_COBBLESTONE);
+            event.accept(ModBlocks.YELLOW_COBBLESTONE);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
