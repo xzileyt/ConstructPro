@@ -467,6 +467,41 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> BLUE_ENDSTONE = registerBlock("blue_endstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f, 9.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GREEN_ENDSTONE = registerBlock("green_endstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f, 9.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ORANGE_ENDSTONE = registerBlock("orange_endstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f, 9.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PINK_ENDSTONE = registerBlock("pink_endstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f, 9.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PURPLE_ENDSTONE = registerBlock("purple_endstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f, 9.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RED_ENDSTONE = registerBlock("red_endstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f, 9.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> YELLOW_ENDSTONE = registerBlock("yellow_endstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f, 9.0f)
+                    .requiresCorrectToolForDrops()));
+
 
     // Light Blocks
     public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp",

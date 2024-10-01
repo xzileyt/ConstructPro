@@ -195,6 +195,13 @@
   "block.constructpro.red_tuff_bricks": "Red Tuff Bricks",
   "block.constructpro.white_tuff_bricks": "White Tuff Bricks",
   "block.constructpro.yellow_tuff_bricks": "Yellow Tuff Bricks",
+  "block.constructpro.blue_endstone": "Blue Endstone",
+  "block.constructpro.green_endstone": "Green Endstone",
+  "block.constructpro.orange_endstone": "Orange Endstone",
+  "block.constructpro.pink_endstone": "Pink Endstone",
+  "block.constructpro.purple_endstone": "Purple Endstone",
+  "block.constructpro.red_endstone": "Red Endstone",
+  "block.constructpro.yellow_endstone": "Yellow Endstone",
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",

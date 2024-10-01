@@ -223,6 +223,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RED_TUFF_BRICKS.get());
                         output.accept(ModBlocks.WHITE_TUFF_BRICKS.get());
                         output.accept(ModBlocks.YELLOW_TUFF_BRICKS.get());
+                        output.accept(ModBlocks.BLUE_ENDSTONE.get());
+                        output.accept(ModBlocks.GREEN_ENDSTONE.get());
+                        output.accept(ModBlocks.ORANGE_ENDSTONE.get());
+                        output.accept(ModBlocks.PINK_ENDSTONE.get());
+                        output.accept(ModBlocks.PURPLE_ENDSTONE.get());
+                        output.accept(ModBlocks.RED_ENDSTONE.get());
+                        output.accept(ModBlocks.YELLOW_ENDSTONE.get());
 
                     }).build());
 

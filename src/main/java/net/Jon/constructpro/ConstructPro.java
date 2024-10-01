@@ -218,6 +218,13 @@ public class ConstructPro {
             event.accept(ModBlocks.RED_TUFF_BRICKS);
             event.accept(ModBlocks.WHITE_TUFF_BRICKS);
             event.accept(ModBlocks.YELLOW_TUFF_BRICKS);
+            event.accept(ModBlocks.BLUE_ENDSTONE);
+            event.accept(ModBlocks.GREEN_ENDSTONE);
+            event.accept(ModBlocks.ORANGE_ENDSTONE);
+            event.accept(ModBlocks.PINK_ENDSTONE);
+            event.accept(ModBlocks.PURPLE_ENDSTONE);
+            event.accept(ModBlocks.RED_ENDSTONE);
+            event.accept(ModBlocks.YELLOW_ENDSTONE);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
