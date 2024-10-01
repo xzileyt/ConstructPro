@@ -47,7 +47,36 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.LAVENDERWOOD_WALL, ModBlocks.lavenderwood_planks);
         simpleBlockItem(ModBlocks.LAVENDERWOOD_DOOR);
 
+        buttonItem(ModBlocks.amberwood_BUTTON, ModBlocks.amberwood_planks);
+        fenceItem(ModBlocks.amberwood_FENCE, ModBlocks.amberwood_planks);
+        wallItem(ModBlocks.amberwood_WALL, ModBlocks.amberwood_planks);
+        simpleBlockItem(ModBlocks.amberwood_DOOR);
 
+        buttonItem(ModBlocks.ashwood_BUTTON, ModBlocks.ashwood_planks);
+        fenceItem(ModBlocks.ashwood_FENCE, ModBlocks.ashwood_planks);
+        wallItem(ModBlocks.ashwood_WALL, ModBlocks.ashwood_planks);
+        simpleBlockItem(ModBlocks.ashwood_DOOR);
+
+        buttonItem(ModBlocks.lumenwood_BUTTON, ModBlocks.lumenwood_planks);
+        fenceItem(ModBlocks.lumenwood_FENCE, ModBlocks.lumenwood_planks);
+        wallItem(ModBlocks.lumenwood_WALL, ModBlocks.lumenwood_planks);
+        simpleBlockItem(ModBlocks.lumenwood_DOOR);
+
+        buttonItem(ModBlocks.ebonywood_BUTTON, ModBlocks.ebonywood_planks);
+        fenceItem(ModBlocks.ebonywood_FENCE, ModBlocks.ebonywood_planks);
+        wallItem(ModBlocks.ebonywood_WALL, ModBlocks.ebonywood_planks);
+        simpleBlockItem(ModBlocks.ebonywood_DOOR);
+
+        buttonItem(ModBlocks.charwood_BUTTON, ModBlocks.charwood_planks);
+        fenceItem(ModBlocks.charwood_FENCE, ModBlocks.charwood_planks);
+        wallItem(ModBlocks.charwood_WALL, ModBlocks.charwood_planks);
+        simpleBlockItem(ModBlocks.charwood_DOOR);
+
+        buttonItem(ModBlocks.moonwood_BUTTON, ModBlocks.moonwood_planks);
+        fenceItem(ModBlocks.moonwood_FENCE, ModBlocks.moonwood_planks);
+        wallItem(ModBlocks.moonwood_WALL, ModBlocks.moonwood_planks);
+        simpleBlockItem(ModBlocks.moonwood_DOOR);
+        
         // Wood logs
 
 

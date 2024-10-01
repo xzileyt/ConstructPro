@@ -221,6 +221,102 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.LAVENDERWOOD_TRAPDOOR.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
                 .unlockedBy(getHasName(ModBlocks.lavenderwood_planks.get()), has(ModBlocks.lavenderwood_planks.get())).save(pRecipeOutput);
 
+        stairBuilder(ModBlocks.amberwood_STAIRS.get(), Ingredient.of(ModBlocks.amberwood_planks.get())).group("amberwood")
+                .unlockedBy(getHasName(ModBlocks.amberwood_planks.get()), has(ModBlocks.amberwood_planks.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.amberwood_SLAB.get(), ModBlocks.amberwood_planks.get());
+        buttonBuilder(ModBlocks.amberwood_BUTTON.get(), Ingredient.of(ModBlocks.amberwood_planks.get())).group("amberwood")
+                .unlockedBy(getHasName(ModBlocks.amberwood_planks.get()), has(ModBlocks.amberwood_planks.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.amberwood_PRESSURE_PLATE.get(), ModBlocks.amberwood_planks.get());
+        fenceBuilder(ModBlocks.amberwood_FENCE.get(), Ingredient.of(ModBlocks.amberwood_planks.get())).group("amberwood")
+                .unlockedBy(getHasName(ModBlocks.amberwood_planks.get()), has(ModBlocks.amberwood_planks.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.amberwood_FENCE_GATE.get(), Ingredient.of(ModBlocks.amberwood_planks.get())).group("amberwood")
+                .unlockedBy(getHasName(ModBlocks.amberwood_planks.get()), has(ModBlocks.amberwood_planks.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.amberwood_WALL.get(), ModBlocks.amberwood_planks.get());
+        doorBuilder(ModBlocks.amberwood_DOOR.get(), Ingredient.of(ModBlocks.amberwood_planks.get())).group("amberwood")
+                .unlockedBy(getHasName(ModBlocks.amberwood_planks.get()), has(ModBlocks.amberwood_planks.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.amberwood_TRAPDOOR.get(), Ingredient.of(ModBlocks.amberwood_planks.get())).group("amberwood")
+                .unlockedBy(getHasName(ModBlocks.amberwood_planks.get()), has(ModBlocks.amberwood_planks.get())).save(pRecipeOutput);
+
+        stairBuilder(ModBlocks.ashwood_STAIRS.get(), Ingredient.of(ModBlocks.ashwood_planks.get())).group("ashwood")
+                .unlockedBy(getHasName(ModBlocks.ashwood_planks.get()), has(ModBlocks.ashwood_planks.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ashwood_SLAB.get(), ModBlocks.ashwood_planks.get());
+        buttonBuilder(ModBlocks.ashwood_BUTTON.get(), Ingredient.of(ModBlocks.ashwood_planks.get())).group("ashwood")
+                .unlockedBy(getHasName(ModBlocks.ashwood_planks.get()), has(ModBlocks.ashwood_planks.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.ashwood_PRESSURE_PLATE.get(), ModBlocks.ashwood_planks.get());
+        fenceBuilder(ModBlocks.ashwood_FENCE.get(), Ingredient.of(ModBlocks.ashwood_planks.get())).group("ashwood")
+                .unlockedBy(getHasName(ModBlocks.ashwood_planks.get()), has(ModBlocks.ashwood_planks.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.ashwood_FENCE_GATE.get(), Ingredient.of(ModBlocks.ashwood_planks.get())).group("ashwood")
+                .unlockedBy(getHasName(ModBlocks.ashwood_planks.get()), has(ModBlocks.ashwood_planks.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ashwood_WALL.get(), ModBlocks.ashwood_planks.get());
+        doorBuilder(ModBlocks.ashwood_DOOR.get(), Ingredient.of(ModBlocks.ashwood_planks.get())).group("ashwood")
+                .unlockedBy(getHasName(ModBlocks.ashwood_planks.get()), has(ModBlocks.ashwood_planks.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.ashwood_TRAPDOOR.get(), Ingredient.of(ModBlocks.ashwood_planks.get())).group("ashwood")
+                .unlockedBy(getHasName(ModBlocks.ashwood_planks.get()), has(ModBlocks.ashwood_planks.get())).save(pRecipeOutput);
+
+        stairBuilder(ModBlocks.lumenwood_STAIRS.get(), Ingredient.of(ModBlocks.lumenwood_planks.get())).group("lumenwood")
+                .unlockedBy(getHasName(ModBlocks.lumenwood_planks.get()), has(ModBlocks.lumenwood_planks.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.lumenwood_SLAB.get(), ModBlocks.lumenwood_planks.get());
+        buttonBuilder(ModBlocks.lumenwood_BUTTON.get(), Ingredient.of(ModBlocks.lumenwood_planks.get())).group("lumenwood")
+                .unlockedBy(getHasName(ModBlocks.lumenwood_planks.get()), has(ModBlocks.lumenwood_planks.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.lumenwood_PRESSURE_PLATE.get(), ModBlocks.lumenwood_planks.get());
+        fenceBuilder(ModBlocks.lumenwood_FENCE.get(), Ingredient.of(ModBlocks.lumenwood_planks.get())).group("lumenwood")
+                .unlockedBy(getHasName(ModBlocks.lumenwood_planks.get()), has(ModBlocks.lumenwood_planks.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.lumenwood_FENCE_GATE.get(), Ingredient.of(ModBlocks.lumenwood_planks.get())).group("lumenwood")
+                .unlockedBy(getHasName(ModBlocks.lumenwood_planks.get()), has(ModBlocks.lumenwood_planks.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.lumenwood_WALL.get(), ModBlocks.lumenwood_planks.get());
+        doorBuilder(ModBlocks.lumenwood_DOOR.get(), Ingredient.of(ModBlocks.lumenwood_planks.get())).group("lumenwood")
+                .unlockedBy(getHasName(ModBlocks.lumenwood_planks.get()), has(ModBlocks.lumenwood_planks.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.lumenwood_TRAPDOOR.get(), Ingredient.of(ModBlocks.lumenwood_planks.get())).group("lumenwood")
+                .unlockedBy(getHasName(ModBlocks.lumenwood_planks.get()), has(ModBlocks.lumenwood_planks.get())).save(pRecipeOutput);
+
+        stairBuilder(ModBlocks.ebonywood_STAIRS.get(), Ingredient.of(ModBlocks.ebonywood_planks.get())).group("ebonywood")
+                .unlockedBy(getHasName(ModBlocks.ebonywood_planks.get()), has(ModBlocks.ebonywood_planks.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ebonywood_SLAB.get(), ModBlocks.ebonywood_planks.get());
+        buttonBuilder(ModBlocks.ebonywood_BUTTON.get(), Ingredient.of(ModBlocks.ebonywood_planks.get())).group("ebonywood")
+                .unlockedBy(getHasName(ModBlocks.ebonywood_planks.get()), has(ModBlocks.ebonywood_planks.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.ebonywood_PRESSURE_PLATE.get(), ModBlocks.ebonywood_planks.get());
+        fenceBuilder(ModBlocks.ebonywood_FENCE.get(), Ingredient.of(ModBlocks.ebonywood_planks.get())).group("ebonywood")
+                .unlockedBy(getHasName(ModBlocks.ebonywood_planks.get()), has(ModBlocks.ebonywood_planks.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.ebonywood_FENCE_GATE.get(), Ingredient.of(ModBlocks.ebonywood_planks.get())).group("ebonywood")
+                .unlockedBy(getHasName(ModBlocks.ebonywood_planks.get()), has(ModBlocks.ebonywood_planks.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ebonywood_WALL.get(), ModBlocks.ebonywood_planks.get());
+        doorBuilder(ModBlocks.ebonywood_DOOR.get(), Ingredient.of(ModBlocks.ebonywood_planks.get())).group("ebonywood")
+                .unlockedBy(getHasName(ModBlocks.ebonywood_planks.get()), has(ModBlocks.ebonywood_planks.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.ebonywood_TRAPDOOR.get(), Ingredient.of(ModBlocks.ebonywood_planks.get())).group("ebonywood")
+                .unlockedBy(getHasName(ModBlocks.ebonywood_planks.get()), has(ModBlocks.ebonywood_planks.get())).save(pRecipeOutput);
+
+        stairBuilder(ModBlocks.charwood_STAIRS.get(), Ingredient.of(ModBlocks.charwood_planks.get())).group("charwood")
+                .unlockedBy(getHasName(ModBlocks.charwood_planks.get()), has(ModBlocks.charwood_planks.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.charwood_SLAB.get(), ModBlocks.charwood_planks.get());
+        buttonBuilder(ModBlocks.charwood_BUTTON.get(), Ingredient.of(ModBlocks.charwood_planks.get())).group("charwood")
+                .unlockedBy(getHasName(ModBlocks.charwood_planks.get()), has(ModBlocks.charwood_planks.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.charwood_PRESSURE_PLATE.get(), ModBlocks.charwood_planks.get());
+        fenceBuilder(ModBlocks.charwood_FENCE.get(), Ingredient.of(ModBlocks.charwood_planks.get())).group("charwood")
+                .unlockedBy(getHasName(ModBlocks.charwood_planks.get()), has(ModBlocks.charwood_planks.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.charwood_FENCE_GATE.get(), Ingredient.of(ModBlocks.charwood_planks.get())).group("charwood")
+                .unlockedBy(getHasName(ModBlocks.charwood_planks.get()), has(ModBlocks.charwood_planks.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.charwood_WALL.get(), ModBlocks.charwood_planks.get());
+        doorBuilder(ModBlocks.charwood_DOOR.get(), Ingredient.of(ModBlocks.charwood_planks.get())).group("charwood")
+                .unlockedBy(getHasName(ModBlocks.charwood_planks.get()), has(ModBlocks.charwood_planks.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.charwood_TRAPDOOR.get(), Ingredient.of(ModBlocks.charwood_planks.get())).group("charwood")
+                .unlockedBy(getHasName(ModBlocks.charwood_planks.get()), has(ModBlocks.charwood_planks.get())).save(pRecipeOutput);
+
+        stairBuilder(ModBlocks.moonwood_STAIRS.get(), Ingredient.of(ModBlocks.moonwood_planks.get())).group("moonwood")
+                .unlockedBy(getHasName(ModBlocks.moonwood_planks.get()), has(ModBlocks.moonwood_planks.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.moonwood_SLAB.get(), ModBlocks.moonwood_planks.get());
+        buttonBuilder(ModBlocks.moonwood_BUTTON.get(), Ingredient.of(ModBlocks.moonwood_planks.get())).group("moonwood")
+                .unlockedBy(getHasName(ModBlocks.moonwood_planks.get()), has(ModBlocks.moonwood_planks.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.moonwood_PRESSURE_PLATE.get(), ModBlocks.moonwood_planks.get());
+        fenceBuilder(ModBlocks.moonwood_FENCE.get(), Ingredient.of(ModBlocks.moonwood_planks.get())).group("moonwood")
+                .unlockedBy(getHasName(ModBlocks.moonwood_planks.get()), has(ModBlocks.moonwood_planks.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.moonwood_FENCE_GATE.get(), Ingredient.of(ModBlocks.moonwood_planks.get())).group("moonwood")
+                .unlockedBy(getHasName(ModBlocks.moonwood_planks.get()), has(ModBlocks.moonwood_planks.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.moonwood_WALL.get(), ModBlocks.moonwood_planks.get());
+        doorBuilder(ModBlocks.moonwood_DOOR.get(), Ingredient.of(ModBlocks.moonwood_planks.get())).group("moonwood")
+                .unlockedBy(getHasName(ModBlocks.moonwood_planks.get()), has(ModBlocks.moonwood_planks.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.moonwood_TRAPDOOR.get(), Ingredient.of(ModBlocks.moonwood_planks.get())).group("moonwood")
+                .unlockedBy(getHasName(ModBlocks.moonwood_planks.get()), has(ModBlocks.moonwood_planks.get())).save(pRecipeOutput);
+
         // Tools
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIAL_PICKAXE.get())
                 .pattern("MMM")

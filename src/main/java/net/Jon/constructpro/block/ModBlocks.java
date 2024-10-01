@@ -29,7 +29,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ConstructPro.MOD_ID);
 
-    // Blocks
+    // Ore Blocks
     public static final RegistryObject<Block> celestial_block = registerBlock("celestial_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
@@ -46,7 +46,35 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
 
-    // Building blocks
+    public static final RegistryObject<Block> aetherium_block = registerBlock("aetherium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERITE_BLOCK)));
+
+    public static final RegistryObject<Block> glacialite_block = registerBlock("glacialite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> necroite_block = registerBlock("necroite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> pyroclast_block = registerBlock("pyroclast_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> solisite_block = registerBlock("solisite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> volcanic_block = registerBlock("volcanic_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERITE_BLOCK)));
+
+
+    // Wood Building blocks
+    // Lavenderwood
     public static final RegistryObject<Block> lavenderwood_planks = registerBlock("lavenderwood_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
@@ -80,6 +108,211 @@ public class ModBlocks {
     public static final RegistryObject<SlabBlock> LAVENDERWOOD_SLAB = registerBlock("lavenderwood_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
+    // Amberwood
+    public static final RegistryObject<Block> amberwood_planks = registerBlock("amberwood_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<StairBlock> amberwood_STAIRS = registerBlock("amberwood_stairs",
+            () -> new StairBlock(ModBlocks.amberwood_planks.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<PressurePlateBlock> amberwood_PRESSURE_PLATE = registerBlock("amberwood_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<ButtonBlock> amberwood_BUTTON = registerBlock("amberwood_button",
+            () -> new ButtonBlock(BlockSetType.OAK,1, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noCollission()));
+
+    public static final RegistryObject<FenceBlock> amberwood_FENCE = registerBlock("amberwood_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<FenceGateBlock> amberwood_FENCE_GATE = registerBlock("amberwood_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<WallBlock> amberwood_WALL = registerBlock("amberwood_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<DoorBlock> amberwood_DOOR = registerBlock("amberwood_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<TrapDoorBlock> amberwood_TRAPDOOR = registerBlock("amberwood_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<SlabBlock> amberwood_SLAB = registerBlock("amberwood_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    // ashwood
+    public static final RegistryObject<Block> ashwood_planks = registerBlock("ashwood_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<StairBlock> ashwood_STAIRS = registerBlock("ashwood_stairs",
+            () -> new StairBlock(ModBlocks.ashwood_planks.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<PressurePlateBlock> ashwood_PRESSURE_PLATE = registerBlock("ashwood_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<ButtonBlock> ashwood_BUTTON = registerBlock("ashwood_button",
+            () -> new ButtonBlock(BlockSetType.OAK,1, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noCollission()));
+
+    public static final RegistryObject<FenceBlock> ashwood_FENCE = registerBlock("ashwood_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<FenceGateBlock> ashwood_FENCE_GATE = registerBlock("ashwood_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<WallBlock> ashwood_WALL = registerBlock("ashwood_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<DoorBlock> ashwood_DOOR = registerBlock("ashwood_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<TrapDoorBlock> ashwood_TRAPDOOR = registerBlock("ashwood_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<SlabBlock> ashwood_SLAB = registerBlock("ashwood_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    // lumenwood
+    public static final RegistryObject<Block> lumenwood_planks = registerBlock("lumenwood_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<StairBlock> lumenwood_STAIRS = registerBlock("lumenwood_stairs",
+            () -> new StairBlock(ModBlocks.lumenwood_planks.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<PressurePlateBlock> lumenwood_PRESSURE_PLATE = registerBlock("lumenwood_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<ButtonBlock> lumenwood_BUTTON = registerBlock("lumenwood_button",
+            () -> new ButtonBlock(BlockSetType.OAK,1, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noCollission()));
+
+    public static final RegistryObject<FenceBlock> lumenwood_FENCE = registerBlock("lumenwood_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<FenceGateBlock> lumenwood_FENCE_GATE = registerBlock("lumenwood_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<WallBlock> lumenwood_WALL = registerBlock("lumenwood_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<DoorBlock> lumenwood_DOOR = registerBlock("lumenwood_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<TrapDoorBlock> lumenwood_TRAPDOOR = registerBlock("lumenwood_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<SlabBlock> lumenwood_SLAB = registerBlock("lumenwood_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    // ebonywood
+    public static final RegistryObject<Block> ebonywood_planks = registerBlock("ebonywood_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<StairBlock> ebonywood_STAIRS = registerBlock("ebonywood_stairs",
+            () -> new StairBlock(ModBlocks.ebonywood_planks.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<PressurePlateBlock> ebonywood_PRESSURE_PLATE = registerBlock("ebonywood_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<ButtonBlock> ebonywood_BUTTON = registerBlock("ebonywood_button",
+            () -> new ButtonBlock(BlockSetType.OAK,1, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noCollission()));
+
+    public static final RegistryObject<FenceBlock> ebonywood_FENCE = registerBlock("ebonywood_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<FenceGateBlock> ebonywood_FENCE_GATE = registerBlock("ebonywood_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<WallBlock> ebonywood_WALL = registerBlock("ebonywood_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<DoorBlock> ebonywood_DOOR = registerBlock("ebonywood_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<TrapDoorBlock> ebonywood_TRAPDOOR = registerBlock("ebonywood_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<SlabBlock> ebonywood_SLAB = registerBlock("ebonywood_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    // charwood
+    public static final RegistryObject<Block> charwood_planks = registerBlock("charwood_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<StairBlock> charwood_STAIRS = registerBlock("charwood_stairs",
+            () -> new StairBlock(ModBlocks.charwood_planks.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<PressurePlateBlock> charwood_PRESSURE_PLATE = registerBlock("charwood_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<ButtonBlock> charwood_BUTTON = registerBlock("charwood_button",
+            () -> new ButtonBlock(BlockSetType.OAK,1, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noCollission()));
+
+    public static final RegistryObject<FenceBlock> charwood_FENCE = registerBlock("charwood_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<FenceGateBlock> charwood_FENCE_GATE = registerBlock("charwood_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<WallBlock> charwood_WALL = registerBlock("charwood_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<DoorBlock> charwood_DOOR = registerBlock("charwood_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<TrapDoorBlock> charwood_TRAPDOOR = registerBlock("charwood_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<SlabBlock> charwood_SLAB = registerBlock("charwood_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    // moonwood
+    public static final RegistryObject<Block> moonwood_planks = registerBlock("moonwood_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<StairBlock> moonwood_STAIRS = registerBlock("moonwood_stairs",
+            () -> new StairBlock(ModBlocks.moonwood_planks.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<PressurePlateBlock> moonwood_PRESSURE_PLATE = registerBlock("moonwood_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<ButtonBlock> moonwood_BUTTON = registerBlock("moonwood_button",
+            () -> new ButtonBlock(BlockSetType.OAK,1, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noCollission()));
+
+    public static final RegistryObject<FenceBlock> moonwood_FENCE = registerBlock("moonwood_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<FenceGateBlock> moonwood_FENCE_GATE = registerBlock("moonwood_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<WallBlock> moonwood_WALL = registerBlock("moonwood_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<DoorBlock> moonwood_DOOR = registerBlock("moonwood_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<TrapDoorBlock> moonwood_TRAPDOOR = registerBlock("moonwood_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<SlabBlock> moonwood_SLAB = registerBlock("moonwood_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    // Building blocks
     public static final RegistryObject<Block> BLACK_TUFF = registerBlock("black_tuff",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
@@ -135,6 +368,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> DARK_CALCITE = registerBlock("dark_calcite",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
+
+
 
 
     // Light Blocks
@@ -269,6 +504,55 @@ public class ModBlocks {
             () -> new DropExperienceBlock((UniformInt.of(1,7)),BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> aetherium_ore = registerBlock("aetherium_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,1)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+    public static final RegistryObject<Block> deppslate_aetherium_ore = registerBlock("deepslate_aetherium_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,1)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+
+    public static final RegistryObject<Block> glacialite_ore = registerBlock("glacialite_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,2)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+    public static final RegistryObject<Block> deppslate_glacialite_ore = registerBlock("deepslate_glacialite_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,2)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+
+    public static final RegistryObject<Block> pyroclast_ore = registerBlock("pyroclast_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,2)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+    public static final RegistryObject<Block> deppslate_pyroclast_ore = registerBlock("deepslate_pyroclast_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,2)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+
+    public static final RegistryObject<Block> necroite_ore = registerBlock("necroite_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,2)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+    public static final RegistryObject<Block> deppslate_necroite_ore = registerBlock("deepslate_necroite_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,2)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+
+    public static final RegistryObject<Block> solisite_ore = registerBlock("solisite_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,2)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+    public static final RegistryObject<Block> deppslate_solisite_ore = registerBlock("deepslate_solisite_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,2)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+
+    public static final RegistryObject<Block> volcanic_ore = registerBlock("volcanic_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,1)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+    public static final RegistryObject<Block> deppslate_volcanic_ore = registerBlock("deepslate_volcanic_ore",
+            () -> new DropExperienceBlock((UniformInt.of(1,1)),BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+
+    public static final RegistryObject<Block> raw_pyroclast_block = registerBlock("raw_pyroclast_block",
+            () -> new DropExperienceBlock((UniformInt.of(1,7)),BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> raw_volcanic_block = registerBlock("raw_volcanic_block",
+            () -> new DropExperienceBlock((UniformInt.of(1,7)),BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
 
 
 
