@@ -27,6 +27,18 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.starlite.get());
                         output.accept(ModItems.raw_mithril_ore.get());
                         output.accept(ModItems.mithril_ingot.get());
+                        output.accept(ModItems.pyroclast_ingot.get());
+                        output.accept(ModItems.raw_pyroclast_ore.get());
+                        output.accept(ModItems.aetherium_ingot.get());
+                        output.accept(ModItems.raw_aetherium_ore.get());
+                        output.accept(ModItems.glacialite_ingot.get());
+                        output.accept(ModItems.raw_glacialite_ore.get());
+                        output.accept(ModItems.necroite_ingot.get());
+                        output.accept(ModItems.raw_necroite_ore.get());
+                        output.accept(ModItems.solisite_ingot.get());
+                        output.accept(ModItems.raw_solisite_ore.get());
+                        output.accept(ModItems.volcanic_ingot.get());
+                        output.accept(ModItems.raw_volcanic_ore.get());
 
                         // Landscaping Tools
                         output.accept(ModItems.Chisel.get());

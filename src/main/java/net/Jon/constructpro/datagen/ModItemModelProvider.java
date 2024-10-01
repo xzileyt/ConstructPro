@@ -27,8 +27,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.starlite.get());
         basicItem(ModItems.FossilizedAmber.get());
         basicItem(ModItems.raw_mithril_ore.get());
-
         basicItem(ModItems.mithril_ingot.get());
+        basicItem(ModItems.aetherium_ingot.get());
+        basicItem(ModItems.raw_aetherium_ore.get());
+        basicItem(ModItems.glacialite_ingot.get());
+        basicItem(ModItems.raw_glacialite_ore.get());
+        basicItem(ModItems.necroite_ingot.get());
+        basicItem(ModItems.raw_necroite_ore.get());
+        basicItem(ModItems.pyroclast_ingot.get());
+        basicItem(ModItems.raw_pyroclast_ore.get());
+        basicItem(ModItems.solisite_ingot.get());
+        basicItem(ModItems.raw_solisite_ore.get());
+        basicItem(ModItems.volcanic_ingot.get());
+        basicItem(ModItems.raw_volcanic_ore.get());
 
         // Building blocks
         buttonItem(ModBlocks.LAVENDERWOOD_BUTTON, ModBlocks.lavenderwood_planks);

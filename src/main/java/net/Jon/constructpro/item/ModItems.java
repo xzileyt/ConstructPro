@@ -35,6 +35,30 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> mithril_ingot = ITEMS.register("mithril_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> raw_pyroclast_ore = ITEMS.register("raw_pyroclast_ore",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> pyroclast_ingot = ITEMS.register("pyroclast_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> raw_aetherium_ore = ITEMS.register("raw_aetherium_ore",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> aetherium_ingot = ITEMS.register("aetherium_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> raw_glacialite_ore = ITEMS.register("raw_glacialite_ore",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> glacialite_ingot = ITEMS.register("glacialite_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> raw_necroite_ore = ITEMS.register("raw_necroite_ore",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> necroite_ingot = ITEMS.register("necroite_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> raw_solisite_ore = ITEMS.register("raw_solisite_ore",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> solisite_ingot = ITEMS.register("solisite_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> raw_volcanic_ore = ITEMS.register("raw_volcanic_ore",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> volcanic_ingot = ITEMS.register("volcanic_ingot",
+            () -> new Item(new Item.Properties()));
 
     // Tools
     public static final RegistryObject<Item> Chisel = ITEMS.register("chisel",

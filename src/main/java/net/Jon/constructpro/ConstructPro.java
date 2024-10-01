@@ -57,6 +57,18 @@ public class ConstructPro {
             event.accept(ModItems.Molten);
             event.accept(ModItems.raw_mithril_ore);
             event.accept(ModItems.mithril_ingot);
+            event.accept(ModItems.aetherium_ingot);
+            event.accept(ModItems.raw_aetherium_ore);
+            event.accept(ModItems.glacialite_ingot);
+            event.accept(ModItems.raw_glacialite_ore);
+            event.accept(ModItems.necroite_ingot);
+            event.accept(ModItems.raw_necroite_ore);
+            event.accept(ModItems.pyroclast_ingot);
+            event.accept(ModItems.raw_pyroclast_ore);
+            event.accept(ModItems.solisite_ingot);
+            event.accept(ModItems.raw_solisite_ore);
+            event.accept(ModItems.volcanic_ingot);
+            event.accept(ModItems.raw_volcanic_ore);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.celestial_block);
