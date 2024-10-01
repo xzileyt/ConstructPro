@@ -200,6 +200,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.volcanic_ore.get(), ModItems.raw_volcanic_ore.get(), 1, 1));
         this.add(ModBlocks.deppslate_volcanic_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.deppslate_volcanic_ore.get(), ModItems.raw_volcanic_ore.get(), 1, 1));
+        this.add(ModBlocks.raw_pyroclast_block.get(),
+                block -> createMultipleOreDrops(ModBlocks.raw_pyroclast_block.get(), ModItems.raw_pyroclast_ore.get(), 1, 1));
+        this.add(ModBlocks.raw_volcanic_block.get(),
+                block -> createMultipleOreDrops(ModBlocks.raw_volcanic_block.get(), ModItems.raw_volcanic_ore.get(), 1, 1));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

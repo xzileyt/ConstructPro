@@ -143,6 +143,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.volcanic_block.get());
                         output.accept(ModBlocks.volcanic_ore.get());
                         output.accept(ModBlocks.deppslate_volcanic_ore.get());
+                        output.accept(ModBlocks.raw_pyroclast_block.get());
+                        output.accept(ModBlocks.raw_volcanic_block.get());
                         output.accept(ModBlocks.amberwood_planks.get());
                         output.accept(ModBlocks.amberwood_STAIRS.get());
                         output.accept(ModBlocks.amberwood_SLAB.get());

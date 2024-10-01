@@ -182,6 +182,99 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.mithril_block.get()), has(ModBlocks.mithril_block.get()))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.aetherium_block.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.aetherium_ingot.get())
+                .unlockedBy(getHasName(ModItems.aetherium_ingot.get()), has(ModItems.aetherium_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.aetherium_ingot.get(), 9)
+                .requires(ModBlocks.aetherium_block.get())
+                .unlockedBy(getHasName(ModBlocks.aetherium_block.get()), has(ModBlocks.aetherium_block.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.glacialite_block.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.glacialite_ingot.get())
+                .unlockedBy(getHasName(ModItems.glacialite_ingot.get()), has(ModItems.glacialite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.glacialite_ingot.get(), 9)
+                .requires(ModBlocks.glacialite_block.get())
+                .unlockedBy(getHasName(ModBlocks.glacialite_block.get()), has(ModBlocks.glacialite_block.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.necroite_block.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.necroite_ingot.get())
+                .unlockedBy(getHasName(ModItems.necroite_ingot.get()), has(ModItems.necroite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.necroite_ingot.get(), 9)
+                .requires(ModBlocks.necroite_block.get())
+                .unlockedBy(getHasName(ModBlocks.necroite_block.get()), has(ModBlocks.necroite_block.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.pyroclast_block.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.pyroclast_ingot.get())
+                .unlockedBy(getHasName(ModItems.pyroclast_ingot.get()), has(ModItems.pyroclast_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.pyroclast_ingot.get(), 9)
+                .requires(ModBlocks.pyroclast_block.get())
+                .unlockedBy(getHasName(ModBlocks.pyroclast_block.get()), has(ModBlocks.pyroclast_block.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.solisite_block.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.solisite_ingot.get())
+                .unlockedBy(getHasName(ModItems.solisite_ingot.get()), has(ModItems.solisite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.solisite_ingot.get(), 9)
+                .requires(ModBlocks.solisite_block.get())
+                .unlockedBy(getHasName(ModBlocks.solisite_block.get()), has(ModBlocks.solisite_block.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.volcanic_block.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.volcanic_ingot.get())
+                .unlockedBy(getHasName(ModItems.volcanic_ingot.get()), has(ModItems.volcanic_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.volcanic_ingot.get(), 9)
+                .requires(ModBlocks.volcanic_block.get())
+                .unlockedBy(getHasName(ModBlocks.volcanic_block.get()), has(ModBlocks.volcanic_block.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.raw_mithril_ore.get(), 9)
+                .requires(ModBlocks.raw_mithril_block.get())
+                .unlockedBy(getHasName(ModBlocks.raw_mithril_block.get()), has(ModBlocks.raw_mithril_block.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.raw_pyroclast_ore.get(), 9)
+                .requires(ModBlocks.raw_pyroclast_block.get())
+                .unlockedBy(getHasName(ModBlocks.raw_pyroclast_block.get()), has(ModBlocks.raw_pyroclast_block.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.raw_volcanic_ore.get(), 9)
+                .requires(ModBlocks.raw_volcanic_block.get())
+                .unlockedBy(getHasName(ModBlocks.raw_volcanic_block.get()), has(ModBlocks.raw_volcanic_block.get()))
+                .save(pRecipeOutput);
+
         // Ore smelting
         oreSmelting(pRecipeOutput, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.mithril_ingot.get(), 0.25f,200,"mithril");
         oreBlasting(pRecipeOutput, MITHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.mithril_ingot.get(), 0.25f,100,"mithril");

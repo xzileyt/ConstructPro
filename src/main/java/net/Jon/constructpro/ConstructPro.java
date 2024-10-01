@@ -132,6 +132,8 @@ public class ConstructPro {
             event.accept(ModBlocks.volcanic_block);
             event.accept(ModBlocks.deppslate_volcanic_ore);
             event.accept(ModBlocks.volcanic_ore);
+            event.accept(ModBlocks.raw_pyroclast_block);
+            event.accept(ModBlocks.raw_volcanic_block);
             event.accept(ModBlocks.amberwood_planks);
             event.accept(ModBlocks.amberwood_STAIRS);
             event.accept(ModBlocks.amberwood_BUTTON);
