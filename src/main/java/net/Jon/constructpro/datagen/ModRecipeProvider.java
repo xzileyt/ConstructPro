@@ -345,6 +345,127 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_end_stone", has(Blocks.END_STONE))
                 .save(pRecipeOutput);
 
+        
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMBERWOOD_HORIZONTAL_PLANKS.get(), 3)  // Outputs 3 horizontal planks
+                .define('P', ModBlocks.amberwood_planks.get())  // Uses your custom planks
+                .pattern("   ")
+                .pattern("P  ")
+                .pattern("PP ")  // Horizontal arrangement
+                .unlockedBy("has_amberwood_planks", has(ModBlocks.amberwood_planks.get()))  // Unlock condition
+                .save(pRecipeOutput);
+
+       
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMBERWWOOD_VERTICAL_PLANKS.get(), 3)
+                .define('P', ModBlocks.amberwood_planks.get())  // Uses your custom planks
+                .pattern("P  ")
+                .pattern("P  ")
+                .pattern("P  ")
+                .unlockedBy("has_amberwood_planks", has(ModBlocks.amberwood_planks.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASHWOOD_HORIZONTAL_PLANKS.get(), 3)  // Outputs 3 horizontal planks
+                .define('P', ModBlocks.ashwood_planks.get())  // Uses your custom planks
+                .pattern("   ")
+                .pattern("P  ")
+                .pattern("PP ")  // Horizontal arrangement
+                .unlockedBy("has_ashwood_planks", has(ModBlocks.ashwood_planks.get()))  // Unlock condition
+                .save(pRecipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASHWOOD_VERTICAL_PLANKS.get(), 3)
+                .define('P', ModBlocks.ashwood_planks.get())  // Uses your custom planks
+                .pattern("P  ")
+                .pattern("P  ")
+                .pattern("P  ")
+                .unlockedBy("has_ashwood_planks", has(ModBlocks.ashwood_planks.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHARWOOD_HORIZONTAL_PLANKS.get(), 3)  // Outputs 3 horizontal planks
+                .define('P', ModBlocks.charwood_planks.get())  // Uses your custom planks
+                .pattern("   ")
+                .pattern("P  ")
+                .pattern("PP ")  // Horizontal arrangement
+                .unlockedBy("has_charwood_planks", has(ModBlocks.charwood_planks.get()))  // Unlock condition
+                .save(pRecipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHARWOOD_VERTICAL_PLANKS.get(), 3)
+                .define('P', ModBlocks.charwood_planks.get())  // Uses your custom planks
+                .pattern("P  ")
+                .pattern("P  ")
+                .pattern("P  ")
+                .unlockedBy("has_charwood_planks", has(ModBlocks.charwood_planks.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EBONYWOOD_HORIZONTAL_PLANKS.get(), 3)  // Outputs 3 horizontal planks
+                .define('P', ModBlocks.ebonywood_planks.get())  // Uses your custom planks
+                .pattern("   ")
+                .pattern("P  ")
+                .pattern("PP ")  // Horizontal arrangement
+                .unlockedBy("has_ebonywood_planks", has(ModBlocks.ebonywood_planks.get()))  // Unlock condition
+                .save(pRecipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EBONYWOOD_VERTICAL_PLANKS.get(), 3)
+                .define('P', ModBlocks.ebonywood_planks.get())  // Uses your custom planks
+                .pattern("P  ")
+                .pattern("P  ")
+                .pattern("P  ")
+                .unlockedBy("has_ebonywood_planks", has(ModBlocks.ebonywood_planks.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAVENDERWOOD_HORIZONTAL_PLANKS.get(), 3)  // Outputs 3 horizontal planks
+                .define('P', ModBlocks.lavenderwood_planks.get())  // Uses your custom planks
+                .pattern("   ")
+                .pattern("P  ")
+                .pattern("PP ")  // Horizontal arrangement
+                .unlockedBy("has_lavenderwood_planks", has(ModBlocks.lavenderwood_planks.get()))  // Unlock condition
+                .save(pRecipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAVENDERWOOD_VERTICAL_PLANKS.get(), 3)
+                .define('P', ModBlocks.lavenderwood_planks.get())  // Uses your custom planks
+                .pattern("P  ")
+                .pattern("P  ")
+                .pattern("P  ")
+                .unlockedBy("has_lavenderwood_planks", has(ModBlocks.lavenderwood_planks.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LUMENWOOD_HORIZONTAL_PLANKS.get(), 3)  // Outputs 3 horizontal planks
+                .define('P', ModBlocks.lumenwood_planks.get())  // Uses your custom planks
+                .pattern("   ")
+                .pattern("P  ")
+                .pattern("PP ")  // Horizontal arrangement
+                .unlockedBy("has_lumenwood_planks", has(ModBlocks.lumenwood_planks.get()))  // Unlock condition
+                .save(pRecipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LUMENWOOD_VERTICAL_PLANKS.get(), 3)
+                .define('P', ModBlocks.lumenwood_planks.get())  // Uses your custom planks
+                .pattern("P  ")
+                .pattern("P  ")
+                .pattern("P  ")
+                .unlockedBy("has_lumenwood_planks", has(ModBlocks.lumenwood_planks.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOONWOOD_HORIZONTAL_PLANKS.get(), 3)  // Outputs 3 horizontal planks
+                .define('P', ModBlocks.moonwood_planks.get())  // Uses your custom planks
+                .pattern("   ")
+                .pattern("P  ")
+                .pattern("PP ")  // Horizontal arrangement
+                .unlockedBy("has_moonwood_planks", has(ModBlocks.moonwood_planks.get()))  // Unlock condition
+                .save(pRecipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOONWOOD_VERTICAL_PLANKS.get(), 3)
+                .define('P', ModBlocks.moonwood_planks.get())  // Uses your custom planks
+                .pattern("P  ")
+                .pattern("P  ")
+                .pattern("P  ")
+                .unlockedBy("has_moonwood_planks", has(ModBlocks.moonwood_planks.get()))
+                .save(pRecipeOutput);
+
+
 
         // Ore blocks
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.celestial_block.get())

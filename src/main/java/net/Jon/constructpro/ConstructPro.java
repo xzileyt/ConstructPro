@@ -225,6 +225,20 @@ public class ConstructPro {
             event.accept(ModBlocks.PURPLE_ENDSTONE);
             event.accept(ModBlocks.RED_ENDSTONE);
             event.accept(ModBlocks.YELLOW_ENDSTONE);
+            event.accept(ModBlocks.AMBERWOOD_HORIZONTAL_PLANKS);
+            event.accept(ModBlocks.AMBERWWOOD_VERTICAL_PLANKS);
+            event.accept(ModBlocks.ASHWOOD_HORIZONTAL_PLANKS);
+            event.accept(ModBlocks.ASHWOOD_VERTICAL_PLANKS);
+            event.accept(ModBlocks.CHARWOOD_HORIZONTAL_PLANKS);
+            event.accept(ModBlocks.CHARWOOD_VERTICAL_PLANKS);
+            event.accept(ModBlocks.EBONYWOOD_HORIZONTAL_PLANKS);
+            event.accept(ModBlocks.EBONYWOOD_VERTICAL_PLANKS);
+            event.accept(ModBlocks.LAVENDERWOOD_HORIZONTAL_PLANKS);
+            event.accept(ModBlocks.LAVENDERWOOD_VERTICAL_PLANKS);
+            event.accept(ModBlocks.LUMENWOOD_HORIZONTAL_PLANKS);
+            event.accept(ModBlocks.LUMENWOOD_VERTICAL_PLANKS);
+            event.accept(ModBlocks.MOONWOOD_HORIZONTAL_PLANKS);
+            event.accept(ModBlocks.MOONWOOD_VERTICAL_PLANKS);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

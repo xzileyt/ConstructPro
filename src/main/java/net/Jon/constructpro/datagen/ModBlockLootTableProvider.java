@@ -181,6 +181,20 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.PURPLE_ENDSTONE.get());
         dropSelf(ModBlocks.RED_ENDSTONE.get());
         dropSelf(ModBlocks.YELLOW_ENDSTONE.get());
+        dropSelf(ModBlocks.AMBERWOOD_HORIZONTAL_PLANKS.get());
+        dropSelf(ModBlocks.AMBERWWOOD_VERTICAL_PLANKS.get());
+        dropSelf(ModBlocks.ASHWOOD_VERTICAL_PLANKS.get());
+        dropSelf(ModBlocks.ASHWOOD_HORIZONTAL_PLANKS.get());
+        dropSelf(ModBlocks.CHARWOOD_HORIZONTAL_PLANKS.get());
+        dropSelf(ModBlocks.CHARWOOD_VERTICAL_PLANKS.get());
+        dropSelf(ModBlocks.EBONYWOOD_VERTICAL_PLANKS.get());
+        dropSelf(ModBlocks.EBONYWOOD_HORIZONTAL_PLANKS.get());
+        dropSelf(ModBlocks.LAVENDERWOOD_VERTICAL_PLANKS.get());
+        dropSelf(ModBlocks.LAVENDERWOOD_HORIZONTAL_PLANKS.get());
+        dropSelf(ModBlocks.LUMENWOOD_HORIZONTAL_PLANKS.get());
+        dropSelf(ModBlocks.LUMENWOOD_VERTICAL_PLANKS.get());
+        dropSelf(ModBlocks.MOONWOOD_HORIZONTAL_PLANKS.get());
+        dropSelf(ModBlocks.MOONWOOD_VERTICAL_PLANKS.get());
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),

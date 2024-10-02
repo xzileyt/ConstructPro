@@ -230,6 +230,20 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PURPLE_ENDSTONE.get());
                         output.accept(ModBlocks.RED_ENDSTONE.get());
                         output.accept(ModBlocks.YELLOW_ENDSTONE.get());
+                        output.accept(ModBlocks.AMBERWOOD_HORIZONTAL_PLANKS.get());
+                        output.accept(ModBlocks.AMBERWWOOD_VERTICAL_PLANKS.get());
+                        output.accept(ModBlocks.ASHWOOD_HORIZONTAL_PLANKS.get());
+                        output.accept(ModBlocks.ASHWOOD_VERTICAL_PLANKS.get());
+                        output.accept(ModBlocks.CHARWOOD_HORIZONTAL_PLANKS.get());
+                        output.accept(ModBlocks.CHARWOOD_VERTICAL_PLANKS.get());
+                        output.accept(ModBlocks.EBONYWOOD_HORIZONTAL_PLANKS.get());
+                        output.accept(ModBlocks.EBONYWOOD_VERTICAL_PLANKS.get());
+                        output.accept(ModBlocks.LUMENWOOD_HORIZONTAL_PLANKS.get());
+                        output.accept(ModBlocks.LAVENDERWOOD_VERTICAL_PLANKS.get());
+                        output.accept(ModBlocks.LUMENWOOD_VERTICAL_PLANKS.get());
+                        output.accept(ModBlocks.LUMENWOOD_HORIZONTAL_PLANKS.get());
+                        output.accept(ModBlocks.MOONWOOD_HORIZONTAL_PLANKS.get());
+                        output.accept(ModBlocks.MOONWOOD_VERTICAL_PLANKS.get());
 
                     }).build());
 

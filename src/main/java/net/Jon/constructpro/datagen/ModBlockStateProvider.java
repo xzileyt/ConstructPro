@@ -209,6 +209,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PURPLE_ENDSTONE);
         blockWithItem(ModBlocks.RED_ENDSTONE);
         blockWithItem(ModBlocks.YELLOW_ENDSTONE);
+        blockWithItem(ModBlocks.AMBERWOOD_HORIZONTAL_PLANKS);
+        blockWithItem(ModBlocks.AMBERWWOOD_VERTICAL_PLANKS);
+        blockWithItem(ModBlocks.ASHWOOD_HORIZONTAL_PLANKS);
+        blockWithItem(ModBlocks.ASHWOOD_VERTICAL_PLANKS);
+        blockWithItem(ModBlocks.CHARWOOD_HORIZONTAL_PLANKS);
+        blockWithItem(ModBlocks.CHARWOOD_VERTICAL_PLANKS);
+        blockWithItem(ModBlocks.EBONYWOOD_HORIZONTAL_PLANKS);
+        blockWithItem(ModBlocks.EBONYWOOD_VERTICAL_PLANKS);
+        blockWithItem(ModBlocks.LAVENDERWOOD_HORIZONTAL_PLANKS);
+        blockWithItem(ModBlocks.LAVENDERWOOD_VERTICAL_PLANKS);
+        blockWithItem(ModBlocks.MOONWOOD_HORIZONTAL_PLANKS);
+        blockWithItem(ModBlocks.MOONWOOD_VERTICAL_PLANKS);
 
         // Ores
         blockWithItem(ModBlocks.celestial_ore);

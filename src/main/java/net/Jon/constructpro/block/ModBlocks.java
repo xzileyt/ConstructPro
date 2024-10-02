@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraftforge.client.model.obj.ObjMaterialLibrary;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -500,6 +501,90 @@ public class ModBlocks {
     public static final RegistryObject<Block> YELLOW_ENDSTONE = registerBlock("yellow_endstone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3.0f, 9.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> AMBERWOOD_HORIZONTAL_PLANKS = registerBlock("amberwood_horizontal_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> AMBERWWOOD_VERTICAL_PLANKS = registerBlock("amberwood_vertical_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASHWOOD_HORIZONTAL_PLANKS = registerBlock("ashwood_horizontal_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASHWOOD_VERTICAL_PLANKS = registerBlock("ashwood_vertical_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CHARWOOD_HORIZONTAL_PLANKS = registerBlock("charwood_horizontal_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CHARWOOD_VERTICAL_PLANKS = registerBlock("charwood_vertical_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> EBONYWOOD_HORIZONTAL_PLANKS = registerBlock("ebonywood_horizontal_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> EBONYWOOD_VERTICAL_PLANKS = registerBlock("ebonywood_vertical_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LAVENDERWOOD_HORIZONTAL_PLANKS = registerBlock("lavenderwood_horizontal_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LAVENDERWOOD_VERTICAL_PLANKS = registerBlock("lavenderwood_vertical_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LUMENWOOD_HORIZONTAL_PLANKS = registerBlock("lumenwood_horizontal_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LUMENWOOD_VERTICAL_PLANKS = registerBlock("lumenwood_vertical_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MOONWOOD_HORIZONTAL_PLANKS = registerBlock("moonwood_horizontal_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MOONWOOD_VERTICAL_PLANKS = registerBlock("moonwood_vertical_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
+                    .sound(SoundType.WOOD)
                     .requiresCorrectToolForDrops()));
 
 
