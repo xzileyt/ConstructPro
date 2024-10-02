@@ -64,17 +64,22 @@ public class ModItems {
 
     // Tools
     public static final RegistryObject<Item> Chisel = ITEMS.register("chisel",
-            () -> new ChiselItem(new Item.Properties().durability(32)));
+            () -> new ChiselItem(new Item.Properties().stacksTo(1).durability(32)));
     public static final RegistryObject<Item> TROWEL = ITEMS.register("trowel",
             () -> new TrowelItem(new Item.Properties().stacksTo(1).durability(250)));
     public static final RegistryObject<Item> GEO_ANALYZER = ITEMS.register("geoanalyzer",
-            () -> new GeoAnalyzer(new Item.Properties()));
+            () -> new GeoAnalyzer(new Item.Properties().stacksTo(1).durability(255)));
     public static final RegistryObject<Item> TERRAINFLATTENINGTOOL = ITEMS.register("terrainflatteningtool",
-            () -> new TerrainFlatteningTool(new Item.Properties().durability(2031)));
+            () -> new TerrainFlatteningTool(new Item.Properties().stacksTo(1).durability(2031)));
     public static final RegistryObject<Item> TerrainSmoother = ITEMS.register("terrain_smoother",
-            () -> new ItemLandSmoother(new Item.Properties()));
+            () -> new ItemLandSmoother(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> MEASUREMENT_TOOL = ITEMS.register("measurement_tool",
-            () -> new MeasurementTool(new Item.Properties()));
+            () -> new MeasurementTool(new Item.Properties().stacksTo(1).durability(250)));
+    public static final RegistryObject<Item> TIMBER_AXE = ITEMS.register("timber_axe",
+            () -> new AxeItem(ModToolTiers.Molten, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.Molten, 7, -3.0f))));
+
+
 
     // Celestial tools
     public static final RegistryObject<Item> CELESTIAL_SWORD = ITEMS.register("celestial_sword",

@@ -221,6 +221,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.LAVENDERWOOD_VERTICAL_PLANKS);
         blockWithItem(ModBlocks.MOONWOOD_HORIZONTAL_PLANKS);
         blockWithItem(ModBlocks.MOONWOOD_VERTICAL_PLANKS);
+        blockWithItem(ModBlocks.SLATE_COBBLESTONE);
+        blockWithItem(ModBlocks.SLATE_COBBLED_DEEPSLATE);
+        blockWithItem(ModBlocks.SLATE_POLISHED_ANDESITE);
+        blockWithItem(ModBlocks.SLATE_STONE);
+        blockWithItem(ModBlocks.SLATE_DEEPSLATE_BRICKS);
+        blockWithItem(ModBlocks.SLATE_ANDESITE);
+        blockWithItem(ModBlocks.SLATE_STONE_BRICKS);
 
         // Ores
         blockWithItem(ModBlocks.celestial_ore);

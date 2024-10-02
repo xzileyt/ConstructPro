@@ -239,6 +239,13 @@ public class ConstructPro {
             event.accept(ModBlocks.LUMENWOOD_VERTICAL_PLANKS);
             event.accept(ModBlocks.MOONWOOD_HORIZONTAL_PLANKS);
             event.accept(ModBlocks.MOONWOOD_VERTICAL_PLANKS);
+            event.accept(ModBlocks.SLATE_ANDESITE);
+            event.accept(ModBlocks.SLATE_COBBLED_DEEPSLATE);
+            event.accept(ModBlocks.SLATE_COBBLESTONE);
+            event.accept(ModBlocks.SLATE_DEEPSLATE_BRICKS);
+            event.accept(ModBlocks.SLATE_POLISHED_ANDESITE);
+            event.accept(ModBlocks.SLATE_STONE);
+            event.accept(ModBlocks.SLATE_STONE_BRICKS);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
@@ -270,6 +277,7 @@ public class ConstructPro {
             event.accept(ModItems.MOLTEN_SHOVEL.get());
             event.accept(ModItems.MOLTEN_HOE.get());
             event.accept(ModItems.MEASUREMENT_TOOL.get());
+            event.accept(ModItems.TIMBER_AXE.get());
         }
     }
 

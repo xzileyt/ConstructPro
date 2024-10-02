@@ -44,9 +44,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.Chisel.get());
                         output.accept(ModItems.TROWEL.get());
                         output.accept(ModItems.GEO_ANALYZER.get());
-
+                        output.accept(ModItems.TERRAINFLATTENINGTOOL.get());
                         output.accept(ModItems.TerrainSmoother.get());
                         output.accept(ModItems.MEASUREMENT_TOOL.get());
+                        output.accept(ModItems.TIMBER_AXE.get());
 
                         // Tools
                         output.accept(ModItems.CELESTIAL_SWORD.get());
@@ -244,6 +245,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LUMENWOOD_HORIZONTAL_PLANKS.get());
                         output.accept(ModBlocks.MOONWOOD_HORIZONTAL_PLANKS.get());
                         output.accept(ModBlocks.MOONWOOD_VERTICAL_PLANKS.get());
+                        output.accept(ModBlocks.SLATE_ANDESITE.get());
+                        output.accept(ModBlocks.SLATE_COBBLED_DEEPSLATE.get());
+                        output.accept(ModBlocks.SLATE_COBBLESTONE.get());
+                        output.accept(ModBlocks.SLATE_DEEPSLATE_BRICKS.get());
+                        output.accept(ModBlocks.SLATE_POLISHED_ANDESITE.get());
+                        output.accept(ModBlocks.SLATE_STONE.get());
+                        output.accept(ModBlocks.SLATE_STONE_BRICKS.get());
 
                     }).build());
 

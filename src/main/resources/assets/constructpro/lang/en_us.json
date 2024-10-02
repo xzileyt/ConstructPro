@@ -25,6 +25,7 @@
   "item.constructpro.terrainflatteningtool": "Terrain Flattening Tool",
   "item.constructpro.terrain_smoother": "Terrain Smoother [WIP]",
   "item.constructpro.measurement_tool": "Measurement Tool",
+  "item.constructpro.timber_axe": "Timber Axe",
 
   "item.constructpro.celestial_sword": "Celestial Sword",
   "item.constructpro.celestial_pickaxe": "Celestial Pickaxe",
@@ -216,6 +217,13 @@
   "block.constructpro.lumenwood_vertical_planks": "Lumenwood Virtical Planks",
   "block.constructpro.moonwood_horizontal_planks": "Moonwood Horizontal Planks",
   "block.constructpro.moonwood_vertical_planks": "Moonwood Virtical Planks",
+  "block.constructpro.slate_andesite": "Slate Andesite",
+  "block.constructpro.slate_cobbled_deepslate": "Slate Cobbled Deepslate",
+  "block.constructpro.slate_cobblestone": "Slate Cobblestone",
+  "block.constructpro.slate_deepslate_bricks": "Slate Deepslate Bricks",
+  "block.constructpro.slate_polished_andesite": "Slate Polished Andesite",
+  "block.constructpro.slate_stone": "Slate Stone",
+  "block.constructpro.slate_stone_bricks": "Slate Stone Bricks",
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",

@@ -587,6 +587,41 @@ public class ModBlocks {
                     .sound(SoundType.WOOD)
                     .requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> SLATE_COBBLESTONE = BLOCKS.register("slate_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 6.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SLATE_ANDESITE = BLOCKS.register("slate_andesite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 6.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SLATE_COBBLED_DEEPSLATE = BLOCKS.register("slate_cobbled_deepslate",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 6.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SLATE_DEEPSLATE_BRICKS = BLOCKS.register("slate_deepslate_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 6.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SLATE_POLISHED_ANDESITE = BLOCKS.register("slate_polished_andesite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 6.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SLATE_STONE = BLOCKS.register("slate_stone",
+            () -> new Block(BlockBehaviour.Properties.of() // Use the appropriate material
+                    .strength(1.5f, 6.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SLATE_STONE_BRICKS = BLOCKS.register("slate_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of() // Use the appropriate material
+                    .strength(1.5f, 6.0f)
+                    .requiresCorrectToolForDrops()));
+
 
     // Light Blocks
     public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp",
