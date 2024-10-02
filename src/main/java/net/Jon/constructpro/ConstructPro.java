@@ -256,7 +256,7 @@ public class ConstructPro {
             event.accept(ModItems.Chisel.get());
             event.accept(ModItems.GEO_ANALYZER.get());
             event.accept(ModItems.TROWEL.get());
-            event.accept(ModItems.TerrainLeveler.get());
+            event.accept(ModItems.TERRAINFLATTENINGTOOL.get());
             event.accept(ModItems.TerrainSmoother.get());
             event.accept(ModItems.CELESTIAL_SWORD.get());
             event.accept(ModItems.CELESTIAL_PICKAXE.get());

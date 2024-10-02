@@ -84,7 +84,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.Chisel.get());
         basicItem(ModItems.TROWEL.get());
         basicItem(ModItems.GEO_ANALYZER.get());
-        basicItem(ModItems.TerrainLeveler.get());
+        basicItem(ModItems.TERRAINFLATTENINGTOOL.get());
         basicItem(ModItems.TerrainSmoother.get());
         basicItem(ModItems.MEASUREMENT_TOOL.get());
 

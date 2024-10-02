@@ -69,8 +69,8 @@ public class ModItems {
             () -> new TrowelItem(new Item.Properties().stacksTo(1).durability(250)));
     public static final RegistryObject<Item> GEO_ANALYZER = ITEMS.register("geoanalyzer",
             () -> new GeoAnalyzer(new Item.Properties()));
-    public static final RegistryObject<Item> TerrainLeveler = ITEMS.register("terrain_leveler",
-            () -> new TerrainLeveler(new Item.Properties()));
+    public static final RegistryObject<Item> TERRAINFLATTENINGTOOL = ITEMS.register("terrainflatteningtool",
+            () -> new TerrainFlatteningTool(new Item.Properties().durability(2031)));
     public static final RegistryObject<Item> TerrainSmoother = ITEMS.register("terrain_smoother",
             () -> new ItemLandSmoother(new Item.Properties()));
     public static final RegistryObject<Item> MEASUREMENT_TOOL = ITEMS.register("measurement_tool",
