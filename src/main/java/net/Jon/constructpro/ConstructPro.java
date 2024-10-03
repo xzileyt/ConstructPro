@@ -5,7 +5,6 @@ import net.Jon.constructpro.block.ModBlocks;
 import net.Jon.constructpro.component.ModDataComponentTypes;
 import net.Jon.constructpro.item.ModCreativeModeTabs;
 import net.Jon.constructpro.item.ModItems;
-// Added this import statement for ModArmorMaterials
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -41,6 +40,10 @@ public class ConstructPro {
 
         modEventBus.addListener(this::addCreative);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    }
+
+    private void log(String message) {
+        System.out.println("[ConstructPro] " + message);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -239,13 +242,12 @@ public class ConstructPro {
             event.accept(ModBlocks.LUMENWOOD_VERTICAL_PLANKS);
             event.accept(ModBlocks.MOONWOOD_HORIZONTAL_PLANKS);
             event.accept(ModBlocks.MOONWOOD_VERTICAL_PLANKS);
-            event.accept(ModBlocks.SLATE_ANDESITE);
-            event.accept(ModBlocks.SLATE_COBBLED_DEEPSLATE);
-            event.accept(ModBlocks.SLATE_COBBLESTONE);
-            event.accept(ModBlocks.SLATE_DEEPSLATE_BRICKS);
-            event.accept(ModBlocks.SLATE_POLISHED_ANDESITE);
-            event.accept(ModBlocks.SLATE_STONE);
-            event.accept(ModBlocks.SLATE_STONE_BRICKS);
+            event.accept(ModBlocks.STELLAR_SLATE_ANDESITE);
+            event.accept(ModBlocks.STELLAR_SLATE_COBBLED_DEEPSLATE);
+            event.accept(ModBlocks.STELLAR_SLATE_COBBLESTONE);
+            event.accept(ModBlocks.STELLAR_SLATE_DEEPSLATE_BRICKS);
+            event.accept(ModBlocks.STELLAR_SLATE_STONE);
+            event.accept(ModBlocks.STELLAR_SLATE_STONE_BRICKS);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
@@ -278,6 +280,16 @@ public class ConstructPro {
             event.accept(ModItems.MOLTEN_HOE.get());
             event.accept(ModItems.MEASUREMENT_TOOL.get());
             event.accept(ModItems.TIMBER_AXE.get());
+        }
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.CELESTIAL_HELMET.get());
+            event.accept(ModItems.CELESTIAL_CHESTPLATE.get());
+            event.accept(ModItems.CELESTIAL_LEGGINGS.get());
+            event.accept(ModItems.CELESTIAL_BOOTS.get());
+            event.accept(ModItems.MOLTEN_HELMET.get());
+            event.accept(ModItems.MOLTEN_CHESTPLATE.get());
+            event.accept(ModItems.MOLTEN_LEGGINGS.get());
+            event.accept(ModItems.MOLTEN_BOOTS.get());
         }
     }
 

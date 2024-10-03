@@ -63,6 +63,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MOLTEN_HOE.get());
 
                         // Combat items
+                        output.accept(ModItems.CELESTIAL_HELMET.get());
+                        output.accept(ModItems.CELESTIAL_CHESTPLATE.get());
+                        output.accept(ModItems.CELESTIAL_LEGGINGS.get());
+                        output.accept(ModItems.CELESTIAL_BOOTS.get());
+
+                        output.accept(ModItems.MOLTEN_HELMET.get());
+                        output.accept(ModItems.MOLTEN_CHESTPLATE.get());
+                        output.accept(ModItems.MOLTEN_LEGGINGS.get());
+                        output.accept(ModItems.MOLTEN_BOOTS.get());
 
 
                         // Food items
@@ -245,13 +254,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LUMENWOOD_HORIZONTAL_PLANKS.get());
                         output.accept(ModBlocks.MOONWOOD_HORIZONTAL_PLANKS.get());
                         output.accept(ModBlocks.MOONWOOD_VERTICAL_PLANKS.get());
-                        output.accept(ModBlocks.SLATE_ANDESITE.get());
-                        output.accept(ModBlocks.SLATE_COBBLED_DEEPSLATE.get());
-                        output.accept(ModBlocks.SLATE_COBBLESTONE.get());
-                        output.accept(ModBlocks.SLATE_DEEPSLATE_BRICKS.get());
-                        output.accept(ModBlocks.SLATE_POLISHED_ANDESITE.get());
-                        output.accept(ModBlocks.SLATE_STONE.get());
-                        output.accept(ModBlocks.SLATE_STONE_BRICKS.get());
+                        output.accept(ModBlocks.STELLAR_SLATE_ANDESITE.get());
+                        output.accept(ModBlocks.STELLAR_SLATE_COBBLED_DEEPSLATE.get());
+                        output.accept(ModBlocks.STELLAR_SLATE_COBBLESTONE.get());
+                        output.accept(ModBlocks.STELLAR_SLATE_DEEPSLATE_BRICKS.get());
+                        output.accept(ModBlocks.STELLAR_SLATE_STONE.get());
+                        output.accept(ModBlocks.STELLAR_SLATE_STONE_BRICKS.get());
 
                     }).build());
 
