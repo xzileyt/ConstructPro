@@ -123,6 +123,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.MOLTEN_AXE);
         handheldItem(ModItems.MOLTEN_SHOVEL);
         handheldItem(ModItems.MOLTEN_HOE);
+        handheldItem(ModItems.VOLCANIC_SWORD);
+        handheldItem(ModItems.VOLCANIC_PICKAXE);
+        handheldItem(ModItems.VOLCANIC_AXE);
+        handheldItem(ModItems.VOLCANIC_SHOVEL);
+        handheldItem(ModItems.VOLCANIC_HOE);
 
         // Food items
         basicItem(ModItems.ETERNAL_STEAK.get());
@@ -137,6 +142,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.MOLTEN_CHESTPLATE);
         trimmedArmorItem(ModItems.MOLTEN_LEGGINGS);
         trimmedArmorItem(ModItems.MOLTEN_BOOTS);
+
+        trimmedArmorItem(ModItems.VOLCANIC_HELMET);
+        trimmedArmorItem(ModItems.VOLCANIC_CHESTPLATE);
+        trimmedArmorItem(ModItems.VOLCANIC_LEGGINGS);
+        trimmedArmorItem(ModItems.VOLCANIC_BOOTS);
     }
 
     // Shoutout to El_Redstoniano for making this

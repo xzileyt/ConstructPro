@@ -14,4 +14,8 @@ public class ModToolTiers {
     public static final Tier Molten = new ForgeTier(2000, 5, 4f, 15,
             ModTags.Blocks.NEEDS_MOLTEN_TOOL, () -> Ingredient.of(ModItems.Molten.get()),
             ModTags.Blocks.INCORRECT_FOR_MOLTEN_TOOL);
+
+    public static final Tier Volcanic = new ForgeTier(2500, 6, 4.5f, 25,
+            ModTags.Blocks.NEEDS_VOLCANIC_TOOL, () -> Ingredient.of(ModItems.volcanic_ingot.get()),
+            ModTags.Blocks.INCORRECT_FOR_VOLCANIC_TOOL);
 }

@@ -38,6 +38,11 @@
   "item.constructpro.molten_axe": "Molten Axe",
   "item.constructpro.molten_shovel": "Molten Shovel",
   "item.constructpro.molten_hoe": "Molten Hoe",
+  "item.constructpro.volcanic_sword": "Volcanic Sword",
+  "item.constructpro.volcanic_pickaxe": "Volcanic Pickaxe",
+  "item.constructpro.volcanic_axe": "Volcanic Axe",
+  "item.constructpro.volcanic_shovel": "Volcanic Shovel",
+  "item.constructpro.volcanic_hoe": "Volcanic Hoe",
 
   "item.constructpro.celestial_helmet": "Celestial Helmet",
   "item.constructpro.celestial_chestplate": "Celestial Chestplate",
@@ -47,6 +52,10 @@
   "item.constructpro.molten_chestplate": "Molten Chestplate",
   "item.constructpro.molten_leggings": "Molten Leggings",
   "item.constructpro.molten_boots": "Molten Boots",
+  "item.constructpro.volcanic_helmet": "Volcanic Helmet",
+  "item.constructpro.volcanic_chestplate": "Volcanic Chestplate",
+  "item.constructpro.volcanic_leggings": "Volcanic Leggings",
+  "item.constructpro.volcanic_boots": "Volcanic Boots",
 
   "item.constructpro.eternal_steak": "Eternal Steak",
 
@@ -233,6 +242,13 @@
   "block.constructpro.stellar_slate_polished_andesite": "Stellar Slate Polished Andesite",
   "block.constructpro.stellar_slate_stone": "Slate Stone",
   "block.constructpro.stellar_slate_stone_bricks": "Stellar Slate Stone Bricks",
+  "block.constructpro.blue_amethyst": "Blue Amethyst",
+  "block.constructpro.green_amethyst": "Green Amethyst",
+  "block.constructpro.light_blue_amethyst": "Light Blue Amethyst",
+  "block.constructpro.orange_amethyst": "Orange Amethyst",
+  "block.constructpro.pink_amethyst": "Pink Amethyst",
+  "block.constructpro.red_amethyst": "Red Amethyst",
+  "block.constructpro.yellow_amethyst": "Yellow Amethyst",
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",

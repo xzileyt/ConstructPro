@@ -14,6 +14,8 @@ public class ModTags {
         public static final TagKey<Block> INCORRECT_FOR_CELESTIAL_TOOL = createTag("incorrect_for_celestial_tool");
         public static final TagKey<Block> NEEDS_MOLTEN_TOOL = createTag("needs_molten_tool");
         public static final TagKey<Block> INCORRECT_FOR_MOLTEN_TOOL = createTag("incorrect_for_molten_tool");
+        public static final TagKey<Block> NEEDS_VOLCANIC_TOOL = createTag("needs_volcanic_tool");
+        public static final TagKey<Block> INCORRECT_FOR_VOLCANIC_TOOL = createTag("incorrect_for_volcanic_tool");
         public static final TagKey<Block> NEEDS_TIMBER_TOOL = createTag("needs_timber_tool"); // Added
         public static final TagKey<Block> INCORRECT_FOR_TIMBER_TOOL = createTag("incorrect_for_timber_tool"); // Added
 

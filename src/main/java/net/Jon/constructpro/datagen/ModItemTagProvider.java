@@ -30,6 +30,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.MOLTEN_HELMET.get())
                 .add(ModItems.MOLTEN_CHESTPLATE.get())
                 .add(ModItems.MOLTEN_LEGGINGS.get())
-                .add(ModItems.MOLTEN_BOOTS.get());
+                .add(ModItems.MOLTEN_BOOTS.get())
+                .add(ModItems.VOLCANIC_HELMET.get())
+                .add(ModItems.VOLCANIC_CHESTPLATE.get())
+                .add(ModItems.VOLCANIC_LEGGINGS.get())
+                .add(ModItems.VOLCANIC_BOOTS.get());
     }
 }

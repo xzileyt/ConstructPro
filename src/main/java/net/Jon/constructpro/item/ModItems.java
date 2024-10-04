@@ -8,6 +8,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -118,20 +119,39 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.Molten, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.Molten, 1, -2.7f))));
 
+    // Volcanic tools
+    public static final RegistryObject<Item> VOLCANIC_SWORD = ITEMS.register("volcanic_sword",
+            () -> new SwordItem(ModToolTiers.Volcanic, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.Volcanic, 6, -2.0f)))); // Better attack damage
+
+    public static final RegistryObject<Item> VOLCANIC_PICKAXE = ITEMS.register("volcanic_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.Volcanic, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.Volcanic, 3, -2.3f)))); // Better efficiency
+
+    public static final RegistryObject<Item> VOLCANIC_AXE = ITEMS.register("volcanic_axe",
+            () -> new AxeItem(ModToolTiers.Volcanic, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.Volcanic, 8, -3.0f)))); // Higher attack damage
+
+    public static final RegistryObject<Item> VOLCANIC_SHOVEL = ITEMS.register("volcanic_shovel",
+            () -> new ShovelItem(ModToolTiers.Volcanic, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.Volcanic, 2.5f, -2.5f)))); // Better attack damage and speed
+
+    public static final RegistryObject<Item> VOLCANIC_HOE = ITEMS.register("volcanic_hoe",
+            () -> new HoeItem(ModToolTiers.Volcanic, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.Volcanic, 2, -2.6f)))); // Higher attack damage
+
+
 
     // Armor
     public static final RegistryObject<Item> CELESTIAL_HELMET = ITEMS.register("celestial_helmet",
             () -> new ArmorItem(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(33))));
-
     public static final RegistryObject<Item> CELESTIAL_CHESTPLATE = ITEMS.register("celestial_chestplate",
             () -> new ArmorItem(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(33))));
-
     public static final RegistryObject<Item> CELESTIAL_LEGGINGS = ITEMS.register("celestial_leggings",
             () -> new ArmorItem(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(33))));
-
     public static final RegistryObject<Item> CELESTIAL_BOOTS = ITEMS.register("celestial_boots",
             () -> new ArmorItem(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(33))));
@@ -139,18 +159,28 @@ public class ModItems {
     public static final RegistryObject<Item> MOLTEN_HELMET = ITEMS.register("molten_helmet",
             () -> new ArmorItem(ModArmorMaterials.MOLTEN_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(37))));
-
     public static final RegistryObject<Item> MOLTEN_CHESTPLATE = ITEMS.register("molten_chestplate",
             () -> new ArmorItem(ModArmorMaterials.MOLTEN_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(37))));
-
     public static final RegistryObject<Item> MOLTEN_LEGGINGS = ITEMS.register("molten_leggings",
             () -> new ArmorItem(ModArmorMaterials.MOLTEN_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(37))));
-
     public static final RegistryObject<Item> MOLTEN_BOOTS = ITEMS.register("molten_boots",
             () -> new ArmorItem(ModArmorMaterials.MOLTEN_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(37))));
+
+    public static final RegistryObject<Item> VOLCANIC_HELMET = ITEMS.register("volcanic_helmet",
+            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(55))));
+    public static final RegistryObject<Item> VOLCANIC_CHESTPLATE = ITEMS.register("volcanic_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(55))));
+    public static final RegistryObject<Item> VOLCANIC_LEGGINGS = ITEMS.register("volcanic_leggings",
+            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(55))));
+    public static final RegistryObject<Item> VOLCANIC_BOOTS = ITEMS.register("volcanic_boots",
+            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(55))));
 
 
 

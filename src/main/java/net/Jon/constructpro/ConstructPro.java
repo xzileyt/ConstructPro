@@ -248,6 +248,13 @@ public class ConstructPro {
             event.accept(ModBlocks.STELLAR_SLATE_DEEPSLATE_BRICKS);
             event.accept(ModBlocks.STELLAR_SLATE_STONE);
             event.accept(ModBlocks.STELLAR_SLATE_STONE_BRICKS);
+            event.accept(ModBlocks.BLUE_AMETHYST);
+            event.accept(ModBlocks.GREEN_AMETHYST);
+            event.accept(ModBlocks.LIGHT_BLUE_AMETHYST);
+            event.accept(ModBlocks.ORANGE_AMETHYST);
+            event.accept(ModBlocks.PINK_AMETHYST);
+            event.accept(ModBlocks.RED_AMETHYST);
+            event.accept(ModBlocks.YELLOW_AMETHYST);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
@@ -280,6 +287,11 @@ public class ConstructPro {
             event.accept(ModItems.MOLTEN_HOE.get());
             event.accept(ModItems.MEASUREMENT_TOOL.get());
             event.accept(ModItems.TIMBER_AXE.get());
+            event.accept(ModItems.VOLCANIC_SWORD.get());
+            event.accept(ModItems.VOLCANIC_PICKAXE.get());
+            event.accept(ModItems.VOLCANIC_AXE.get());
+            event.accept(ModItems.VOLCANIC_SHOVEL.get());
+            event.accept(ModItems.VOLCANIC_HOE.get());
         }
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.CELESTIAL_HELMET.get());
@@ -290,6 +302,10 @@ public class ConstructPro {
             event.accept(ModItems.MOLTEN_CHESTPLATE.get());
             event.accept(ModItems.MOLTEN_LEGGINGS.get());
             event.accept(ModItems.MOLTEN_BOOTS.get());
+            event.accept(ModItems.VOLCANIC_HELMET.get());
+            event.accept(ModItems.VOLCANIC_CHESTPLATE.get());
+            event.accept(ModItems.VOLCANIC_LEGGINGS.get());
+            event.accept(ModItems.VOLCANIC_BOOTS.get());
         }
     }
 

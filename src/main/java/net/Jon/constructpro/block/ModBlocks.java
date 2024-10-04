@@ -611,6 +611,48 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f, 6.0f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> BLUE_AMETHYST = registerBlock("blue_amethyst",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f,9.0f)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GREEN_AMETHYST = registerBlock("green_amethyst",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f,9.0f)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_AMETHYST = registerBlock("light_blue_amethyst",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f,9.0f)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ORANGE_AMETHYST = registerBlock("orange_amethyst",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f,9.0f)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PINK_AMETHYST = registerBlock("pink_amethyst",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f,9.0f)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RED_AMETHYST = registerBlock("red_amethyst",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f,9.0f)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> YELLOW_AMETHYST = registerBlock("yellow_amethyst",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f,9.0f)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()));
+
 
     // Light Blocks
     public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp",

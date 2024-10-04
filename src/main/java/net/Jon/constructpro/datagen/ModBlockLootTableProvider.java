@@ -201,6 +201,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.STELLAR_SLATE_DEEPSLATE_BRICKS.get());
         dropSelf(ModBlocks.STELLAR_SLATE_STONE.get());
         dropSelf(ModBlocks.STELLAR_SLATE_STONE_BRICKS.get());
+        dropSelf(ModBlocks.BLUE_AMETHYST.get());
+        dropSelf(ModBlocks.GREEN_AMETHYST.get());
+        dropSelf(ModBlocks.LIGHT_BLUE_AMETHYST.get());
+        dropSelf(ModBlocks.ORANGE_AMETHYST.get());
+        dropSelf(ModBlocks.PINK_AMETHYST.get());
+        dropSelf(ModBlocks.RED_AMETHYST.get());
+        dropSelf(ModBlocks.YELLOW_AMETHYST.get());
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),

@@ -61,6 +61,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MOLTEN_AXE.get());
                         output.accept(ModItems.MOLTEN_SHOVEL.get());
                         output.accept(ModItems.MOLTEN_HOE.get());
+                        output.accept(ModItems.VOLCANIC_SWORD.get());
+                        output.accept(ModItems.VOLCANIC_PICKAXE.get());
+                        output.accept(ModItems.VOLCANIC_AXE.get());
+                        output.accept(ModItems.VOLCANIC_SHOVEL.get());
+                        output.accept(ModItems.VOLCANIC_HOE.get());
 
                         // Combat items
                         output.accept(ModItems.CELESTIAL_HELMET.get());
@@ -72,6 +77,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MOLTEN_CHESTPLATE.get());
                         output.accept(ModItems.MOLTEN_LEGGINGS.get());
                         output.accept(ModItems.MOLTEN_BOOTS.get());
+
+                        output.accept(ModItems.VOLCANIC_HELMET.get());
+                        output.accept(ModItems.VOLCANIC_CHESTPLATE.get());
+                        output.accept(ModItems.VOLCANIC_LEGGINGS.get());
+                        output.accept(ModItems.VOLCANIC_BOOTS.get());
 
 
                         // Food items
@@ -260,6 +270,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.STELLAR_SLATE_DEEPSLATE_BRICKS.get());
                         output.accept(ModBlocks.STELLAR_SLATE_STONE.get());
                         output.accept(ModBlocks.STELLAR_SLATE_STONE_BRICKS.get());
+                        output.accept(ModBlocks.BLUE_AMETHYST.get());
+                        output.accept(ModBlocks.GREEN_AMETHYST.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_AMETHYST.get());
+                        output.accept(ModBlocks.ORANGE_AMETHYST.get());
+                        output.accept(ModBlocks.PINK_AMETHYST.get());
+                        output.accept(ModBlocks.RED_AMETHYST.get());
+                        output.accept(ModBlocks.YELLOW_AMETHYST.get());
 
                     }).build());
 
