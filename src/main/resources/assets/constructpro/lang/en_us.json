@@ -16,6 +16,7 @@
   "item.constructpro.pyroclast_ingot": "Pyroclast Ingot",
   "item.constructpro.raw_solisite_ore": "Raw Solisite",
   "item.constructpro.solisite_ingot": "Solisite Ingot",
+  "item.constructpro.volcanic_scrap": "Volcanic Scrap",
   "item.constructpro.raw_volcanic_ore": "Raw Volcanic",
   "item.constructpro.volcanic_ingot": "Volcanic Ingot",
 
@@ -249,6 +250,8 @@
   "block.constructpro.pink_amethyst": "Pink Amethyst",
   "block.constructpro.red_amethyst": "Red Amethyst",
   "block.constructpro.yellow_amethyst": "Yellow Amethyst",
+  "block.constructpro.overgrown_stone": "Overgrown Stone",
+  "block.constructpro.snow_stone": "Snow Stone",
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",

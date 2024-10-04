@@ -58,6 +58,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> solisite_ingot = ITEMS.register("solisite_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> volcanic_scrap = ITEMS.register("volcanic_scrap",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> raw_volcanic_ore = ITEMS.register("raw_volcanic_ore",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> volcanic_ingot = ITEMS.register("volcanic_ingot",

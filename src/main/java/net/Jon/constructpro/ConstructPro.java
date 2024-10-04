@@ -72,6 +72,7 @@ public class ConstructPro {
             event.accept(ModItems.raw_solisite_ore);
             event.accept(ModItems.volcanic_ingot);
             event.accept(ModItems.raw_volcanic_ore);
+            event.accept(ModItems.volcanic_scrap);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.celestial_block);
@@ -255,6 +256,8 @@ public class ConstructPro {
             event.accept(ModBlocks.PINK_AMETHYST);
             event.accept(ModBlocks.RED_AMETHYST);
             event.accept(ModBlocks.YELLOW_AMETHYST);
+            event.accept(ModBlocks.OVERGROWN_STONE);
+            event.accept(ModBlocks.SNOW_STONE);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

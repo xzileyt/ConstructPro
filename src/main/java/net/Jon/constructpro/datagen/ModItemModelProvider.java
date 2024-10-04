@@ -63,6 +63,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.raw_solisite_ore.get());
         basicItem(ModItems.volcanic_ingot.get());
         basicItem(ModItems.raw_volcanic_ore.get());
+        basicItem(ModItems.volcanic_scrap.get());
 
         // Building blocks
         buttonItem(ModBlocks.LAVENDERWOOD_BUTTON, ModBlocks.lavenderwood_planks);

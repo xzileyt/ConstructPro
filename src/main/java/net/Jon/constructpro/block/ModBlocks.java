@@ -653,6 +653,16 @@ public class ModBlocks {
                     .sound(SoundType.AMETHYST)
                     .requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> OVERGROWN_STONE = registerBlock("overgrown_stone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f,9.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SNOW_STONE = registerBlock("snow_stone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f,9.0f)
+                    .requiresCorrectToolForDrops()));
+
 
     // Light Blocks
     public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp",

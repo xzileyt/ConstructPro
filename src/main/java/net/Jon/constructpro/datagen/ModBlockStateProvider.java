@@ -259,7 +259,47 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.deppslate_solisite_ore);
         blockWithItem(ModBlocks.volcanic_ore);
         blockWithItem(ModBlocks.deppslate_volcanic_ore);
+
+        // Custom blocks
+        // Overgrown Stone
+        ResourceLocation sideTexture = ResourceLocation.tryParse("constructpro:block/overgrown_stone_side");
+        ResourceLocation topTexture = ResourceLocation.tryParse("constructpro:block/overgrown_stone_top");
+        ResourceLocation bottomTexture = ResourceLocation.tryParse("constructpro:block/overgrown_stone_bottom");
+
+        simpleBlock(ModBlocks.OVERGROWN_STONE.get(),
+                models().cube("overgrown_stone",
+                        sideTexture, // Side texture (for north, south, east, west)
+                        topTexture,  // Top texture (for top)
+                        sideTexture, // East texture (same as side)
+                        sideTexture, // West texture (same as side)
+                        topTexture,  // Up texture (top texture)
+                        bottomTexture   // Down texture (top texture)
+                )
+        );
+
+
+        // Overgrown Stone
+        ResourceLocation sideTexture2 = ResourceLocation.tryParse("constructpro:block/snow_stone_side");
+        ResourceLocation topTexture2 = ResourceLocation.tryParse("constructpro:block/snow_stone_top");
+        ResourceLocation bottomTexture2 = ResourceLocation.tryParse("constructpro:block/snow_stone_bottom");
+
+        simpleBlock(ModBlocks.SNOW_STONE.get(),
+                models().cube("snow_stone",
+                        sideTexture2, // Side texture (for north, south, east, west)
+                        topTexture2,  // Top texture (for top)
+                        sideTexture2, // East texture (same as side)
+                        sideTexture2, // West texture (same as side)
+                        topTexture2,  // Up texture (top texture)
+                        bottomTexture2   // Down texture (top texture)
+                )
+        );
+
+
+
     }
+
+
+
 
     private void customLamp() {
         getVariantBuilder(ModBlocks.PURPLE_LAMP.get()).forAllStates(state -> {

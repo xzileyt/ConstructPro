@@ -208,6 +208,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.PINK_AMETHYST.get());
         dropSelf(ModBlocks.RED_AMETHYST.get());
         dropSelf(ModBlocks.YELLOW_AMETHYST.get());
+        dropSelf(ModBlocks.OVERGROWN_STONE.get());
+        dropSelf(ModBlocks.SNOW_STONE.get());
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),
@@ -255,9 +257,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.deppslate_solisite_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.deppslate_solisite_ore.get(), ModItems.raw_solisite_ore.get(), 2, 4));
         this.add(ModBlocks.volcanic_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.volcanic_ore.get(), ModItems.raw_volcanic_ore.get(), 1, 1));
+                block -> createMultipleOreDrops(ModBlocks.volcanic_ore.get(), ModItems.volcanic_scrap.get(), 1, 1));
         this.add(ModBlocks.deppslate_volcanic_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.deppslate_volcanic_ore.get(), ModItems.raw_volcanic_ore.get(), 1, 1));
+                block -> createMultipleOreDrops(ModBlocks.deppslate_volcanic_ore.get(), ModItems.volcanic_scrap.get(), 1, 1));
         this.add(ModBlocks.raw_pyroclast_block.get(),
                 block -> createMultipleOreDrops(ModBlocks.raw_pyroclast_block.get(), ModItems.raw_pyroclast_ore.get(), 1, 1));
         this.add(ModBlocks.raw_volcanic_block.get(),
