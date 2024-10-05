@@ -278,7 +278,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         );
 
 
-        // Overgrown Stone
+        // Snow Stone
         ResourceLocation sideTexture2 = ResourceLocation.tryParse("constructpro:block/snow_stone_side");
         ResourceLocation topTexture2 = ResourceLocation.tryParse("constructpro:block/snow_stone_top");
         ResourceLocation bottomTexture2 = ResourceLocation.tryParse("constructpro:block/snow_stone_bottom");
@@ -293,6 +293,25 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         bottomTexture2   // Down texture (top texture)
                 )
         );
+
+        // Snow Stone bricks
+        ResourceLocation sideTexture3 = ResourceLocation.tryParse("constructpro:block/snow_stone_bricks_side");
+        ResourceLocation topTexture3 = ResourceLocation.tryParse("constructpro:block/snow_stone_bricks_top");
+        ResourceLocation bottomTexture3 = ResourceLocation.tryParse("constructpro:block/snow_stone_bricks_bottom");
+
+        simpleBlock(ModBlocks.SNOW_STONE_BRICKS.get(),
+                models().cube("snow_stone_bricks",
+                        sideTexture3, // Side texture (for north, south, east, west)
+                        topTexture3,  // Top texture (for top)
+                        sideTexture3, // East texture (same as side)
+                        sideTexture3, // West texture (same as side)
+                        topTexture3,  // Up texture (top texture)
+                        bottomTexture3   // Down texture (top texture)
+                )
+        );
+
+
+
 
 
 

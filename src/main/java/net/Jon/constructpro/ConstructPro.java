@@ -258,6 +258,7 @@ public class ConstructPro {
             event.accept(ModBlocks.YELLOW_AMETHYST);
             event.accept(ModBlocks.OVERGROWN_STONE);
             event.accept(ModBlocks.SNOW_STONE);
+            event.accept(ModBlocks.SNOW_STONE_BRICKS);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

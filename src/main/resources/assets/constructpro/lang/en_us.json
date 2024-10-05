@@ -252,6 +252,7 @@
   "block.constructpro.yellow_amethyst": "Yellow Amethyst",
   "block.constructpro.overgrown_stone": "Overgrown Stone",
   "block.constructpro.snow_stone": "Snow Stone",
+  "block.constructpro.snow_stone_bricks": "Snow Stone Bricks",
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",

@@ -280,6 +280,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.YELLOW_AMETHYST.get());
                         output.accept(ModBlocks.OVERGROWN_STONE.get());
                         output.accept(ModBlocks.SNOW_STONE.get());
+                        output.accept(ModBlocks.SNOW_STONE_BRICKS.get());
 
                     }).build());
 

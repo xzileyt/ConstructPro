@@ -663,6 +663,11 @@ public class ModBlocks {
                     .strength(3.0f,9.0f)
                     .requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> SNOW_STONE_BRICKS = registerBlock("snow_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.0f,9.0f)
+                    .requiresCorrectToolForDrops()));
+
 
     // Light Blocks
     public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp",

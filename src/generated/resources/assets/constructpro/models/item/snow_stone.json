@@ -1,3 +1,11 @@
 {
-  "parent": "constructpro:block/snow_stone"
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "constructpro:block/snow_stone_bottom",
+    "east": "constructpro:block/snow_stone_side",
+    "north": "constructpro:block/snow_stone_side",
+    "south": "constructpro:block/snow_stone_side",
+    "up": "constructpro:block/snow_stone_top",
+    "west": "constructpro:block/snow_stone_side"
+  }
 }
