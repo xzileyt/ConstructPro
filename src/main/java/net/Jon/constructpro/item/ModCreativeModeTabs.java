@@ -305,6 +305,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PURPLE_BRICKS.get());
                         output.accept(ModBlocks.RED_BRICKS.get());
                         output.accept(ModBlocks.YELLOW_BRICKS.get());
+                        output.accept(ModBlocks.GILDED_STONE.get());
+                        output.accept(ModBlocks.GILDED_STONE_BRICKS.get());
 
                     }).build());
 

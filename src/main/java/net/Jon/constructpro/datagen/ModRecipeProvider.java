@@ -31,6 +31,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> PYROCLAST_SMELTABLES = List.of(ModItems.raw_pyroclast_ore.get());
         List<ItemLike> SOLISITE_SMELTABLES = List.of(ModItems.raw_solisite_ore.get());
         List<ItemLike> VOLCANIC_SMELTABLES = List.of(ModItems.raw_volcanic_ore.get());
+        List<ItemLike> VOLCANIC_SCRAP_SMELTABLES = List.of(ModItems.volcanic_scrap.get());
+
 
         // Blocks
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.COPPER_ANDESITE.get())
@@ -466,6 +468,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pRecipeOutput);
 
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GILDED_STONE.get())
+                .requires(Blocks.STONE)
+                .requires(Items.GOLD_INGOT)
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
+                .save(pRecipeOutput);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GILDED_STONE_BRICKS.get())
+                .requires(Blocks.STONE_BRICKS)
+                .requires(Items.GOLD_INGOT)
+                .unlockedBy("has_stone_bricks", has(Blocks.STONE_BRICKS))
+                .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
+                .save(pRecipeOutput);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BRICKS_WHITE_GROUT.get())
+                .requires(Blocks.BRICKS)
+                .requires(Items.WHITE_DYE)
+                .unlockedBy("has_bricks", has(Blocks.BRICKS))
+                .unlockedBy("has_white_dye", has(Items.WHITE_DYE))
+                .save(pRecipeOutput);
+
+
+        // Ore items
+        // Volcanic ingot craft
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.volcanic_ingot.get())
+                .pattern("SBS")
+                .pattern("SDS")
+                .pattern("SBS")
+                .define('S', ModItems.volcanic_scrap.get()) // Volcanic Scrap
+                .define('B', Items.BLAZE_POWDER) // Blaze Powder
+                .define('D', Items.DIAMOND) // Diamond
+                .unlockedBy(getHasName(ModItems.volcanic_scrap.get()), has(ModItems.volcanic_scrap.get()))
+                .save(pRecipeOutput, "volcanic_ingot"); // Recipe name
 
         // Ore blocks
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.celestial_block.get())
@@ -632,8 +669,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pRecipeOutput, SOLISITE_SMELTABLES, RecipeCategory.MISC, ModItems.solisite_ingot.get(), 0.25f,200,"solisite");
         oreBlasting(pRecipeOutput, SOLISITE_SMELTABLES, RecipeCategory.MISC, ModItems.solisite_ingot.get(), 0.25f,100,"solisite");
 
-        oreSmelting(pRecipeOutput, VOLCANIC_SMELTABLES, RecipeCategory.MISC, ModItems.volcanic_ingot.get(), 0.25f,200,"volcanic");
-        oreBlasting(pRecipeOutput, VOLCANIC_SMELTABLES, RecipeCategory.MISC, ModItems.volcanic_ingot.get(), 0.25f,100,"volcanic");
+        oreSmelting(pRecipeOutput, VOLCANIC_SMELTABLES, RecipeCategory.MISC, ModItems.volcanic_scrap.get(), 0.25f,200,"volcanic");
+        oreBlasting(pRecipeOutput, VOLCANIC_SMELTABLES, RecipeCategory.MISC, ModItems.volcanic_scrap.get(), 0.25f,100,"volcanic");
+
+        oreSmelting(pRecipeOutput, VOLCANIC_SCRAP_SMELTABLES, RecipeCategory.MISC, ModItems.raw_volcanic_ore.get(), 0.25f, 200, "volcanic_scrap");
+        oreBlasting(pRecipeOutput, VOLCANIC_SCRAP_SMELTABLES, RecipeCategory.MISC, ModItems.raw_volcanic_ore.get(), 0.25f, 200, "volcanic_scrap");
 
         // Wood blocks
         stairBuilder(ModBlocks.LAVENDER_STAIRS.get(), Ingredient.of(ModBlocks.lavenderwood_planks.get())).group("lavender")
@@ -748,12 +788,143 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.moonwood_TRAPDOOR.get(), Ingredient.of(ModBlocks.moonwood_planks.get())).group("moonwood")
                 .unlockedBy(getHasName(ModBlocks.moonwood_planks.get()), has(ModBlocks.moonwood_planks.get())).save(pRecipeOutput);
 
+        // Armor
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CELESTIAL_HELMET.get())
+                .pattern("MMM")
+                .pattern("M M")  // Use 3 spaces for consistency
+                .pattern("   ")  // Empty row still needs 3 spaces
+                .define('M', ModItems.CELESTIAL.get())
+                .unlockedBy("has_celestial", has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CELESTIAL_CHESTPLATE.get())
+                .pattern("M M")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', ModItems.CELESTIAL.get())
+                .unlockedBy("has_celestial", has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CELESTIAL_LEGGINGS.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("M M")
+                .define('M', ModItems.CELESTIAL.get())
+                .unlockedBy("has_celestial", has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CELESTIAL_BOOTS.get())
+                .pattern("M M")
+                .pattern("M M")
+                .pattern("   ")  // 3 spaces for the empty row
+                .define('M', ModItems.CELESTIAL.get())
+                .unlockedBy("has_celestial", has(ModItems.CELESTIAL.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FOSSILIZED_AMBER_HELMET.get())
+                .pattern("MMM")
+                .pattern("M M")  // Use 3 spaces for consistency
+                .pattern("   ")  // Empty row still needs 3 spaces
+                .define('M', ModItems.FossilizedAmber.get())
+                .unlockedBy("has_fossilized_amber", has(ModItems.FossilizedAmber.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FOSSILIZED_AMBER_CHESTPLATE.get())
+                .pattern("M M")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', ModItems.FossilizedAmber.get())
+                .unlockedBy("has_fossilized_amber", has(ModItems.FossilizedAmber.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FOSSILIZED_AMBER_LEGGINGS.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("M M")
+                .define('M', ModItems.FossilizedAmber.get())
+                .unlockedBy("has_fossilized_amber", has(ModItems.FossilizedAmber.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FOSSILIZED_AMBER_BOOTS.get())
+                .pattern("M M")
+                .pattern("M M")
+                .pattern("   ")  // 3 spaces for the empty row
+                .define('M', ModItems.FossilizedAmber.get())
+                .unlockedBy("has_fossilized_amber", has(ModItems.FossilizedAmber.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MOLTEN_HELMET.get())
+                .pattern("MMM")
+                .pattern("M M")  // Use 3 spaces for consistency
+                .pattern("   ")  // Empty row still needs 3 spaces
+                .define('M', ModItems.Molten.get())
+                .unlockedBy("has_molten", has(ModItems.Molten.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MOLTEN_CHESTPLATE.get())
+                .pattern("M M")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', ModItems.Molten.get())
+                .unlockedBy("has_molten", has(ModItems.Molten.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MOLTEN_LEGGINGS.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("M M")
+                .define('M', ModItems.Molten.get())
+                .unlockedBy("has_molten", has(ModItems.Molten.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MOLTEN_BOOTS.get())
+                .pattern("M M")
+                .pattern("M M")
+                .pattern("   ")  // 3 spaces for the empty row
+                .define('M', ModItems.Molten.get())
+                .unlockedBy("has_molten", has(ModItems.Molten.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.VOLCANIC_HELMET.get())
+                .pattern("MMM")
+                .pattern("M M")  // Use 3 spaces for consistency
+                .pattern("   ")  // Empty row still needs 3 spaces
+                .define('M', ModItems.volcanic_ingot.get())
+                .unlockedBy("has_volcanic_ingot", has(ModItems.volcanic_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.VOLCANIC_CHESTPLATE.get())
+                .pattern("M M")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', ModItems.volcanic_ingot.get())
+                .unlockedBy("has_volcanic_ingot", has(ModItems.volcanic_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.VOLCANIC_LEGGINGS.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("M M")
+                .define('M', ModItems.volcanic_ingot.get())
+                .unlockedBy("has_volcanic_ingot", has(ModItems.volcanic_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.VOLCANIC_BOOTS.get())
+                .pattern("M M")
+                .pattern("M M")
+                .pattern("   ")  // 3 spaces for the empty row
+                .define('M', ModItems.volcanic_ingot.get())
+                .unlockedBy("has_volcanic_ingot", has(ModItems.volcanic_ingot.get()))
+                .save(pRecipeOutput);
+
+
+
         // Tools
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIAL_PICKAXE.get())
                 .pattern("MMM")
                 .pattern(" S ")
                 .pattern(" S ")
-                .define('M', ModItems.CELESTIAL.get()) // Replace with your desired material
+                .define('M', ModItems.CELESTIAL.get())
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
                 .save(pRecipeOutput);
@@ -762,7 +933,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("MM ")
                 .pattern("MS ")
                 .pattern(" S ")
-                .define('M', ModItems.CELESTIAL.get()) // Replace with your desired material
+                .define('M', ModItems.CELESTIAL.get())
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.CELESTIAL.get()), has(ModItems.CELESTIAL.get()))
                 .save(pRecipeOutput);

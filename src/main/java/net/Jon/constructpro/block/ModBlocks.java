@@ -783,6 +783,18 @@ public class ModBlocks {
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> GILDED_STONE = registerBlock("gilded_stone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 8.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GILDED_STONE_BRICKS = registerBlock("gilded_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.5f, 9.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
 
     // Light Blocks
     public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp",

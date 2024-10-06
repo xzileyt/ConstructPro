@@ -277,6 +277,8 @@
   "block.constructpro.purple_bricks": "Purple Bricks",
   "block.constructpro.red_bricks": "Red Bricks",
   "block.constructpro.yellow_bricks": "Yellow Bricks",
+  "block.constructpro.gilded_stone": "Gilded Stone",
+  "block.constructpro.gilded_stone_bricks": "Gilded Stone Bricks",
 
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",

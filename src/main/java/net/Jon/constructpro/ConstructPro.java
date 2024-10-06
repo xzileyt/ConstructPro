@@ -278,6 +278,8 @@ public class ConstructPro {
             event.accept(ModBlocks.PURPLE_BRICKS);
             event.accept(ModBlocks.RED_BRICKS);
             event.accept(ModBlocks.YELLOW_BRICKS);
+            event.accept(ModBlocks.GILDED_STONE);
+            event.accept(ModBlocks.GILDED_STONE_BRICKS);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

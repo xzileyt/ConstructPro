@@ -255,6 +255,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PURPLE_BRICKS);
         blockWithItem(ModBlocks.RED_BRICKS);
         blockWithItem(ModBlocks.YELLOW_BRICKS);
+        blockWithItem(ModBlocks.GILDED_STONE);
+        blockWithItem(ModBlocks.GILDED_STONE_BRICKS);
 
         // Ores
         blockWithItem(ModBlocks.celestial_ore);
