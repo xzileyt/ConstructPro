@@ -263,7 +263,15 @@
   "block.constructpro.plaster_block": "Plaster Block",
   "block.constructpro.plaster_bricks": "Plaster Bricks",
   "block.constructpro.bricks_white_grout": "Bricks White Grout",
-
+  "block.constructpro.blue_bricks": "Blue Bricks",
+  "block.constructpro.green_bricks": "Green Bricks",
+  "block.constructpro.light_blue_bricks": "Light Blue Bricks",
+  "block.constructpro.lime_green_bricks": "Lime Green Bricks",
+  "block.constructpro.orange_bricks": "Orange Bricks",
+  "block.constructpro.pink_bricks": "Pink Bricks",
+  "block.constructpro.purple_bricks": "Purple Bricks",
+  "block.constructpro.red_bricks": "Red Bricks",
+  "block.constructpro.yellow_bricks": "Yellow Bricks",
 
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",

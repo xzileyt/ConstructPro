@@ -291,7 +291,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PLASTER_BLOCK.get());
                         output.accept(ModBlocks.PLASTER_BRICKS.get());
                         output.accept(ModBlocks.BRICKS_WHITE_GROUT.get());
-
+                        output.accept(ModBlocks.BLUE_BRICKS.get());
+                        output.accept(ModBlocks.GREEN_BRICKS.get());
+                        output.accept(ModBlocks.LIGHT_BLUE_BRICKS.get());
+                        output.accept(ModBlocks.LIME_GREEN_BRICKS.get());
+                        output.accept(ModBlocks.ORANGE_BRICKS.get());
+                        output.accept(ModBlocks.PINK_BRICKS.get());
+                        output.accept(ModBlocks.PURPLE_BRICKS.get());
+                        output.accept(ModBlocks.RED_BRICKS.get());
+                        output.accept(ModBlocks.YELLOW_BRICKS.get());
 
                     }).build());
 

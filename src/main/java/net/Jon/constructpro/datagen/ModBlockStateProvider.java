@@ -246,7 +246,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PLASTER_BLOCK);
         blockWithItem(ModBlocks.PLASTER_BRICKS);
         blockWithItem(ModBlocks.BRICKS_WHITE_GROUT);
-
+        blockWithItem(ModBlocks.BLUE_BRICKS);
+        blockWithItem(ModBlocks.GREEN_BRICKS);
+        blockWithItem(ModBlocks.LIGHT_BLUE_BRICKS);
+        blockWithItem(ModBlocks.LIME_GREEN_BRICKS);
+        blockWithItem(ModBlocks.ORANGE_BRICKS);
+        blockWithItem(ModBlocks.PINK_BRICKS);
+        blockWithItem(ModBlocks.PURPLE_BRICKS);
+        blockWithItem(ModBlocks.RED_BRICKS);
+        blockWithItem(ModBlocks.YELLOW_BRICKS);
 
         // Ores
         blockWithItem(ModBlocks.celestial_ore);

@@ -269,6 +269,15 @@ public class ConstructPro {
             event.accept(ModBlocks.PLASTER_BLOCK);
             event.accept(ModBlocks.PLASTER_BRICKS);
             event.accept(ModBlocks.BRICKS_WHITE_GROUT);
+            event.accept(ModBlocks.BLUE_BRICKS);
+            event.accept(ModBlocks.GREEN_BRICKS);
+            event.accept(ModBlocks.LIGHT_BLUE_BRICKS);
+            event.accept(ModBlocks.LIME_GREEN_BRICKS);
+            event.accept(ModBlocks.ORANGE_BRICKS);
+            event.accept(ModBlocks.PINK_BRICKS);
+            event.accept(ModBlocks.PURPLE_BRICKS);
+            event.accept(ModBlocks.RED_BRICKS);
+            event.accept(ModBlocks.YELLOW_BRICKS);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
