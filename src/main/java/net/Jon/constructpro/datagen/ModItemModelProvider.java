@@ -134,6 +134,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ETERNAL_STEAK.get());
 
         // Armor
+        trimmedArmorItem(ModItems.FOSSILIZED_AMBER_HELMET);
+        trimmedArmorItem(ModItems.FOSSILIZED_AMBER_CHESTPLATE);
+        trimmedArmorItem(ModItems.FOSSILIZED_AMBER_LEGGINGS);
+        trimmedArmorItem(ModItems.FOSSILIZED_AMBER_BOOTS);
+
         trimmedArmorItem(ModItems.CELESTIAL_HELMET);
         trimmedArmorItem(ModItems.CELESTIAL_CHESTPLATE);
         trimmedArmorItem(ModItems.CELESTIAL_LEGGINGS);

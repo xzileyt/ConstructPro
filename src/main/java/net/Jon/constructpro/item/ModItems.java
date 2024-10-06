@@ -147,6 +147,19 @@ public class ModItems {
 
 
     // Armor
+    public static final RegistryObject<Item> FOSSILIZED_AMBER_HELMET = ITEMS.register("fossilized_amber_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.FOSSILIZED_AMBER_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(20))));
+    public static final RegistryObject<Item> FOSSILIZED_AMBER_CHESTPLATE = ITEMS.register("fossilized_amber_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.FOSSILIZED_AMBER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(20))));
+    public static final RegistryObject<Item> FOSSILIZED_AMBER_LEGGINGS = ITEMS.register("fossilized_amber_leggings",
+            () -> new ArmorItem(ModArmorMaterials.FOSSILIZED_AMBER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(20))));
+    public static final RegistryObject<Item> FOSSILIZED_AMBER_BOOTS = ITEMS.register("fossilized_amber_boots",
+            () -> new ArmorItem(ModArmorMaterials.FOSSILIZED_AMBER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(20))));
+
     public static final RegistryObject<Item> CELESTIAL_HELMET = ITEMS.register("celestial_helmet",
             () -> new ModArmorItem(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(33))));

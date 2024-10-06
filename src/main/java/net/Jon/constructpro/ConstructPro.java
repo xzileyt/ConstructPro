@@ -329,6 +329,10 @@ public class ConstructPro {
             event.accept(ModItems.VOLCANIC_CHESTPLATE.get());
             event.accept(ModItems.VOLCANIC_LEGGINGS.get());
             event.accept(ModItems.VOLCANIC_BOOTS.get());
+            event.accept(ModItems.FOSSILIZED_AMBER_HELMET.get());
+            event.accept(ModItems.FOSSILIZED_AMBER_CHESTPLATE.get());
+            event.accept(ModItems.FOSSILIZED_AMBER_LEGGINGS.get());
+            event.accept(ModItems.FOSSILIZED_AMBER_BOOTS.get());
         }
     }
 

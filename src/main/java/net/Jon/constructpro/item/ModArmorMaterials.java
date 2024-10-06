@@ -19,6 +19,15 @@ import java.util.function.Supplier;
 
 public class ModArmorMaterials {
     // Armors
+    public static final Holder<ArmorMaterial> FOSSILIZED_AMBER_ARMOR_MATERIAL = register("fossilized_amber", Util.make(new EnumMap<>(ArmorItem.Type.class),
+            attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 3);
+                attribute.put(ArmorItem.Type.LEGGINGS, 8);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 7);
+                attribute.put(ArmorItem.Type.HELMET, 5);
+                attribute.put(ArmorItem.Type.BODY, 15);
+            }), 9, 0f, 0.0f, () -> ModItems.FossilizedAmber.get());
+
     public static final Holder<ArmorMaterial> CELESTIAL_ARMOR_MATERIAL = register("celestial", Util.make(new EnumMap<>(ArmorItem.Type.class),
             attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS, 5);

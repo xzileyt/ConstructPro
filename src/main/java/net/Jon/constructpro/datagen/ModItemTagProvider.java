@@ -34,6 +34,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.VOLCANIC_HELMET.get())
                 .add(ModItems.VOLCANIC_CHESTPLATE.get())
                 .add(ModItems.VOLCANIC_LEGGINGS.get())
-                .add(ModItems.VOLCANIC_BOOTS.get());
+                .add(ModItems.VOLCANIC_BOOTS.get())
+                .add(ModItems.FOSSILIZED_AMBER_HELMET.get())
+                .add(ModItems.FOSSILIZED_AMBER_CHESTPLATE.get())
+                .add(ModItems.FOSSILIZED_AMBER_LEGGINGS.get())
+                .add(ModItems.FOSSILIZED_AMBER_BOOTS.get());
     }
 }

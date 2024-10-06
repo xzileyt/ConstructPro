@@ -69,6 +69,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.VOLCANIC_HOE.get());
 
                         // Combat items
+                        output.accept(ModItems.FOSSILIZED_AMBER_HELMET.get());
+                        output.accept(ModItems.FOSSILIZED_AMBER_CHESTPLATE.get());
+                        output.accept(ModItems.FOSSILIZED_AMBER_LEGGINGS.get());
+                        output.accept(ModItems.FOSSILIZED_AMBER_BOOTS.get());
+
                         output.accept(ModItems.CELESTIAL_HELMET.get());
                         output.accept(ModItems.CELESTIAL_CHESTPLATE.get());
                         output.accept(ModItems.CELESTIAL_LEGGINGS.get());
