@@ -1,6 +1,7 @@
 package net.Jon.constructpro.item;
 
 import net.Jon.constructpro.ConstructPro;
+import net.Jon.constructpro.block.ModBlocks;
 import net.Jon.constructpro.item.custom.*;
 import net.Jon.constructpro.util.ModTags;
 import net.minecraft.network.chat.Component;
@@ -84,6 +85,7 @@ public class ModItems {
 
 
 
+
     // Celestial tools
     public static final RegistryObject<Item> CELESTIAL_SWORD = ITEMS.register("celestial_sword",
             () -> new SwordItem(ModToolTiers.CELESTIAL, new Item.Properties()
@@ -146,7 +148,7 @@ public class ModItems {
 
     // Armor
     public static final RegistryObject<Item> CELESTIAL_HELMET = ITEMS.register("celestial_helmet",
-            () -> new ArmorItem(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(33))));
     public static final RegistryObject<Item> CELESTIAL_CHESTPLATE = ITEMS.register("celestial_chestplate",
             () -> new ArmorItem(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
@@ -159,7 +161,7 @@ public class ModItems {
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(33))));
 
     public static final RegistryObject<Item> MOLTEN_HELMET = ITEMS.register("molten_helmet",
-            () -> new ArmorItem(ModArmorMaterials.MOLTEN_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.MOLTEN_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(37))));
     public static final RegistryObject<Item> MOLTEN_CHESTPLATE = ITEMS.register("molten_chestplate",
             () -> new ArmorItem(ModArmorMaterials.MOLTEN_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
@@ -172,7 +174,7 @@ public class ModItems {
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(37))));
 
     public static final RegistryObject<Item> VOLCANIC_HELMET = ITEMS.register("volcanic_helmet",
-            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(55))));
     public static final RegistryObject<Item> VOLCANIC_CHESTPLATE = ITEMS.register("volcanic_chestplate",
             () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,

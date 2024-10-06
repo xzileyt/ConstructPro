@@ -259,6 +259,16 @@ public class ConstructPro {
             event.accept(ModBlocks.OVERGROWN_STONE);
             event.accept(ModBlocks.SNOW_STONE);
             event.accept(ModBlocks.SNOW_STONE_BRICKS);
+            event.accept(ModBlocks.LIMESTONE);
+            event.accept(ModBlocks.LIMESTONE_ANDESITE);
+            event.accept(ModBlocks.LIMESTONE_BRICKS);
+            event.accept(ModBlocks.LIMESTONE_COBBLED);
+            event.accept(ModBlocks.LIMESTONE_POLISHED_ANDESITE);
+            event.accept(ModBlocks.MULCH_DIRT);
+            event.accept(ModBlocks.ROCKY_MOSS);
+            event.accept(ModBlocks.PLASTER_BLOCK);
+            event.accept(ModBlocks.PLASTER_BRICKS);
+            event.accept(ModBlocks.BRICKS_WHITE_GROUT);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

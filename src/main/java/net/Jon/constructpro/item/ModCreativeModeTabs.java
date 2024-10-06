@@ -281,6 +281,17 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OVERGROWN_STONE.get());
                         output.accept(ModBlocks.SNOW_STONE.get());
                         output.accept(ModBlocks.SNOW_STONE_BRICKS.get());
+                        output.accept(ModBlocks.LIMESTONE.get());
+                        output.accept(ModBlocks.LIMESTONE_ANDESITE.get());
+                        output.accept(ModBlocks.LIMESTONE_BRICKS.get());
+                        output.accept(ModBlocks.LIMESTONE_COBBLED.get());
+                        output.accept(ModBlocks.LIMESTONE_POLISHED_ANDESITE.get());
+                        output.accept(ModBlocks.MULCH_DIRT.get());
+                        output.accept(ModBlocks.ROCKY_MOSS.get());
+                        output.accept(ModBlocks.PLASTER_BLOCK.get());
+                        output.accept(ModBlocks.PLASTER_BRICKS.get());
+                        output.accept(ModBlocks.BRICKS_WHITE_GROUT.get());
+
 
                     }).build());
 

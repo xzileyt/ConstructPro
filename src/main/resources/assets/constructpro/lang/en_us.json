@@ -253,6 +253,18 @@
   "block.constructpro.overgrown_stone": "Overgrown Stone",
   "block.constructpro.snow_stone": "Snow Stone",
   "block.constructpro.snow_stone_bricks": "Snow Stone Bricks",
+  "block.constructpro.limestone": "Limestone",
+  "block.constructpro.limestone_andesite": "Limestone Andesite",
+  "block.constructpro.limestone_bricks": "Limestone Bricks",
+  "block.constructpro.limestone_cobbled": "Limestone Cobbled",
+  "block.constructpro.limestone_polished_andesite": "Limestone Polished Andesite",
+  "block.constructpro.mulch_dirt": "Mulch Dirt",
+  "block.constructpro.rocky_moss": "Rocky Moss",
+  "block.constructpro.plaster_block": "Plaster Block",
+  "block.constructpro.plaster_bricks": "Plaster Bricks",
+  "block.constructpro.bricks_white_grout": "Bricks White Grout",
+
+
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",

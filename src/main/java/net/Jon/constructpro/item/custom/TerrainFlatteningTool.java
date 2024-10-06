@@ -25,7 +25,7 @@ public class TerrainFlatteningTool extends Item {
 
         if (player != null && !level.isClientSide()) {
             // Message to player
-            player.sendSystemMessage(Component.translatable("Used Terrain Flattening Tool!"));
+
 
             // Define flattening area radius (e.g., 3x3 area)
             int radius = 2; // Radius of 1 creates a 3x3 area

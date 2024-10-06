@@ -211,6 +211,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.OVERGROWN_STONE.get());
         dropSelf(ModBlocks.SNOW_STONE.get());
         dropSelf(ModBlocks.SNOW_STONE_BRICKS.get());
+        dropSelf(ModBlocks.LIMESTONE.get());
+        dropSelf(ModBlocks.LIMESTONE_ANDESITE.get());
+        dropSelf(ModBlocks.LIMESTONE_BRICKS.get());
+        dropSelf(ModBlocks.LIMESTONE_COBBLED.get());
+        dropSelf(ModBlocks.LIMESTONE_POLISHED_ANDESITE.get());
+        dropSelf(ModBlocks.MULCH_DIRT.get());
+        dropSelf(ModBlocks.ROCKY_MOSS.get());
+        dropSelf(ModBlocks.PLASTER_BLOCK.get());
+        dropSelf(ModBlocks.PLASTER_BRICKS.get());
+        dropSelf(ModBlocks.BRICKS_WHITE_GROUT.get());
+
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),

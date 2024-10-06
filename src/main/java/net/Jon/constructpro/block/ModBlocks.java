@@ -3,6 +3,7 @@ package net.Jon.constructpro.block;
 import net.Jon.constructpro.ConstructPro;
 import net.Jon.constructpro.block.custom.PurpleLampBlock;
 import net.Jon.constructpro.item.ModItems;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -668,6 +669,66 @@ public class ModBlocks {
                     .strength(3.0f,9.0f)
                     .requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> LIMESTONE = registerBlock("limestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LIMESTONE_ANDESITE = registerBlock("limestone_andesite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LIMESTONE_BRICKS = registerBlock("limestone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LIMESTONE_COBBLED = registerBlock("limestone_cobbled",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> LIMESTONE_POLISHED_ANDESITE = registerBlock("limestone_polished_andesite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MULCH_DIRT = registerBlock("mulch_dirt",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.5f,0.5f)
+                    .sound(SoundType.ROOTED_DIRT)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ROCKY_MOSS = registerBlock("rocky_moss",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.0f, 4.0f)
+                    .sound(SoundType.MOSS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PLASTER_BLOCK = registerBlock("plaster_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.8f, 1.5f)
+                    .sound(SoundType.CALCITE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PLASTER_BRICKS = registerBlock("plaster_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.2f, 3.0f)
+                    .sound(SoundType.CALCITE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> BRICKS_WHITE_GROUT = registerBlock("bricks_white_grout",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
 
     // Light Blocks
     public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp",
@@ -757,6 +818,7 @@ public class ModBlocks {
                     .lightLevel(state -> 15)
                     .noOcclusion()
                     .sound(SoundType.GLASS)));
+
 
 
 
