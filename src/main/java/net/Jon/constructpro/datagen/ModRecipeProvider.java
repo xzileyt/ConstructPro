@@ -500,6 +500,76 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
                 .save(pRecipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_MUSHROOM_BLOCK.get())
+                .requires(Blocks.RED_MUSHROOM_BLOCK)
+                .requires(Items.BLUE_DYE)
+                .unlockedBy("has_red_mushroom_block", has(Blocks.RED_MUSHROOM_BLOCK))
+                .unlockedBy("has_blue_dye", has(Items.BLUE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_MUSHROOM_BLOCK.get())
+                .requires(Blocks.RED_MUSHROOM_BLOCK)
+                .requires(Items.BROWN_DYE)
+                .unlockedBy("has_red_mushroom_block", has(Blocks.RED_MUSHROOM_BLOCK))
+                .unlockedBy("has_brown_dye", has(Items.BROWN_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_MUSHROOM_BLOCK.get())
+                .requires(Blocks.RED_MUSHROOM_BLOCK)
+                .requires(Items.CYAN_DYE)
+                .unlockedBy("has_red_mushroom_block", has(Blocks.RED_MUSHROOM_BLOCK))
+                .unlockedBy("has_cyan_dye", has(Items.CYAN_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_MUSHROOM_BLOCK.get())
+                .requires(Blocks.RED_MUSHROOM_BLOCK)
+                .requires(Items.GREEN_DYE)
+                .unlockedBy("has_red_mushroom_block", has(Blocks.RED_MUSHROOM_BLOCK))
+                .unlockedBy("has_green_dye", has(Items.GREEN_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_MUSHROOM_BLOCK.get())
+                .requires(Blocks.RED_MUSHROOM_BLOCK)
+                .requires(Items.LIGHT_BLUE_DYE)
+                .unlockedBy("has_red_mushroom_block", has(Blocks.RED_MUSHROOM_BLOCK))
+                .unlockedBy("has_light_blue_dye", has(Items.LIGHT_BLUE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_MUSHROOM_BLOCK.get())
+                .requires(Blocks.RED_MUSHROOM_BLOCK)
+                .requires(Items.LIME_DYE)
+                .unlockedBy("has_red_mushroom_block", has(Blocks.RED_MUSHROOM_BLOCK))
+                .unlockedBy("has_lime_dye", has(Items.LIME_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_MUSHROOM_BLOCK.get())
+                .requires(Blocks.RED_MUSHROOM_BLOCK)
+                .requires(Items.ORANGE_DYE)
+                .unlockedBy("has_red_mushroom_block", has(Blocks.RED_MUSHROOM_BLOCK))
+                .unlockedBy("has_orange_dye", has(Items.ORANGE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_MUSHROOM_BLOCK.get())
+                .requires(Blocks.RED_MUSHROOM_BLOCK)
+                .requires(Items.PINK_DYE)
+                .unlockedBy("has_red_mushroom_block", has(Blocks.RED_MUSHROOM_BLOCK))
+            .unlockedBy("has_pink_dye", has(Items.PINK_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_MUSHROOM_BLOCK.get())
+                .requires(Blocks.RED_MUSHROOM_BLOCK)
+                .requires(Items.PURPLE_DYE)
+                .unlockedBy("has_red_mushroom_block", has(Blocks.RED_MUSHROOM_BLOCK))
+                .unlockedBy("has_purple_dye", has(Items.PURPLE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_MUSHROOM_BLOCK.get())
+                .requires(Blocks.RED_MUSHROOM_BLOCK)
+                .requires(Items.YELLOW_DYE)
+                .unlockedBy("has_red_mushroom_block", has(Blocks.RED_MUSHROOM_BLOCK))
+                .unlockedBy("has_yellow_dye", has(Items.YELLOW_DYE))
+                .save(pRecipeOutput);
+
 
         // Ore items
         // Volcanic ingot craft

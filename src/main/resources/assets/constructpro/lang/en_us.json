@@ -1,5 +1,4 @@
 {
-  "item.constructpro.starlite": "starlite",
   "item.constructpro.crimsonquartz": "Crimson Quartz",
   "item.constructpro.fossilizedamber": "Fossilized Amber",
   "item.constructpro.celestial": "Celestial Diamond",
@@ -19,7 +18,7 @@
   "item.constructpro.volcanic_scrap": "Volcanic Scrap",
   "item.constructpro.raw_volcanic_ore": "Raw Volcanic",
   "item.constructpro.volcanic_ingot": "Volcanic Ingot",
-  "item.constructpro.starlite_ore": "Starlite ore",
+  "item.constructpro.starlite": "Starlite",
 
 
   "item.constructpro.chisel": "Chisel",

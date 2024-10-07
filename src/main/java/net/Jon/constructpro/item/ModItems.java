@@ -25,8 +25,6 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, ConstructPro.MOD_ID);
 
     // Ore
-    public static final RegistryObject<Item> starlite = ITEMS.register("starlite",
-            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CrimsonQuartz = ITEMS.register("crimsonquartz",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FossilizedAmber = ITEMS.register("fossilizedamber",
@@ -65,7 +63,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> volcanic_ingot = ITEMS.register("volcanic_ingot",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> STARLITE_ORE = ITEMS.register("starlite_ore",
+    public static final RegistryObject<Item> STARLITE = ITEMS.register("starlite",
             () -> new Item(new Item.Properties()));
 
     // Tools

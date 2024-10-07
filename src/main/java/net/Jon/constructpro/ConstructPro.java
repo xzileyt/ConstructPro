@@ -53,7 +53,6 @@ public class ConstructPro {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         // Add items to creative tabs
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.starlite);
             event.accept(ModItems.CrimsonQuartz);
             event.accept(ModItems.FossilizedAmber);
             event.accept(ModItems.CELESTIAL);
@@ -73,7 +72,7 @@ public class ConstructPro {
             event.accept(ModItems.volcanic_ingot);
             event.accept(ModItems.raw_volcanic_ore);
             event.accept(ModItems.volcanic_scrap);
-            event.accept(ModItems.STARLITE_ORE);
+            event.accept(ModItems.STARLITE);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.celestial_block);

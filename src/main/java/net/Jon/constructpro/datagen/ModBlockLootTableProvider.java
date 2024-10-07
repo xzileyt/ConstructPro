@@ -247,9 +247,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.molten_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.molten_ore.get(), ModItems.Molten.get(), 1, 2));
         this.add(ModBlocks.starlite_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.starlite_ore.get(), ModItems.starlite.get(), 1, 2));
+                block -> createMultipleOreDrops(ModBlocks.starlite_ore.get(), ModItems.STARLITE.get(), 1, 2));
         this.add(ModBlocks.starlite_deepslate_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.starlite_deepslate_ore.get(), ModItems.starlite.get(), 1, 2));
+                block -> createMultipleOreDrops(ModBlocks.starlite_deepslate_ore.get(), ModItems.STARLITE.get(), 1, 2));
         this.add(ModBlocks.raw_mithril_block.get(),
                 block -> createMultipleOreDrops(ModBlocks.raw_mithril_block.get(), ModItems.raw_mithril_ore.get(), 1, 1));
         this.add(ModBlocks.mithril_ore.get(),

@@ -20,7 +20,7 @@ public class ModToolTiers {
             ModTags.Blocks.INCORRECT_FOR_VOLCANIC_TOOL);
 
     public static final Tier STARLITE = new ForgeTier(1700,4.5f,3.5f,20,
-            ModTags.Blocks.NEEDS_STARLITE_TOOL, () -> Ingredient.of(ModItems.starlite.get()),
+            ModTags.Blocks.NEEDS_STARLITE_TOOL, () -> Ingredient.of(ModItems.STARLITE.get()),
             ModTags.Blocks.INCORRECT_FOR_STARLITE_TOOL);
 
 }

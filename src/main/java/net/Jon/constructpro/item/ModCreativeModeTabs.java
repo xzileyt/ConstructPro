@@ -24,7 +24,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CrimsonQuartz.get());
                         output.accept(ModItems.Molten.get());
                         output.accept(ModItems.FossilizedAmber.get());
-                        output.accept(ModItems.starlite.get());
                         output.accept(ModItems.raw_mithril_ore.get());
                         output.accept(ModItems.mithril_ingot.get());
                         output.accept(ModItems.pyroclast_ingot.get());
@@ -40,7 +39,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.volcanic_ingot.get());
                         output.accept(ModItems.raw_volcanic_ore.get());
                         output.accept(ModItems.volcanic_scrap.get());
-                        output.accept(ModItems.STARLITE_ORE.get());
+                        output.accept(ModItems.STARLITE.get());
 
                         // Landscaping / Hand Tools
                         output.accept(ModItems.Chisel.get());

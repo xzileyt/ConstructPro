@@ -47,7 +47,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CELESTIAL.get());
         basicItem(ModItems.CrimsonQuartz.get());
         basicItem(ModItems.Molten.get());
-        basicItem(ModItems.starlite.get());
         basicItem(ModItems.FossilizedAmber.get());
         basicItem(ModItems.raw_mithril_ore.get());
         basicItem(ModItems.mithril_ingot.get());
@@ -64,6 +63,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.volcanic_ingot.get());
         basicItem(ModItems.raw_volcanic_ore.get());
         basicItem(ModItems.volcanic_scrap.get());
+        basicItem(ModItems.STARLITE.get());
 
         // Building blocks
         buttonItem(ModBlocks.LAVENDERWOOD_BUTTON, ModBlocks.lavenderwood_planks);
