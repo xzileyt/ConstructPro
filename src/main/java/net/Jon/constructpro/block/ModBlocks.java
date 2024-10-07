@@ -79,6 +79,12 @@ public class ModBlocks {
 
     // Wood Building blocks
     // Lavenderwood
+    public static final RegistryObject<Block> LAVENDERWOOD_LOG = registerBlock("lavenderwood_log",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f,5.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> lavenderwood_planks = registerBlock("lavenderwood_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));

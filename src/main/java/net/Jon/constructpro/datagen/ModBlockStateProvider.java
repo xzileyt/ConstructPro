@@ -330,8 +330,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         bottomTexture3   // Down texture (top texture)
                 )
         );
+        // Lavender Log
+        ResourceLocation sideTexture4 = ResourceLocation.tryParse("constructpro:block/lavenderwood_log_side");
+        ResourceLocation topTexture4 = ResourceLocation.tryParse("constructpro:block/lavenderwood_log_top");
 
-
+        simpleBlock(ModBlocks.LAVENDERWOOD_LOG.get(),
+                models().cube("lavenderwood_log",
+                        sideTexture4, // Side texture (for north, south, east, west)
+                        topTexture4,  // Top texture (for top)
+                        sideTexture4, // East texture (same as side)
+                        sideTexture4, // West texture (same as side)
+                        topTexture4,  // Up texture (top texture)
+                        topTexture4   // Down texture (same as side)
+                )
+        );
 
 
 

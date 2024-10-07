@@ -233,40 +233,41 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.YELLOW_BRICKS.get());
         dropSelf(ModBlocks.GILDED_STONE.get());
         dropSelf(ModBlocks.GILDED_STONE_BRICKS.get());
+        dropSelf(ModBlocks.LAVENDERWOOD_LOG.get());
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.CELESTIAL.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.celestial_ore.get(), ModItems.CELESTIAL.get(), 1, 2));
         this.add(ModBlocks.celestial_deepslate_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.celestial_deepslate_ore.get(), ModItems.CELESTIAL.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.celestial_deepslate_ore.get(), ModItems.CELESTIAL.get(), 1, 2));
         this.add(ModBlocks.crimson_quartz_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.crimson_quartz_ore.get(), ModItems.CrimsonQuartz.get(), 2, 3));
+                block -> createMultipleOreDrops(ModBlocks.crimson_quartz_ore.get(), ModItems.CrimsonQuartz.get(), 1, 2));
         this.add(ModBlocks.fossilized_amber_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.fossilized_amber_ore.get(), ModItems.FossilizedAmber.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.fossilized_amber_ore.get(), ModItems.FossilizedAmber.get(), 1, 2));
         this.add(ModBlocks.molten_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.molten_ore.get(), ModItems.Molten.get(), 1, 2));
         this.add(ModBlocks.starlite_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.starlite_ore.get(), ModItems.starlite.get(), 1, 2));
         this.add(ModBlocks.starlite_deepslate_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.starlite_deepslate_ore.get(), ModItems.starlite.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.starlite_deepslate_ore.get(), ModItems.starlite.get(), 1, 2));
         this.add(ModBlocks.raw_mithril_block.get(),
                 block -> createMultipleOreDrops(ModBlocks.raw_mithril_block.get(), ModItems.raw_mithril_ore.get(), 1, 1));
         this.add(ModBlocks.mithril_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.mithril_ore.get(), ModItems.raw_mithril_ore.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.mithril_ore.get(), ModItems.raw_mithril_ore.get(), 1, 2));
         this.add(ModBlocks.deepslate_mithril_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.deepslate_mithril_ore.get(), ModItems.raw_mithril_ore.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.deepslate_mithril_ore.get(), ModItems.raw_mithril_ore.get(), 1, 2));
         this.add(ModBlocks.raw_pyroclast_block.get(),
                 block -> createMultipleOreDrops(ModBlocks.raw_pyroclast_block.get(), ModItems.raw_pyroclast_ore.get(), 1, 1));
         this.add(ModBlocks.raw_volcanic_block.get(),
                 block -> createMultipleOreDrops(ModBlocks.raw_volcanic_block.get(), ModItems.raw_volcanic_ore.get(), 1, 1));
         this.add(ModBlocks.aetherium_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.aetherium_ore.get(), ModItems.raw_aetherium_ore.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.aetherium_ore.get(), ModItems.raw_aetherium_ore.get(), 1, 2));
         this.add(ModBlocks.deppslate_aetherium_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.deppslate_aetherium_ore.get(), ModItems.raw_aetherium_ore.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.deppslate_aetherium_ore.get(), ModItems.raw_aetherium_ore.get(), 1, 2));
         this.add(ModBlocks.glacialite_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.glacialite_ore.get(), ModItems.raw_glacialite_ore.get(), 1, 3));
+                block -> createMultipleOreDrops(ModBlocks.glacialite_ore.get(), ModItems.raw_glacialite_ore.get(), 1, 2));
         this.add(ModBlocks.deppslate_glacialite_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.deppslate_glacialite_ore.get(), ModItems.raw_glacialite_ore.get(), 1, 3));
+                block -> createMultipleOreDrops(ModBlocks.deppslate_glacialite_ore.get(), ModItems.raw_glacialite_ore.get(), 1, 2));
         this.add(ModBlocks.necroite_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.necroite_ore.get(), ModItems.raw_necroite_ore.get(), 1, 2));
         this.add(ModBlocks.deppslate_necroite_ore.get(),
@@ -276,9 +277,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.deppslate_pyroclast_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.deppslate_pyroclast_ore.get(), ModItems.raw_pyroclast_ore.get(), 1, 2));
         this.add(ModBlocks.solisite_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.solisite_ore.get(), ModItems.raw_solisite_ore.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.solisite_ore.get(), ModItems.raw_solisite_ore.get(), 1, 2));
         this.add(ModBlocks.deppslate_solisite_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.deppslate_solisite_ore.get(), ModItems.raw_solisite_ore.get(), 2, 4));
+                block -> createMultipleOreDrops(ModBlocks.deppslate_solisite_ore.get(), ModItems.raw_solisite_ore.get(), 1, 2));
         this.add(ModBlocks.volcanic_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.volcanic_ore.get(), ModItems.volcanic_scrap.get(), 1, 1));
         this.add(ModBlocks.deppslate_volcanic_ore.get(),

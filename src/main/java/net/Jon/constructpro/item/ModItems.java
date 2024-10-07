@@ -65,6 +65,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> volcanic_ingot = ITEMS.register("volcanic_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STARLITE_ORE = ITEMS.register("starlite_ore",
+            () -> new Item(new Item.Properties()));
 
     // Tools
     public static final RegistryObject<Item> Chisel = ITEMS.register("chisel",
@@ -82,6 +84,8 @@ public class ModItems {
     public static final RegistryObject<Item> TIMBER_AXE = ITEMS.register("timber_axe",
             () -> new AxeItem(ModToolTiers.Molten, new Item.Properties()
                     .attributes(AxeItem.createAttributes(ModToolTiers.Molten, 7, -3.0f))));
+    public static final RegistryObject<Item> Hazard_Alert = ITEMS.register("hazard_alert",
+            () -> new HazardAlertItem(new Item.Properties().stacksTo(1).durability(255)));
 
 
 
@@ -127,23 +131,35 @@ public class ModItems {
     public static final RegistryObject<Item> VOLCANIC_SWORD = ITEMS.register("volcanic_sword",
             () -> new SwordItem(ModToolTiers.Volcanic, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTiers.Volcanic, 6, -2.0f)))); // Better attack damage
-
     public static final RegistryObject<Item> VOLCANIC_PICKAXE = ITEMS.register("volcanic_pickaxe",
             () -> new PickaxeItem(ModToolTiers.Volcanic, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.Volcanic, 3, -2.3f)))); // Better efficiency
-
     public static final RegistryObject<Item> VOLCANIC_AXE = ITEMS.register("volcanic_axe",
             () -> new AxeItem(ModToolTiers.Volcanic, new Item.Properties()
                     .attributes(AxeItem.createAttributes(ModToolTiers.Volcanic, 8, -3.0f)))); // Higher attack damage
-
     public static final RegistryObject<Item> VOLCANIC_SHOVEL = ITEMS.register("volcanic_shovel",
             () -> new ShovelItem(ModToolTiers.Volcanic, new Item.Properties()
                     .attributes(ShovelItem.createAttributes(ModToolTiers.Volcanic, 2.5f, -2.5f)))); // Better attack damage and speed
-
     public static final RegistryObject<Item> VOLCANIC_HOE = ITEMS.register("volcanic_hoe",
             () -> new HoeItem(ModToolTiers.Volcanic, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.Volcanic, 2, -2.6f)))); // Higher attack damage
 
+    // Starlite tools
+    public static final RegistryObject<Item> STARLITE_SWORD = ITEMS.register("starlite_sword",
+            () -> new SwordItem(ModToolTiers.STARLITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.STARLITE, 8, -2.2f))));
+    public static final RegistryObject<Item> STARLITE_AXE = ITEMS.register("starlite_axe",
+            () -> new AxeItem(ModToolTiers.STARLITE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.STARLITE, 10, -3.0f))));
+    public static final RegistryObject<Item> STARLITE_PICKAXE = ITEMS.register("starlite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.STARLITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.STARLITE, 5, -2.6f))));
+    public static final RegistryObject<Item> STARLITE_SHOVEL = ITEMS.register("starlite_shovel",
+            () -> new ShovelItem(ModToolTiers.STARLITE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.STARLITE, 4.5f, -2.5f))));
+    public static final RegistryObject<Item> STARLITE_HOE = ITEMS.register("starlite_hoe",
+            () -> new HoeItem(ModToolTiers.STARLITE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.STARLITE, 2, -2.6f))));
 
 
     // Armor

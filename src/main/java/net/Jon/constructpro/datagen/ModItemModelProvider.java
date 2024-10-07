@@ -112,6 +112,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TerrainSmoother.get());
         basicItem(ModItems.MEASUREMENT_TOOL.get());
         basicItem(ModItems.TIMBER_AXE.get());
+        basicItem(ModItems.Hazard_Alert.get());
 
         handheldItem(ModItems.CELESTIAL_SWORD);
         handheldItem(ModItems.CELESTIAL_PICKAXE);

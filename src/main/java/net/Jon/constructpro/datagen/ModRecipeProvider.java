@@ -7,6 +7,8 @@ import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -489,6 +491,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.WHITE_DYE)
                 .unlockedBy("has_bricks", has(Blocks.BRICKS))
                 .unlockedBy("has_white_dye", has(Items.WHITE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ROCKY_MOSS.get())
+                .requires(Blocks.COBBLESTONE)
+                .requires(Blocks.MOSS_BLOCK)
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
                 .save(pRecipeOutput);
 
 
@@ -1037,6 +1046,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('G', Items.GOLD_NUGGET)
                 .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
                 .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Hazard_Alert.get())
+                .pattern("GLI")
+                .pattern("RDN")
+                .pattern("QFQ")
+                .define('G', Items.GOLD_INGOT)
+                .define('L', Items.LAPIS_LAZULI)
+                .define('I', Items.IRON_BLOCK)
+                .define('R', Items.REDSTONE)
+                .define('D', Items.DIAMOND)
+                .define('N', Items.QUARTZ)
+                .define('Q', Items.GLOWSTONE_DUST)
+                .define('F', Items.FIRE_CHARGE)
+                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                .save(pRecipeOutput);
+
+
 
         // Items
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GEO_ANALYZER.get())

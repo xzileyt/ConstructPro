@@ -40,8 +40,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.volcanic_ingot.get());
                         output.accept(ModItems.raw_volcanic_ore.get());
                         output.accept(ModItems.volcanic_scrap.get());
+                        output.accept(ModItems.STARLITE_ORE.get());
 
-                        // Landscaping Tools
+                        // Landscaping / Hand Tools
                         output.accept(ModItems.Chisel.get());
                         output.accept(ModItems.TROWEL.get());
                         output.accept(ModItems.GEO_ANALYZER.get());
@@ -49,6 +50,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TerrainSmoother.get());
                         output.accept(ModItems.MEASUREMENT_TOOL.get());
                         output.accept(ModItems.TIMBER_AXE.get());
+                        output.accept(ModItems.Hazard_Alert.get());
 
                         // Tools
                         output.accept(ModItems.CELESTIAL_SWORD.get());
@@ -56,6 +58,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CELESTIAL_AXE.get());
                         output.accept(ModItems.CELESTIAL_SHOVEL.get());
                         output.accept(ModItems.CELESTIAL_HOE.get());
+                        output.accept(ModItems.STARLITE_SWORD.get());
+                        output.accept(ModItems.STARLITE_PICKAXE.get());
+                        output.accept(ModItems.STARLITE_AXE.get());
+                        output.accept(ModItems.STARLITE_SHOVEL.get());
+                        output.accept(ModItems.STARLITE_HOE.get());
                         output.accept(ModItems.CELESTIAL_HAMMER.get());
                         output.accept(ModItems.MOLTEN_SWORD.get());
                         output.accept(ModItems.MOLTEN_PICKAXE.get());
@@ -307,6 +314,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.YELLOW_BRICKS.get());
                         output.accept(ModBlocks.GILDED_STONE.get());
                         output.accept(ModBlocks.GILDED_STONE_BRICKS.get());
+                        output.accept(ModBlocks.LAVENDERWOOD_LOG.get());
 
                     }).build());
 
