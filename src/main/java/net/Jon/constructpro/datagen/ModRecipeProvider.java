@@ -570,6 +570,144 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_yellow_dye", has(Items.YELLOW_DYE))
                 .save(pRecipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PLASTER_BLOCK.get(), 2)
+                .requires(Blocks.CALCITE)
+                .requires(Blocks.DIORITE)
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .unlockedBy("has_diorite", has(Blocks.DIORITE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PLASTER_BRICKS.get(), 3)
+                .requires(Blocks.CALCITE)
+                .requires(Blocks.DIORITE)
+                .requires(Blocks.STONE_BRICKS)
+                .unlockedBy("has_calcite", has(Blocks.CALCITE))
+                .unlockedBy("has_diorite", has(Blocks.DIORITE))
+                .unlockedBy("has_stone_brickss", has(Blocks.STONE_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MULCH_DIRT.get(), 4) // Outputs 4 Mulch Dirt
+                .requires(Blocks.DIRT)
+                .requires(Items.BONE_MEAL)
+                .requires(Blocks.OAK_LEAVES)
+                .unlockedBy("has_dirt", has(Blocks.DIRT))
+                .unlockedBy("oak_leaves", has(Blocks.OAK_LEAVES))
+                .unlockedBy("has_bone_meal", has(Items.BONE_MEAL))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_STONE.get(), 2)
+                .requires(Blocks.SNOW)
+                .requires(Blocks.STONE)
+                .unlockedBy("has_snow", has(Blocks.SNOW))
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_STONE_BRICKS.get(), 2)
+                .requires(Blocks.SNOW)
+                .requires(Blocks.STONE_BRICKS)
+                .unlockedBy("has_snow", has(Blocks.SNOW))
+                .unlockedBy("has_stone_bricks", has(Blocks.STONE_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STELLAR_SLATE_ANDESITE.get(), 4)
+                .requires(Blocks.ANDESITE)
+                .requires(Blocks.STONE)
+                .unlockedBy("has_andesite", has(Blocks.ANDESITE))
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STELLAR_SLATE_COBBLESTONE.get(), 4)
+                .requires(Blocks.COBBLESTONE)
+                .requires(Blocks.STONE_BRICKS)
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .unlockedBy("has_stone_bricks", has(Blocks.STONE_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STELLAR_SLATE_COBBLED_DEEPSLATE.get(), 4)
+                .requires(Blocks.COBBLED_DEEPSLATE)
+                .requires(Blocks.STONE)
+                .unlockedBy("has_cobbled_deepslate", has(Blocks.COBBLED_DEEPSLATE))
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STELLAR_SLATE_DEEPSLATE_BRICKS.get(), 4)
+                .requires(Blocks.DEEPSLATE_BRICKS)
+                .requires(Blocks.ANDESITE)
+                .unlockedBy("has_deepslate_bricks", has(Blocks.DEEPSLATE_BRICKS))
+                .unlockedBy("has_andesite", has(Blocks.ANDESITE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STELLAR_SLATE_STONE.get(), 4)
+                .requires(Blocks.STONE)
+                .requires(Blocks.COBBLESTONE)
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STELLAR_SLATE_STONE_BRICKS.get(), 4)
+                .requires(Blocks.STONE_BRICKS)
+                .requires(Blocks.DEEPSLATE_BRICKS)
+                .unlockedBy("has_stone_bricks", has(Blocks.STONE_BRICKS))
+                .unlockedBy("has_deepslate_bricks", has(Blocks.DEEPSLATE_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIMESTONE.get(), 4)
+                .requires(Blocks.STONE)
+                .requires(Items.QUARTZ)
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .unlockedBy("has_quartz", has(Items.QUARTZ))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIMESTONE_BRICKS.get(), 4)
+                .pattern("LL ")
+                .pattern("LL ")
+                .pattern("   ")
+                .define('L', ModBlocks.LIMESTONE.get())
+                .unlockedBy("has_limestone", has(ModBlocks.LIMESTONE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIMESTONE_ANDESITE.get(), 4)
+                .requires(ModBlocks.LIMESTONE.get())
+                .requires(Blocks.ANDESITE)
+                .unlockedBy("has_limestone", has(ModBlocks.LIMESTONE.get()))
+                .unlockedBy("has_andesite", has(Blocks.ANDESITE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIMESTONE_COBBLED.get(), 4)
+                .requires(ModBlocks.LIMESTONE.get())
+                .requires(Blocks.COBBLESTONE)
+                .unlockedBy("has_limestone", has(ModBlocks.LIMESTONE.get()))
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIMESTONE_POLISHED_ANDESITE.get(), 4)
+                .requires(Blocks.POLISHED_ANDESITE)
+                .requires(ModBlocks.LIMESTONE.get())
+                .unlockedBy("has_polished_andesite", has(Blocks.POLISHED_ANDESITE))
+                .unlockedBy("has_limestone", has(ModBlocks.LIMESTONE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OVERGROWN_STONE.get(), 4)
+                .requires(Blocks.MOSS_BLOCK)
+                .requires(Items.STONE)
+                .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_STONE.get(), 4)
+                .requires(Blocks.SNOW_BLOCK)
+                .requires(Items.STONE)
+                .unlockedBy("has_snow_block", has(Blocks.SNOW_BLOCK))
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_STONE_BRICKS.get(), 4)
+                .requires(Blocks.SNOW_BLOCK)
+                .requires(Items.STONE_BRICKS)
+                .unlockedBy("has_snow_block", has(Blocks.SNOW_BLOCK))
+                .unlockedBy("has_stone_bricks", has(Blocks.STONE_BRICKS))
+                .save(pRecipeOutput);
+
 
         // Ore items
         // Volcanic ingot craft
