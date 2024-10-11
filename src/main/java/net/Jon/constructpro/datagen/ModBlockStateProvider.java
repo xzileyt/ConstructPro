@@ -282,6 +282,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.deppslate_volcanic_ore);
 
         // Custom blocks
+        blockWithItem(ModBlocks.HEIGHT_MARKER);
+
         // Overgrown Stone
         ResourceLocation sideTexture = ResourceLocation.tryParse("constructpro:block/overgrown_stone_side");
         ResourceLocation topTexture = ResourceLocation.tryParse("constructpro:block/overgrown_stone_top");

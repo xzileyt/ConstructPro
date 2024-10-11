@@ -317,6 +317,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GILDED_STONE.get());
                         output.accept(ModBlocks.GILDED_STONE_BRICKS.get());
                         output.accept(ModBlocks.LAVENDERWOOD_LOG.get());
+                        output.accept(ModBlocks.HEIGHT_MARKER.get());
 
                     }).build());
 

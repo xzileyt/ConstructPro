@@ -1,7 +1,8 @@
 package net.Jon.constructpro.block;
 
 import net.Jon.constructpro.ConstructPro;
-import net.Jon.constructpro.block.custom.PurpleLampBlock;
+import net.Jon.constructpro.block.custom.*;
+import net.Jon.constructpro.block.custom.HeightMarker;
 import net.Jon.constructpro.item.ModItems;
 import net.minecraft.client.resources.model.Material;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -16,12 +17,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.Jon.constructpro.block.custom.BlueGlowstoneBlock;
-import net.Jon.constructpro.block.custom.CyanGlowstoneBlock;
-import net.Jon.constructpro.block.custom.GreenGlowstoneBlock;
-import net.Jon.constructpro.block.custom.LightBlueGlowstoneBlock;
-import net.Jon.constructpro.block.custom.PurpleGlowstoneBlock;
-import net.Jon.constructpro.block.custom.RedGlowstoneBlock;
 
 
 import java.util.function.Supplier;
@@ -30,6 +25,13 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ConstructPro.MOD_ID);
+
+    // Custom Blocks
+    public static final RegistryObject<Block> HEIGHT_MARKER = BLOCKS.register("height_marker",
+            () -> new HeightMarker());
+
+
+
 
     // Ore Blocks
     public static final RegistryObject<Block> celestial_block = registerBlock("celestial_block",

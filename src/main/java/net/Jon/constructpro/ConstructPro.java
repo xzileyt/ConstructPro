@@ -324,6 +324,7 @@ public class ConstructPro {
             event.accept(ModItems.STARLITE_AXE.get());
             event.accept(ModItems.STARLITE_SHOVEL.get());
             event.accept(ModItems.STARLITE_HOE.get());
+            event.accept(ModBlocks.HEIGHT_MARKER.get());
         }
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.CELESTIAL_HELMET.get());
