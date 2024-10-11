@@ -81,9 +81,9 @@ public class ModBlocks {
 
     // Wood Building blocks
     // Lavenderwood
-    public static final RegistryObject<Block> LAVENDERWOOD_LOG = registerBlock("lavenderwood_log",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2.0f,5.0f)
+    public static final RegistryObject<RotatedPillarBlock> LAVENDERWOOD_LOG = registerBlock("lavenderwood_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 5.0f)
                     .sound(SoundType.WOOD)
                     .requiresCorrectToolForDrops()));
 

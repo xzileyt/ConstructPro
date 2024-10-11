@@ -5,9 +5,8 @@ import net.Jon.constructpro.block.ModBlocks;
 import net.Jon.constructpro.block.custom.PurpleLampBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -36,6 +35,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.solisite_block);
         blockWithItem(ModBlocks.volcanic_block);
         blockWithItem(ModBlocks.pyroclast_block);
+
+        // Register log blocks
+        logBlock(ModBlocks.LAVENDERWOOD_LOG.get(), "lavenderwood_log"); // This should correspond to the correct texture files
+
 
         // Wood
         blockWithItem(ModBlocks.lavenderwood_planks);
@@ -332,22 +335,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         bottomTexture3   // Down texture (top texture)
                 )
         );
-        // Lavender Log
-        ResourceLocation sideTexture4 = ResourceLocation.tryParse("constructpro:block/lavenderwood_log_side");
-        ResourceLocation topTexture4 = ResourceLocation.tryParse("constructpro:block/lavenderwood_log_top");
-
-        simpleBlock(ModBlocks.LAVENDERWOOD_LOG.get(),
-                models().cube("lavenderwood_log",
-                        sideTexture4, // Side texture (for north, south, east, west)
-                        topTexture4,  // Top texture (for top)
-                        sideTexture4, // East texture (same as side)
-                        sideTexture4, // West texture (same as side)
-                        topTexture4,  // Up texture (top texture)
-                        topTexture4   // Down texture (same as side)
-                )
-        );
-
-
 
 
     }
@@ -369,6 +356,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ResourceLocation.fromNamespaceAndPath(ConstructPro.MOD_ID, "block/" + "purple_lamp_on")));
     }
 
+    // Generic method for logging blocks
+    public void logBlock(RotatedPillarBlock log, String blockName) {
+        // Update the texture paths to use "side" for the log texture
+        axisBlock(log, modLoc("block/" + blockName + "_side"), modLoc("block/" + blockName + "_top"));
+    }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

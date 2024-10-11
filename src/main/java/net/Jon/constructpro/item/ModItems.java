@@ -218,6 +218,8 @@ public class ModItems {
             () -> new AnimalArmorItem(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
 
+    // Wood Logs
+
 
 
     // Food items
