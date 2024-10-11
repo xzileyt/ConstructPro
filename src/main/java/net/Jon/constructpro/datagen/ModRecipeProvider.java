@@ -1266,6 +1266,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModBlocks.HEIGHT_MARKER.get())
+                .pattern("RRR")
+                .pattern("RIR")
+                .pattern("RRR")
+                .define('I', Items.REDSTONE_TORCH)
+                .define('R', Blocks.DEEPSLATE)
+                .unlockedBy(getHasName(Blocks.DEEPSLATE), has(Blocks.DEEPSLATE))
+                .unlockedBy(getHasName(Items.REDSTONE_TORCH), has(Items.REDSTONE_TORCH))
+                .save(pRecipeOutput);
+
+
 
 
         // Items
