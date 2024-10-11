@@ -102,7 +102,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.moonwood_DOOR);
         
         // Wood logs
-
+        simpleBlockItem(ModBlocks.LAVENDERWOOD_LOG);
 
         // Tools
         basicItem(ModItems.Chisel.get());
