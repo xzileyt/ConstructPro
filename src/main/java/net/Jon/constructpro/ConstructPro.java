@@ -342,6 +342,7 @@ public class ConstructPro {
             event.accept(ModItems.FOSSILIZED_AMBER_CHESTPLATE.get());
             event.accept(ModItems.FOSSILIZED_AMBER_LEGGINGS.get());
             event.accept(ModItems.FOSSILIZED_AMBER_BOOTS.get());
+            event.accept(ModItems.CELESTIAL_HORSE_ARMOR.get());
         }
     }
 

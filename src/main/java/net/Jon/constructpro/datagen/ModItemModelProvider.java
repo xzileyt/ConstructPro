@@ -154,6 +154,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.VOLCANIC_CHESTPLATE);
         trimmedArmorItem(ModItems.VOLCANIC_LEGGINGS);
         trimmedArmorItem(ModItems.VOLCANIC_BOOTS);
+
+        // Mob Armor
+        basicItem(ModItems.CELESTIAL_HORSE_ARMOR.get());
     }
 
     // Shoutout to El_Redstoniano for making this

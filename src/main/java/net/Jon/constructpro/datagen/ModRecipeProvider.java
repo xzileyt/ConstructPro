@@ -595,20 +595,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_bone_meal", has(Items.BONE_MEAL))
                 .save(pRecipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_STONE.get(), 2)
-                .requires(Blocks.SNOW)
-                .requires(Blocks.STONE)
-                .unlockedBy("has_snow", has(Blocks.SNOW))
-                .unlockedBy("has_stone", has(Blocks.STONE))
-                .save(pRecipeOutput);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_STONE_BRICKS.get(), 2)
-                .requires(Blocks.SNOW)
-                .requires(Blocks.STONE_BRICKS)
-                .unlockedBy("has_snow", has(Blocks.SNOW))
-                .unlockedBy("has_stone_bricks", has(Blocks.STONE_BRICKS))
-                .save(pRecipeOutput);
-
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STELLAR_SLATE_ANDESITE.get(), 4)
                 .requires(Blocks.ANDESITE)
                 .requires(Blocks.STONE)
@@ -1134,6 +1120,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_volcanic_ingot", has(ModItems.volcanic_ingot.get()))
                 .save(pRecipeOutput);
 
+        // Mob Armor
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CELESTIAL_HORSE_ARMOR.get(), 1)
+                .pattern("C  ")
+                .pattern("CSC")
+                .pattern("C C")
+                .define('C', ModItems.CELESTIAL.get())
+                .define('S', Items.SADDLE)
+                .unlockedBy("has_celestial", has(ModItems.CELESTIAL.get()))
+                .unlockedBy("has_saddle", has(Items.SADDLE))
+                .save(pRecipeOutput);
 
 
         // Tools

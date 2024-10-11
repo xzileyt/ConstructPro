@@ -95,6 +95,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.VOLCANIC_LEGGINGS.get());
                         output.accept(ModItems.VOLCANIC_BOOTS.get());
 
+                        // Mob Armors
+                        output.accept(ModItems.CELESTIAL_HORSE_ARMOR.get());
+
 
                         // Food items
                         output.accept(ModItems.ETERNAL_STEAK.get());

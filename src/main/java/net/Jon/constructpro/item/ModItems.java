@@ -213,6 +213,11 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(55))));
 
+    // Mob Armor
+    public static final RegistryObject<Item> CELESTIAL_HORSE_ARMOR = ITEMS.register("celestial_horse_armor",
+            () -> new AnimalArmorItem(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
+                    false, new Item.Properties().stacksTo(1)));
+
 
 
     // Food items
