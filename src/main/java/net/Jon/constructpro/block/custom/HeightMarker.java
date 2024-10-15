@@ -20,7 +20,7 @@ public class HeightMarker extends Block {
     public HeightMarker() {
         super(BlockBehaviour.Properties.of()
                 .strength(1.5f, 6.0f)
-                .sound(SoundType.WOOD)
+                .sound(SoundType.HEAVY_CORE)
                 .requiresCorrectToolForDrops());
     }
 

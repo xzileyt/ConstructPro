@@ -103,6 +103,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         
         // Wood logs
         simpleBlockItem(ModBlocks.LAVENDERWOOD_LOG);
+        simpleBlockItem(ModBlocks.AMBERWOOD_LOG);
+
+        // Custom blocks
+        simpleBlockItem(ModBlocks.HEIGHT_MARKER);
+        simpleBlockItem(ModBlocks.OVERGROWN_STONE);
+        simpleBlockItem(ModBlocks.SNOW_STONE);
+        simpleBlockItem(ModBlocks.SNOW_STONE_BRICKS);
 
         // Tools
         basicItem(ModItems.Chisel.get());
