@@ -1,8 +1,12 @@
 package net.Jon.constructpro.item.custom;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -72,5 +76,17 @@ public class ItemLandSmoother extends Item {
                 world.setBlock(pos, newBlockState, 3); // Replace with the desired block
             }
         }
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+        if (Screen.hasShiftDown()) {
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.itemLandSmoother.shift_down"));
+        } else {
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.itemLandSmoother"));
+        }
+
+        super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+
     }
 }

@@ -694,6 +694,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_stone_bricks", has(Blocks.STONE_BRICKS))
                 .save(pRecipeOutput);
 
+        // Wood logs
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.lavenderwood_planks.get(), 4)
+                .requires(ModBlocks.LAVENDERWOOD_LOG.get().asItem())
+                .unlockedBy("has_lavenderwood_log", has(ModBlocks.LAVENDERWOOD_LOG.get().asItem()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.amberwood_planks.get(), 4)
+                .requires(ModBlocks.AMBERWOOD_LOG.get().asItem())
+                .unlockedBy("has_amberwood_log", has(ModBlocks.AMBERWOOD_LOG.get().asItem()))
+                .save(pRecipeOutput);
+
 
         // Ore items
         // Volcanic ingot craft

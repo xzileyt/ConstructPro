@@ -39,5 +39,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.FOSSILIZED_AMBER_CHESTPLATE.get())
                 .add(ModItems.FOSSILIZED_AMBER_LEGGINGS.get())
                 .add(ModItems.FOSSILIZED_AMBER_BOOTS.get());
+
+
     }
 }

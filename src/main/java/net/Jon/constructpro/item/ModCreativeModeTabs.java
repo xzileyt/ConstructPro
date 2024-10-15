@@ -95,9 +95,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.VOLCANIC_LEGGINGS.get());
                         output.accept(ModItems.VOLCANIC_BOOTS.get());
 
+
                         // Mob Armors
                         output.accept(ModItems.CELESTIAL_HORSE_ARMOR.get());
-
 
                         // Food items
                         output.accept(ModItems.ETERNAL_STEAK.get());
@@ -318,7 +318,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GILDED_STONE_BRICKS.get());
                         output.accept(ModBlocks.LAVENDERWOOD_LOG.get());
                         output.accept(ModBlocks.HEIGHT_MARKER.get());
-
+                        output.accept(ModBlocks.AMBERWOOD_LOG.get());
                     }).build());
 
 

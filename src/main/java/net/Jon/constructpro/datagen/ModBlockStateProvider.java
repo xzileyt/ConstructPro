@@ -37,8 +37,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.pyroclast_block);
 
         // Register log blocks
-        logBlock(ModBlocks.LAVENDERWOOD_LOG.get(), "lavenderwood_log"); // This should correspond to the correct texture files
-
+        logBlock(ModBlocks.LAVENDERWOOD_LOG.get(), "lavenderwood_log");
+        logBlock(ModBlocks.AMBERWOOD_LOG.get(), "amberwood_log");
 
         // Wood
         blockWithItem(ModBlocks.lavenderwood_planks);
@@ -285,7 +285,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.deppslate_volcanic_ore);
 
         // Custom blocks
-        blockWithItem(ModBlocks.HEIGHT_MARKER);
+        simpleBlock(ModBlocks.HEIGHT_MARKER.get());
 
         // Overgrown Stone
         ResourceLocation sideTexture = ResourceLocation.tryParse("constructpro:block/overgrown_stone_side");

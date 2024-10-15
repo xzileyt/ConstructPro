@@ -235,6 +235,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.GILDED_STONE_BRICKS.get());
         dropSelf(ModBlocks.LAVENDERWOOD_LOG.get());
         dropSelf(ModBlocks.HEIGHT_MARKER.get());
+        dropSelf(ModBlocks.AMBERWOOD_LOG.get());
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),

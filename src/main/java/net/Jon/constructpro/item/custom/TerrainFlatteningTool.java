@@ -1,14 +1,18 @@
 package net.Jon.constructpro.item.custom;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
+
+import java.util.List;
 
 public class TerrainFlatteningTool extends Item {
 
@@ -49,5 +53,17 @@ public class TerrainFlatteningTool extends Item {
         }
 
         return InteractionResult.PASS;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+        if (Screen.hasShiftDown()) {
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.terrainflatteningtool.shift_down"));
+        } else {
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.terrainflatteningtool"));
+        }
+
+        super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+
     }
 }

@@ -80,7 +80,7 @@ public class TrowelItem extends Item {
         if (Screen.hasShiftDown()) {
             pTooltipComponents.add(Component.translatable("tooltip.constructpro.Trowel.shift_down"));
         } else {
-            pTooltipComponents.add(Component.translatable("tooltip.constructpro.GeoAnalyzer"));
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.Trowel"));
         }
 
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);

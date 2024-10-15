@@ -90,9 +90,9 @@ public class GeoAnalyzer extends Item {
     @Override
     public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
         if (Screen.hasShiftDown()) {
-            pTooltipComponents.add(Component.translatable("tooltip.constructpro.GeoAnalyzer.shift_down"));
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.geoanalyzer.shift_down"));
         } else {
-            pTooltipComponents.add(Component.translatable("tooltip.constructpro.GeoAnalyzer"));
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.geoanalyzer"));
         }
 
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);

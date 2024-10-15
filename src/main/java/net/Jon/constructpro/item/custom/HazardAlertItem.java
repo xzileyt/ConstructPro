@@ -1,16 +1,20 @@
 package net.Jon.constructpro.item.custom;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public class HazardAlertItem extends Item {
 
@@ -74,5 +78,17 @@ public class HazardAlertItem extends Item {
         }
 
         lastDetectionTime = System.currentTimeMillis(); // Update cooldown time
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+        if (Screen.hasShiftDown()) {
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.hazard_alert.shift_down"));
+        } else {
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.hazard_alert"));
+        }
+
+        super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+
     }
 }

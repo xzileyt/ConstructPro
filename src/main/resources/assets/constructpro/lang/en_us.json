@@ -70,7 +70,6 @@
   "item.constructpro.fossilized_amber_leggings": "Fossilized Amber Leggings",
   "item.constructpro.fossilized_amber_boots": "Fossilized Amber Boots",
 
-
   "item.constructpro.eternal_steak": "Eternal Steak",
 
   "block.constructpro.height_marker": "Height Marker",
@@ -290,22 +289,26 @@
   "block.constructpro.gilded_stone": "Gilded Stone",
   "block.constructpro.gilded_stone_bricks": "Gilded Stone Bricks",
   "block.constructpro.lavenderwood_log": "Lavender Wood Log",
-
+  "block.constructpro.amberwood_log": "Amber Wood Log",
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",
-  "tooltip.constructpro.GeoAnalyzer.shift_down": "This Item detect ore around the player",
-  "tooltip.constructpro.GeoAnalyzer": "Press §eShift§r for more Information!",
-  "tooltip.constructpro.Trowel.shift_down": "This Item randomly places blocks from the hotbar",
-  "tooltip.constructpro.Trowel": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.geoanalyzer.shift_down": "This Item detect ore around the player",
+  "tooltip.constructpro.geoanalyzer": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.trowel.shift_down": "This Item randomly places blocks from the hotbar",
+  "tooltip.constructpro.trowel": "Press §eShift§r for more Information!",
   "tooltip.constructpro.EternalSteak.shift_down": "This Item is an unlimited use steak",
   "tooltip.constructpro.EternalSteak": "Press §eShift§r for more Information!",
-  "tooltip.constructpro.terrain_leveler.shift_down": "This tool levels the terrain with different modes [Right click air to change modes]",
-  "tooltip.constructpro.terrain_leveler": "Press §eShift§r for more Information!",
-  "tooltip.constructpro.terrain_smoother.shift_down": "This tool smooths the terrain",
-  "tooltip.constructpro.terrain_smoother": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.itemLandSmoother.shift_down": "This tool smooths the terrain",
+  "tooltip.constructpro.itemLandSmoother": "Press §eShift§r for more Information!",
   "tooltip.constructpro.celestial_hammer.shift_down": "This tool is unbreakable and breaks a 3x3 area",
   "tooltip.constructpro.celestial_hammer": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.hazard_alert.shift_down": "This tool detects ore around the player and says the amount of ore",
+  "tooltip.constructpro.hazard_alert": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.terrainflatteningtool.shift_down": "This tool flattens the land in a set of modes from 3x3 to 11x11 by right clicking in the air with the tool in hand",
+  "tooltip.constructpro.terrainflatteningtool": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.measurement_tool.shift_down": "This tool measures the distance and angle for the player they set",
+  "tooltip.constructpro.measurement_tool": "Press §eShift§r for more Information!",
 
   "creativetab.ConstructPro.constructpro_items": "ConstructPro Items",
   "creativetab.ConstructPro.constructpro_blocks": "ConstructPro Blocks"

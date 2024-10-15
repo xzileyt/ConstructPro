@@ -1,5 +1,6 @@
 package net.Jon.constructpro.item.custom;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
@@ -8,8 +9,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3; // Ensure Vec3 is imported correctly
+
+import java.util.List;
 
 public class MeasurementTool extends Item {
     private BlockPos firstPos = null;
@@ -68,5 +72,17 @@ public class MeasurementTool extends Item {
         } else {
             return null; // No valid block found
         }
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+        if (Screen.hasShiftDown()) {
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.measurement_tool.shift_down"));
+        } else {
+            pTooltipComponents.add(Component.translatable("tooltip.constructpro.measurement_tool"));
+        }
+
+        super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+
     }
 }

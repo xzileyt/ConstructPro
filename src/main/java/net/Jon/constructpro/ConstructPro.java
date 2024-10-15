@@ -35,6 +35,11 @@ public class ConstructPro {
         ModBlocks.register(modEventBus);
         ModDataComponentTypes.register(modEventBus);
 
+        // Enchantments
+
+        // Dimensions
+
+
         // Register armor materials
 
 
@@ -281,6 +286,7 @@ public class ConstructPro {
             event.accept(ModBlocks.GILDED_STONE);
             event.accept(ModBlocks.GILDED_STONE_BRICKS);
             event.accept(ModBlocks.LAVENDERWOOD_LOG);
+            event.accept(ModBlocks.AMBERWOOD_LOG);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);

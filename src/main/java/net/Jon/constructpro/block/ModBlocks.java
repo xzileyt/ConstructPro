@@ -121,6 +121,12 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
     // Amberwood
+    public static final RegistryObject<RotatedPillarBlock> AMBERWOOD_LOG = registerBlock("amberwood_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 5.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> amberwood_planks = registerBlock("amberwood_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
