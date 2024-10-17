@@ -33,6 +33,8 @@ public class ModBlocks {
 
 
 
+
+
     // Ore Blocks
     public static final RegistryObject<Block> celestial_block = registerBlock("celestial_block",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -808,6 +810,47 @@ public class ModBlocks {
                     .strength(2.5f, 9.0f)
                     .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> BLUE_WARPED_WART_BLOCK = registerBlock("blue_warped_wart_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.0f, 1.0f)
+                    .sound(SoundType.WART_BLOCK)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GREEN_WARPED_WART_BLOCK = registerBlock("green_warped_wart_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.0f, 1.0f)
+                    .sound(SoundType.WART_BLOCK)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ORANGE_WARPED_WART_BLOCK = registerBlock("orange_warped_wart_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.0f, 1.0f)
+                    .sound(SoundType.WART_BLOCK)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PINK_WARPED_WART_BLOCK = registerBlock("pink_warped_wart_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.0f, 1.0f)
+                    .sound(SoundType.WART_BLOCK)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PURPLE_WARPED_WART_BLOCK = registerBlock("purple_warped_wart_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.0f, 1.0f)
+                    .sound(SoundType.WART_BLOCK)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> YELLOW_WARPED_WART_BLOCK = registerBlock("yellow_warped_wart_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.0f, 1.0f)
+                    .sound(SoundType.WART_BLOCK)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DRY_HAY_BALE = registerBlock("dry_hay_bale",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(0.5f, 0.5f) // Set destroy time (hardness) and explosion resistance
+                    .sound(SoundType.GRASS)));
 
 
     // Light Blocks

@@ -319,6 +319,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LAVENDERWOOD_LOG.get());
                         output.accept(ModBlocks.HEIGHT_MARKER.get());
                         output.accept(ModBlocks.AMBERWOOD_LOG.get());
+                        output.accept(ModBlocks.BLUE_WARPED_WART_BLOCK.get());
+                        output.accept(ModBlocks.GREEN_WARPED_WART_BLOCK.get());
+                        output.accept(ModBlocks.ORANGE_WARPED_WART_BLOCK.get());
+                        output.accept(ModBlocks.PINK_WARPED_WART_BLOCK.get());
+                        output.accept(ModBlocks.PURPLE_WARPED_WART_BLOCK.get());
+                        output.accept(ModBlocks.YELLOW_WARPED_WART_BLOCK.get());
+                        output.accept(ModBlocks.DRY_HAY_BALE.get());
+
                     }).build());
 
 

@@ -290,6 +290,14 @@
   "block.constructpro.gilded_stone_bricks": "Gilded Stone Bricks",
   "block.constructpro.lavenderwood_log": "Lavender Wood Log",
   "block.constructpro.amberwood_log": "Amber Wood Log",
+  "block.constructpro.blue_warped_wart_block": "Blue Wart Block",
+  "block.constructpro.green_warped_wart_block": "Green Wart Block",
+  "block.constructpro.orange_warped_wart_block": "Orange Wart Block",
+  "block.constructpro.pink_warped_wart_block": "Pink Wart Block",
+  "block.constructpro.purple_warped_wart_block": "Purple Wart Block",
+  "block.constructpro.yellow_warped_wart_block": "Yellow Wart Block",
+  "block.constructpro.dry_hay_bale": "Dry Hay Bale",
+
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",
   "tooltip.constructpro.chisel": "Press §eShift§r for more Information!",

@@ -694,6 +694,169 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_stone_bricks", has(Blocks.STONE_BRICKS))
                 .save(pRecipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_BRICKS.get(),4)
+                .requires(Blocks.BRICKS)
+                .requires(Items.BLUE_DYE)
+                .unlockedBy("has_bricks", has(Blocks.BRICKS))
+                .unlockedBy("has_blue_dye", has(Items.BLUE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_BRICKS.get(),4)
+                .requires(Blocks.BRICKS)
+                .requires(Items.GREEN_DYE)
+                .unlockedBy("has_bricks", has(Blocks.BRICKS))
+                .unlockedBy("has_green_dye", has(Items.GREEN_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_BRICKS.get(),4)
+                .requires(Blocks.BRICKS)
+                .requires(Items.LIGHT_BLUE_DYE)
+                .unlockedBy("has_bricks", has(Blocks.BRICKS))
+                .unlockedBy("has_light_blue_dye", has(Items.LIGHT_BLUE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_GREEN_BRICKS.get(),4)
+                .requires(Blocks.BRICKS)
+                .requires(Items.LIME_DYE)
+                .unlockedBy("has_bricks", has(Blocks.BRICKS))
+                .unlockedBy("has_lime_dye", has(Items.LIME_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_BRICKS.get(),4)
+                .requires(Blocks.BRICKS)
+                .requires(Items.ORANGE_DYE)
+                .unlockedBy("has_bricks", has(Blocks.BRICKS))
+                .unlockedBy("has_orange_dye", has(Items.ORANGE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_BRICKS.get(),4)
+                .requires(Blocks.BRICKS)
+                .requires(Items.PINK_DYE)
+                .unlockedBy("has_bricks", has(Blocks.BRICKS))
+                .unlockedBy("has_pink_dye", has(Items.PINK_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_BRICKS.get(),4)
+                .requires(Blocks.BRICKS)
+                .requires(Items.PURPLE_DYE)
+                .unlockedBy("has_bricks", has(Blocks.BRICKS))
+                .unlockedBy("has_purple_dye", has(Items.PURPLE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_BRICKS.get(),4)
+                .requires(Blocks.BRICKS)
+                .requires(Items.RED_DYE)
+                .unlockedBy("has_bricks", has(Blocks.BRICKS))
+                .unlockedBy("has_red_dye", has(Items.RED_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_BRICKS.get(),4)
+                .requires(Blocks.BRICKS)
+                .requires(Items.YELLOW_DYE)
+                .unlockedBy("has_bricks", has(Blocks.BRICKS))
+                .unlockedBy("has_yellow_dye", has(Items.YELLOW_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_AMETHYST.get(),4)
+                .requires(Blocks.AMETHYST_BLOCK)
+                .requires(Items.BLUE_DYE)
+                .unlockedBy("has_amethyst_block", has(Blocks.AMETHYST_BLOCK))
+                .unlockedBy("has_blue_dye", has(Items.BLUE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_AMETHYST.get(),4)
+                .requires(Blocks.AMETHYST_BLOCK)
+                .requires(Items.GREEN_DYE)
+                .unlockedBy("has_amethyst_block", has(Blocks.AMETHYST_BLOCK))
+                .unlockedBy("has_green_dye", has(Items.GREEN_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_AMETHYST.get(),4)
+                .requires(Blocks.AMETHYST_BLOCK)
+                .requires(Items.LIGHT_BLUE_DYE)
+                .unlockedBy("has_amethyst_block", has(Blocks.AMETHYST_BLOCK))
+                .unlockedBy("has_light_blue_dye", has(Items.LIGHT_BLUE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_AMETHYST.get(),4)
+                .requires(Blocks.AMETHYST_BLOCK)
+                .requires(Items.ORANGE_DYE)
+                .unlockedBy("has_amethyst_block", has(Blocks.AMETHYST_BLOCK))
+                .unlockedBy("has_orange_dye", has(Items.ORANGE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_AMETHYST.get(),4)
+                .requires(Blocks.AMETHYST_BLOCK)
+                .requires(Items.PINK_DYE)
+                .unlockedBy("has_amethyst_block", has(Blocks.AMETHYST_BLOCK))
+                .unlockedBy("has_pink_dye", has(Items.PINK_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_AMETHYST.get(),4)
+                .requires(Blocks.AMETHYST_BLOCK)
+                .requires(Items.RED_DYE)
+                .unlockedBy("has_amethyst_block", has(Blocks.AMETHYST_BLOCK))
+                .unlockedBy("has_red_dye", has(Items.RED_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_AMETHYST.get(),4)
+                .requires(Blocks.AMETHYST_BLOCK)
+                .requires(Items.YELLOW_DYE)
+                .unlockedBy("has_amethyst_block", has(Blocks.AMETHYST_BLOCK))
+                .unlockedBy("has_yellow_dye", has(Items.YELLOW_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_WARPED_WART_BLOCK.get(),4)
+                .requires(Blocks.NETHER_WART_BLOCK)
+                .requires(Items.BLUE_DYE)
+                .unlockedBy("has_nether_wart_block", has(Blocks.NETHER_WART_BLOCK))
+                .unlockedBy("has_blue_dye", has(Items.BLUE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_WARPED_WART_BLOCK.get(),4)
+                .requires(Blocks.NETHER_WART_BLOCK)
+                .requires(Items.GREEN_DYE)
+                .unlockedBy("has_nether_wart_block", has(Blocks.NETHER_WART_BLOCK))
+                .unlockedBy("has_green_dye", has(Items.GREEN_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_WARPED_WART_BLOCK.get(),4)
+                .requires(Blocks.NETHER_WART_BLOCK)
+                .requires(Items.ORANGE_DYE)
+                .unlockedBy("has_nether_wart_block", has(Blocks.NETHER_WART_BLOCK))
+                .unlockedBy("has_orange_dye", has(Items.ORANGE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_WARPED_WART_BLOCK.get(),4)
+                .requires(Blocks.NETHER_WART_BLOCK)
+                .requires(Items.PINK_DYE)
+                .unlockedBy("has_nether_wart_block", has(Blocks.NETHER_WART_BLOCK))
+                .unlockedBy("has_pink_dye", has(Items.PINK_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_WARPED_WART_BLOCK.get(),4)
+                .requires(Blocks.NETHER_WART_BLOCK)
+                .requires(Items.PURPLE_DYE)
+                .unlockedBy("has_nether_wart_block", has(Blocks.NETHER_WART_BLOCK))
+                .unlockedBy("has_purple_dye", has(Items.PURPLE_DYE))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_WARPED_WART_BLOCK.get(),4)
+                .requires(Blocks.NETHER_WART_BLOCK)
+                .requires(Items.YELLOW_DYE)
+                .unlockedBy("has_nether_wart_block", has(Blocks.NETHER_WART_BLOCK))
+                .unlockedBy("has_yellow_dye", has(Items.YELLOW_DYE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRY_HAY_BALE.get(),6)
+                .pattern("   ")
+                .pattern("WWW")
+                .pattern("WWW")
+                .define('W', Items.WHEAT)
+                .unlockedBy("has_wheat", has(Items.WHEAT))
+                .save(pRecipeOutput);
+
+
         // Wood logs
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.lavenderwood_planks.get(), 4)
                 .requires(ModBlocks.LAVENDERWOOD_LOG.get().asItem())

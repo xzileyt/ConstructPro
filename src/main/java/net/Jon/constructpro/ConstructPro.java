@@ -5,6 +5,7 @@ import net.Jon.constructpro.block.ModBlocks;
 import net.Jon.constructpro.component.ModDataComponentTypes;
 import net.Jon.constructpro.item.ModCreativeModeTabs;
 import net.Jon.constructpro.item.ModItems;
+import net.Jon.constructpro.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -287,6 +288,13 @@ public class ConstructPro {
             event.accept(ModBlocks.GILDED_STONE_BRICKS);
             event.accept(ModBlocks.LAVENDERWOOD_LOG);
             event.accept(ModBlocks.AMBERWOOD_LOG);
+            event.accept(ModBlocks.BLUE_WARPED_WART_BLOCK);
+            event.accept(ModBlocks.GREEN_WARPED_WART_BLOCK);
+            event.accept(ModBlocks.ORANGE_WARPED_WART_BLOCK);
+            event.accept(ModBlocks.PINK_WARPED_WART_BLOCK);
+            event.accept(ModBlocks.PURPLE_WARPED_WART_BLOCK);
+            event.accept(ModBlocks.YELLOW_WARPED_WART_BLOCK);
+            event.accept(ModBlocks.DRY_HAY_BALE);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
@@ -363,6 +371,7 @@ public class ConstructPro {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             // Client setup code
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

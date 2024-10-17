@@ -40,6 +40,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         logBlock(ModBlocks.LAVENDERWOOD_LOG.get(), "lavenderwood_log");
         logBlock(ModBlocks.AMBERWOOD_LOG.get(), "amberwood_log");
 
+        // Register blocks
+        pillarBlock((RotatedPillarBlock) ModBlocks.DRY_HAY_BALE.get(), "dry_hay_bale");
+
+
         // Wood
         blockWithItem(ModBlocks.lavenderwood_planks);
         stairsBlock(ModBlocks.LAVENDER_STAIRS.get(), blockTexture(ModBlocks.lavenderwood_planks.get()));
@@ -260,6 +264,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.YELLOW_BRICKS);
         blockWithItem(ModBlocks.GILDED_STONE);
         blockWithItem(ModBlocks.GILDED_STONE_BRICKS);
+        blockWithItem(ModBlocks.BLUE_WARPED_WART_BLOCK);
+        blockWithItem(ModBlocks.GREEN_WARPED_WART_BLOCK);
+        blockWithItem(ModBlocks.ORANGE_WARPED_WART_BLOCK);
+        blockWithItem(ModBlocks.PINK_WARPED_WART_BLOCK);
+        blockWithItem(ModBlocks.PURPLE_WARPED_WART_BLOCK);
+        blockWithItem(ModBlocks.YELLOW_WARPED_WART_BLOCK);
 
         // Ores
         blockWithItem(ModBlocks.celestial_ore);
@@ -360,6 +370,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
     public void logBlock(RotatedPillarBlock log, String blockName) {
         // Update the texture paths to use "side" for the log texture
         axisBlock(log, modLoc("block/" + blockName + "_side"), modLoc("block/" + blockName + "_top"));
+    }
+
+    public void pillarBlock(RotatedPillarBlock block, String blockName) {
+        axisBlock(block, modLoc("block/" + blockName + "_side"), modLoc("block/" + blockName + "_top"));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -110,9 +110,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.OVERGROWN_STONE);
         simpleBlockItem(ModBlocks.SNOW_STONE);
         simpleBlockItem(ModBlocks.SNOW_STONE_BRICKS);
+        simpleBlockItem(ModBlocks.DRY_HAY_BALE);
+
+
+
 
         // Tools
-        basicItem(ModItems.Chisel.get());
+        //basicItem(ModItems.Chisel.get());
         basicItem(ModItems.TROWEL.get());
         basicItem(ModItems.GEO_ANALYZER.get());
         basicItem(ModItems.TERRAINFLATTENINGTOOL.get());
