@@ -63,6 +63,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.volcanic_ingot.get());
         basicItem(ModItems.raw_volcanic_ore.get());
         basicItem(ModItems.volcanic_scrap.get());
+        basicItem(ModItems.STARLITE_DUST.get());
         basicItem(ModItems.STARLITE.get());
 
         // Building blocks
@@ -111,6 +112,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.SNOW_STONE);
         simpleBlockItem(ModBlocks.SNOW_STONE_BRICKS);
         simpleBlockItem(ModBlocks.DRY_HAY_BALE);
+        simpleBlockItem(ModBlocks.VOLCANIC_DEBRIS);
 
 
 
@@ -170,6 +172,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.VOLCANIC_CHESTPLATE);
         trimmedArmorItem(ModItems.VOLCANIC_LEGGINGS);
         trimmedArmorItem(ModItems.VOLCANIC_BOOTS);
+
+        trimmedArmorItem(ModItems.STARLITE_HELMET);
+        trimmedArmorItem(ModItems.STARLITE_CHESTPLATE);
+        trimmedArmorItem(ModItems.STARLITE_LEGGINGS);
+        trimmedArmorItem(ModItems.STARLITE_BOOTS);
 
 
         // Mob Armor

@@ -19,7 +19,7 @@ import java.util.function.Supplier;
 
 public class ModArmorMaterials {
     // Armors
-    public static final Holder<ArmorMaterial> FOSSILIZED_AMBER_ARMOR_MATERIAL = register("fossilized_amber", Util.make(new EnumMap<>(ArmorItem.Type.class),
+    public static final Holder<ArmorMaterial> FOSSILIZED_AMBER_ARMOR_MATERIAL = register("fossilizedamber", Util.make(new EnumMap<>(ArmorItem.Type.class),
             attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS, 3);
                 attribute.put(ArmorItem.Type.LEGGINGS, 8);
@@ -54,6 +54,15 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.HELMET, 6);
                 attribute.put(ArmorItem.Type.BODY, 15);
             }), 25, 5f, 0.2f, () -> ModItems.volcanic_ingot.get());
+
+    public static final Holder<ArmorMaterial> STARLITE_ARMOR_MATERIAL = register("starlite", Util.make(new EnumMap<>(ArmorItem.Type.class),
+            attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 6);
+                attribute.put(ArmorItem.Type.LEGGINGS, 10);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 15);
+                attribute.put(ArmorItem.Type.HELMET, 7);
+                attribute.put(ArmorItem.Type.BODY, 20);
+            }), 30, 6f, 0.3f, () -> ModItems.STARLITE.get());
 
 
 

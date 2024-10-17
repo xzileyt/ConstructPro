@@ -78,6 +78,7 @@ public class ConstructPro {
             event.accept(ModItems.volcanic_ingot);
             event.accept(ModItems.raw_volcanic_ore);
             event.accept(ModItems.volcanic_scrap);
+            event.accept(ModItems.STARLITE_DUST);
             event.accept(ModItems.STARLITE);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -295,6 +296,7 @@ public class ConstructPro {
             event.accept(ModBlocks.PURPLE_WARPED_WART_BLOCK);
             event.accept(ModBlocks.YELLOW_WARPED_WART_BLOCK);
             event.accept(ModBlocks.DRY_HAY_BALE);
+            event.accept(ModBlocks.VOLCANIC_DEBRIS);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
@@ -358,6 +360,10 @@ public class ConstructPro {
             event.accept(ModItems.FOSSILIZED_AMBER_LEGGINGS.get());
             event.accept(ModItems.FOSSILIZED_AMBER_BOOTS.get());
             event.accept(ModItems.CELESTIAL_HORSE_ARMOR.get());
+            event.accept(ModItems.STARLITE_HELMET.get());
+            event.accept(ModItems.STARLITE_CHESTPLATE.get());
+            event.accept(ModItems.STARLITE_LEGGINGS.get());
+            event.accept(ModItems.STARLITE_BOOTS.get());
         }
     }
 

@@ -852,6 +852,13 @@ public class ModBlocks {
                     .strength(0.5f, 0.5f) // Set destroy time (hardness) and explosion resistance
                     .sound(SoundType.GRASS)));
 
+    public static final RegistryObject<Block> VOLCANIC_DEBRIS = registerBlock("volcanic_debris",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(30.0F, 1200.0F)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()));
+
+
 
     // Light Blocks
     public static final RegistryObject<Block> PURPLE_LAMP = registerBlock("purple_lamp",

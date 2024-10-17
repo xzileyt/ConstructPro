@@ -19,7 +19,7 @@ public class ModArmorItem extends ArmorItem {
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.FOSSILIZED_AMBER_ARMOR_MATERIAL,
                             List.of(new MobEffectInstance(MobEffects.NIGHT_VISION, 200, 1, false, false),
-                                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, false, false)))
+                                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 1, false, false)))
                     .put(ModArmorMaterials.CELESTIAL_ARMOR_MATERIAL,
                             List.of(new MobEffectInstance(MobEffects.JUMP, 200, 1, false, false),
                                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, false, false)))
@@ -30,7 +30,11 @@ public class ModArmorItem extends ArmorItem {
                             List.of(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 1, false, false),
                                     new MobEffectInstance(MobEffects.REGENERATION, 200, 1, false, false),
                                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1, false, false)))
-
+                    .put(ModArmorMaterials.STARLITE_ARMOR_MATERIAL,
+                            List.of(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 1, false, false),
+                                    new MobEffectInstance(MobEffects.REGENERATION, 200, 1, false, false),
+                                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 1, false, false),
+                                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1, false, false)))
                     .build();
 
 

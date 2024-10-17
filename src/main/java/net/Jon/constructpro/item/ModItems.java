@@ -63,6 +63,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> volcanic_ingot = ITEMS.register("volcanic_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STARLITE_DUST = ITEMS.register("starlite_dust",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> STARLITE = ITEMS.register("starlite",
             () -> new Item(new Item.Properties()));
 
@@ -145,19 +147,19 @@ public class ModItems {
     // Starlite tools
     public static final RegistryObject<Item> STARLITE_SWORD = ITEMS.register("starlite_sword",
             () -> new SwordItem(ModToolTiers.STARLITE, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTiers.STARLITE, 8, -2.2f))));
+                    .attributes(SwordItem.createAttributes(ModToolTiers.STARLITE, 8, -1.9f))));
     public static final RegistryObject<Item> STARLITE_AXE = ITEMS.register("starlite_axe",
             () -> new AxeItem(ModToolTiers.STARLITE, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.STARLITE, 10, -3.0f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.STARLITE, 10, -2.0f))));
     public static final RegistryObject<Item> STARLITE_PICKAXE = ITEMS.register("starlite_pickaxe",
             () -> new PickaxeItem(ModToolTiers.STARLITE, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.STARLITE, 5, -2.6f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.STARLITE, 3.5f, -2.3f))));
     public static final RegistryObject<Item> STARLITE_SHOVEL = ITEMS.register("starlite_shovel",
             () -> new ShovelItem(ModToolTiers.STARLITE, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.STARLITE, 4.5f, -2.5f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.STARLITE, 3.0f, -2.0f))));
     public static final RegistryObject<Item> STARLITE_HOE = ITEMS.register("starlite_hoe",
             () -> new HoeItem(ModToolTiers.STARLITE, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.STARLITE, 2, -2.6f))));
+                    .attributes(HoeItem.createAttributes(ModToolTiers.STARLITE, 2, -2.0f))));
 
 
     // Armor
@@ -212,6 +214,19 @@ public class ModItems {
     public static final RegistryObject<Item> VOLCANIC_BOOTS = ITEMS.register("volcanic_boots",
             () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(55))));
+
+    public static final RegistryObject<Item> STARLITE_HELMET = ITEMS.register("starlite_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(60))));
+    public static final RegistryObject<Item> STARLITE_CHESTPLATE = ITEMS.register("starlite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(60))));
+    public static final RegistryObject<Item> STARLITE_LEGGINGS = ITEMS.register("starlite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(60))));
+    public static final RegistryObject<Item> STARLITE_BOOTS = ITEMS.register("starlite_boots",
+            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(60))));
 
     // Mob Armor
     public static final RegistryObject<Item> CELESTIAL_HORSE_ARMOR = ITEMS.register("celestial_horse_armor",

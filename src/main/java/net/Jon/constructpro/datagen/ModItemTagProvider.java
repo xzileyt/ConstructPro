@@ -38,7 +38,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.FOSSILIZED_AMBER_HELMET.get())
                 .add(ModItems.FOSSILIZED_AMBER_CHESTPLATE.get())
                 .add(ModItems.FOSSILIZED_AMBER_LEGGINGS.get())
-                .add(ModItems.FOSSILIZED_AMBER_BOOTS.get());
+                .add(ModItems.FOSSILIZED_AMBER_BOOTS.get())
+                .add(ModItems.STARLITE_HELMET.get())
+                .add(ModItems.STARLITE_CHESTPLATE.get())
+                .add(ModItems.STARLITE_LEGGINGS.get())
+                .add(ModItems.STARLITE_BOOTS.get());
 
 
     }

@@ -871,15 +871,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         // Ore items
         // Volcanic ingot craft
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.volcanic_ingot.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.volcanic_ingot.get(),1)
                 .pattern("SBS")
                 .pattern("SDS")
                 .pattern("SBS")
-                .define('S', ModItems.volcanic_scrap.get()) // Volcanic Scrap
-                .define('B', Items.BLAZE_POWDER) // Blaze Powder
-                .define('D', Items.DIAMOND) // Diamond
+                .define('S', ModItems.volcanic_scrap.get())
+                .define('B', Items.BLAZE_POWDER)
+                .define('D', Items.DIAMOND)
                 .unlockedBy(getHasName(ModItems.volcanic_scrap.get()), has(ModItems.volcanic_scrap.get()))
-                .save(pRecipeOutput, "volcanic_ingot"); // Recipe name
+                .save(pRecipeOutput, "volcanic_ingot");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STARLITE.get(),1)
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.STARLITE_DUST.get())
+                .unlockedBy(getHasName(ModItems.STARLITE_DUST.get()), has(ModItems.STARLITE_DUST.get()))
+                .save(pRecipeOutput);
 
         // Ore blocks
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.celestial_block.get())
@@ -1294,6 +1302,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_volcanic_ingot", has(ModItems.volcanic_ingot.get()))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STARLITE_HELMET.get())
+                .pattern("MMM")
+                .pattern("M M")  // Use 3 spaces for consistency
+                .pattern("   ")  // Empty row still needs 3 spaces
+                .define('M', ModItems.STARLITE.get())
+                .unlockedBy("has_starlite_ingot", has(ModItems.STARLITE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STARLITE_CHESTPLATE.get())
+                .pattern("M M")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', ModItems.STARLITE.get())
+                .unlockedBy("has_starlite_ingot", has(ModItems.STARLITE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STARLITE_LEGGINGS.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("M M")
+                .define('M', ModItems.STARLITE.get())
+                .unlockedBy("has_starlite_ingot", has(ModItems.STARLITE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STARLITE_BOOTS.get())
+                .pattern("M M")
+                .pattern("M M")
+                .pattern("   ")  // 3 spaces for the empty row
+                .define('M', ModItems.STARLITE.get())
+                .unlockedBy("has_starlite_ingot", has(ModItems.STARLITE.get()))
+                .save(pRecipeOutput);
+
         // Mob Armor
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CELESTIAL_HORSE_ARMOR.get(), 1)
                 .pattern("C  ")
@@ -1404,6 +1444,96 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('M', ModItems.Molten.get())
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.Molten.get()), has(ModItems.Molten.get()))
+                .save(pRecipeOutput);
+        
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STARLITE_SWORD.get())
+                .pattern(" M ")
+                .pattern(" M ")
+                .pattern(" S ")
+                .define('M', ModItems.STARLITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.STARLITE.get()), has(ModItems.STARLITE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STARLITE_PICKAXE.get())
+                .pattern("MMM")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.STARLITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.STARLITE.get()), has(ModItems.STARLITE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STARLITE_AXE.get())
+                .pattern("MM ")
+                .pattern("MS ")
+                .pattern(" S ")
+                .define('M', ModItems.STARLITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.STARLITE.get()), has(ModItems.STARLITE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STARLITE_SHOVEL.get())
+                .pattern(" M ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.STARLITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.STARLITE.get()), has(ModItems.STARLITE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.STARLITE_HOE.get())
+                .pattern("MM ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.STARLITE.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.STARLITE.get()), has(ModItems.STARLITE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.VOLCANIC_SWORD.get())
+                .pattern(" M ")
+                .pattern(" M ")
+                .pattern(" S ")
+                .define('M', ModItems.volcanic_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.volcanic_ingot.get()), has(ModItems.volcanic_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.VOLCANIC_PICKAXE.get())
+                .pattern("MMM")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.volcanic_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.volcanic_ingot.get()), has(ModItems.volcanic_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.VOLCANIC_AXE.get())
+                .pattern("MM ")
+                .pattern("MS ")
+                .pattern(" S ")
+                .define('M', ModItems.volcanic_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.volcanic_ingot.get()), has(ModItems.volcanic_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.VOLCANIC_SHOVEL.get())
+                .pattern(" M ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.volcanic_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.volcanic_ingot.get()), has(ModItems.volcanic_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.VOLCANIC_HOE.get())
+                .pattern("MM ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.volcanic_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.volcanic_ingot.get()), has(ModItems.volcanic_ingot.get()))
                 .save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.Chisel.get())

@@ -346,6 +346,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 )
         );
 
+        // Overgrown Stone
+        ResourceLocation sideTexture4 = ResourceLocation.tryParse("constructpro:block/volcanic_debris_side");
+        ResourceLocation topTexture4 = ResourceLocation.tryParse("constructpro:block/volcanic_debris_top");
+
+        simpleBlock(ModBlocks.VOLCANIC_DEBRIS.get(),
+                models().cube("volcanic_debris",
+                        sideTexture4, // Side texture (for north, south, east, west)
+                        sideTexture4,  // Top texture (for top)
+                        sideTexture4, // East texture (same as side)
+                        sideTexture4, // West texture (same as side)
+                        topTexture4,  // Up texture (top texture)
+                        topTexture4   // Down texture (top texture)
+                )
+        );
+
 
     }
 

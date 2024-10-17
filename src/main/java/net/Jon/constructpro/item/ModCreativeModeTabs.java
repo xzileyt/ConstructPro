@@ -39,6 +39,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.volcanic_ingot.get());
                         output.accept(ModItems.raw_volcanic_ore.get());
                         output.accept(ModItems.volcanic_scrap.get());
+                        output.accept(ModItems.STARLITE_DUST.get());
                         output.accept(ModItems.STARLITE.get());
 
                         // Landscaping / Hand Tools
@@ -94,6 +95,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.VOLCANIC_CHESTPLATE.get());
                         output.accept(ModItems.VOLCANIC_LEGGINGS.get());
                         output.accept(ModItems.VOLCANIC_BOOTS.get());
+
+                        output.accept(ModItems.STARLITE_HELMET.get());
+                        output.accept(ModItems.STARLITE_CHESTPLATE.get());
+                        output.accept(ModItems.STARLITE_LEGGINGS.get());
+                        output.accept(ModItems.STARLITE_BOOTS.get());
 
 
                         // Mob Armors
@@ -326,6 +332,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PURPLE_WARPED_WART_BLOCK.get());
                         output.accept(ModBlocks.YELLOW_WARPED_WART_BLOCK.get());
                         output.accept(ModBlocks.DRY_HAY_BALE.get());
+                        output.accept(ModBlocks.VOLCANIC_DEBRIS.get());
 
                     }).build());
 

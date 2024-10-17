@@ -18,6 +18,7 @@
   "item.constructpro.volcanic_scrap": "Volcanic Scrap",
   "item.constructpro.raw_volcanic_ore": "Raw Volcanic",
   "item.constructpro.volcanic_ingot": "Volcanic Ingot",
+  "item.constructpro.starlite_dust": "Starlite Dust",
   "item.constructpro.starlite": "Starlite",
 
 
@@ -69,6 +70,10 @@
   "item.constructpro.fossilized_amber_chestplate": "Fossilized Amber Chestplate",
   "item.constructpro.fossilized_amber_leggings": "Fossilized Amber Leggings",
   "item.constructpro.fossilized_amber_boots": "Fossilized Amber Boots",
+  "item.constructpro.starlite_helmet": "Starlite Helmet",
+  "item.constructpro.starlite_chestplate": "Starlite Chestplate",
+  "item.constructpro.starlite_leggings": "Starlite Leggings",
+  "item.constructpro.starlite_boots": "Starlite Boots",
 
   "item.constructpro.eternal_steak": "Eternal Steak",
 
@@ -297,6 +302,7 @@
   "block.constructpro.purple_warped_wart_block": "Purple Wart Block",
   "block.constructpro.yellow_warped_wart_block": "Yellow Wart Block",
   "block.constructpro.dry_hay_bale": "Dry Hay Bale",
+  "block.constructpro.volcanic_debris": "Volcanic Debris",
 
 
   "tooltip.constructpro.chisel.shift_down": "This Item changes certain Blocks",

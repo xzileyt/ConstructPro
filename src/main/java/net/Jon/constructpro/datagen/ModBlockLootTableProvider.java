@@ -256,9 +256,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.molten_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.molten_ore.get(), ModItems.Molten.get(), 1, 2));
         this.add(ModBlocks.starlite_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.starlite_ore.get(), ModItems.STARLITE.get(), 1, 2));
+                block -> createMultipleOreDrops(ModBlocks.starlite_ore.get(), ModItems.STARLITE_DUST.get(), 1, 2));
         this.add(ModBlocks.starlite_deepslate_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.starlite_deepslate_ore.get(), ModItems.STARLITE.get(), 1, 2));
+                block -> createMultipleOreDrops(ModBlocks.starlite_deepslate_ore.get(), ModItems.STARLITE_DUST.get(), 1, 2));
         this.add(ModBlocks.raw_mithril_block.get(),
                 block -> createMultipleOreDrops(ModBlocks.raw_mithril_block.get(), ModItems.raw_mithril_ore.get(), 1, 1));
         this.add(ModBlocks.mithril_ore.get(),
@@ -290,13 +290,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.deppslate_solisite_ore.get(),
                 block -> createMultipleOreDrops(ModBlocks.deppslate_solisite_ore.get(), ModItems.raw_solisite_ore.get(), 1, 2));
         this.add(ModBlocks.volcanic_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.volcanic_ore.get(), ModItems.volcanic_scrap.get(), 1, 1));
+                block -> createMultipleOreDrops(ModBlocks.volcanic_ore.get(), ModItems.raw_volcanic_ore.get(), 1, 1));
         this.add(ModBlocks.deppslate_volcanic_ore.get(),
-                block -> createMultipleOreDrops(ModBlocks.deppslate_volcanic_ore.get(), ModItems.volcanic_scrap.get(), 1, 1));
+                block -> createMultipleOreDrops(ModBlocks.deppslate_volcanic_ore.get(), ModItems.raw_volcanic_ore.get(), 1, 1));
         this.add(ModBlocks.raw_pyroclast_block.get(),
                 block -> createMultipleOreDrops(ModBlocks.raw_pyroclast_block.get(), ModItems.raw_pyroclast_ore.get(), 1, 1));
         this.add(ModBlocks.raw_volcanic_block.get(),
                 block -> createMultipleOreDrops(ModBlocks.raw_volcanic_block.get(), ModItems.raw_volcanic_ore.get(), 1, 1));
+        this.add(ModBlocks.VOLCANIC_DEBRIS.get(),
+                block -> createMultipleOreDrops(ModBlocks.VOLCANIC_DEBRIS.get(), ModItems.volcanic_scrap.get(), 1, 1));
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
