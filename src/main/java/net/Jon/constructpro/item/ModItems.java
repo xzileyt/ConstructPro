@@ -86,8 +86,10 @@ public class ModItems {
                     .attributes(AxeItem.createAttributes(ModToolTiers.Molten, 7, -3.0f))));
     public static final RegistryObject<Item> Hazard_Alert = ITEMS.register("hazard_alert",
             () -> new HazardAlertItem(new Item.Properties().stacksTo(1).durability(255)));
-
-
+    public static final RegistryObject<Item> PATTERN_STENCIL = ITEMS.register("pattern_stencil",
+            () -> new HazardAlertItem(new Item.Properties().stacksTo(1).durability(500)));
+    public static final RegistryObject<Item> TIME_SHIFTER = ITEMS.register("time_shifter",
+            () -> new TimeShifter(new Item.Properties().stacksTo(1), 1000));
 
 
     // Celestial tools
@@ -160,6 +162,23 @@ public class ModItems {
     public static final RegistryObject<Item> STARLITE_HOE = ITEMS.register("starlite_hoe",
             () -> new HoeItem(ModToolTiers.STARLITE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.STARLITE, 2, -2.0f))));
+
+    // AETHERIUM tools
+    public static final RegistryObject<Item> AETHERIUM_SWORD = ITEMS.register("aetherium_sword",
+            () -> new SwordItem(ModToolTiers.AETHERIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.AETHERIUM, 8, -1.9f))));
+    public static final RegistryObject<Item> AETHERIUM_AXE = ITEMS.register("aetherium_axe",
+            () -> new AxeItem(ModToolTiers.AETHERIUM, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.AETHERIUM, 10, -2.0f))));
+    public static final RegistryObject<Item> AETHERIUM_PICKAXE = ITEMS.register("aetherium_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.AETHERIUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.AETHERIUM, 3.5f, -2.3f))));
+    public static final RegistryObject<Item> AETHERIUM_SHOVEL = ITEMS.register("aetherium_shovel",
+            () -> new ShovelItem(ModToolTiers.AETHERIUM, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.AETHERIUM, 3.0f, -2.0f))));
+    public static final RegistryObject<Item> AETHERIUM_HOE = ITEMS.register("aetherium_hoe",
+            () -> new HoeItem(ModToolTiers.AETHERIUM, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.AETHERIUM, 2, -2.0f))));
 
 
     // Armor

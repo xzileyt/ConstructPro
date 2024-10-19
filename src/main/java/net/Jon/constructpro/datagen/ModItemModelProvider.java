@@ -126,6 +126,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.MEASUREMENT_TOOL.get());
         basicItem(ModItems.TIMBER_AXE.get());
         basicItem(ModItems.Hazard_Alert.get());
+        basicItem(ModItems.PATTERN_STENCIL.get());
+        basicItem(ModItems.TIME_SHIFTER.get());
 
         handheldItem(ModItems.CELESTIAL_SWORD);
         handheldItem(ModItems.CELESTIAL_PICKAXE);
@@ -148,6 +150,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.STARLITE_AXE);
         handheldItem(ModItems.STARLITE_SHOVEL);
         handheldItem(ModItems.STARLITE_HOE);
+        handheldItem(ModItems.AETHERIUM_SWORD);
+        handheldItem(ModItems.AETHERIUM_PICKAXE);
+        handheldItem(ModItems.AETHERIUM_AXE);
+        handheldItem(ModItems.AETHERIUM_SHOVEL);
+        handheldItem(ModItems.AETHERIUM_HOE);
 
         // Food items
         basicItem(ModItems.ETERNAL_STEAK.get());

@@ -5,6 +5,7 @@ import net.Jon.constructpro.block.ModBlocks;
 import net.Jon.constructpro.component.ModDataComponentTypes;
 import net.Jon.constructpro.item.ModCreativeModeTabs;
 import net.Jon.constructpro.item.ModItems;
+import net.Jon.constructpro.sound.ModSounds;
 import net.Jon.constructpro.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,6 +36,7 @@ public class ConstructPro {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModDataComponentTypes.register(modEventBus);
+        ModSounds.SOUNDS.register(modEventBus);
 
         // Enchantments
 
@@ -341,6 +343,13 @@ public class ConstructPro {
             event.accept(ModItems.STARLITE_SHOVEL.get());
             event.accept(ModItems.STARLITE_HOE.get());
             event.accept(ModBlocks.HEIGHT_MARKER.get());
+            event.accept(ModItems.PATTERN_STENCIL.get());
+            event.accept(ModItems.TIME_SHIFTER.get());
+            event.accept(ModItems.AETHERIUM_SWORD.get());
+            event.accept(ModItems.AETHERIUM_PICKAXE.get());
+            event.accept(ModItems.AETHERIUM_AXE.get());
+            event.accept(ModItems.AETHERIUM_SHOVEL.get());
+            event.accept(ModItems.AETHERIUM_HOE.get());
         }
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.CELESTIAL_HELMET.get());

@@ -23,4 +23,8 @@ public class ModToolTiers {
             ModTags.Blocks.NEEDS_STARLITE_TOOL, () -> Ingredient.of(ModItems.STARLITE.get()),
             ModTags.Blocks.INCORRECT_FOR_STARLITE_TOOL);
 
+    public static final Tier AETHERIUM = new ForgeTier(1500,4.3f,3.5f,25,
+            ModTags.Blocks.NEEDS_AETHERIUM_TOOL, () -> Ingredient.of(ModItems.aetherium_ingot.get()),
+            ModTags.Blocks.INCORRECT_FOR_AETHERIUM_TOOL);
+
 }

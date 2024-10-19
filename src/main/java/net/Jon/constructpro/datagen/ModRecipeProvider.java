@@ -1580,11 +1580,56 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.REDSTONE_TORCH), has(Items.REDSTONE_TORCH))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AETHERIUM_PICKAXE.get())
+                .pattern("MMM")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.aetherium_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.aetherium_ingot.get()), has(ModItems.aetherium_ingot.get()))
+                .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AETHERIUM_AXE.get())
+                .pattern("MM ")
+                .pattern("MS ")
+                .pattern(" S ")
+                .define('M', ModItems.aetherium_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.aetherium_ingot.get()), has(ModItems.aetherium_ingot.get()))
+                .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AETHERIUM_SHOVEL.get())
+                .pattern(" M ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.aetherium_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.aetherium_ingot.get()), has(ModItems.aetherium_ingot.get()))
+                .save(pRecipeOutput);
 
-        // Items
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GEO_ANALYZER.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AETHERIUM_HOE.get())
+                .pattern("MM ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.aetherium_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.aetherium_ingot.get()), has(ModItems.aetherium_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TIME_SHIFTER.get())
+                .pattern("CEC")
+                .pattern("ANA")
+                .pattern("LDL")
+                .define('C', Items.CLOCK)
+                .define('E', Items.ENDER_PEARL)
+                .define('A', Items.AMETHYST_SHARD)
+                .define('N', Items.NETHER_STAR)
+                .define('L', Items.LAPIS_BLOCK)
+                .define('D', Items.DIAMOND_BLOCK)
+                .unlockedBy("has_nether_star", has(Items.NETHER_STAR))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.GEO_ANALYZER.get())
                 .pattern("GGG")
                 .pattern("IDI")
                 .pattern("GGG")
@@ -1594,6 +1639,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.REDSTONE_BLOCK), has(Items.REDSTONE_BLOCK))
                 .save(pRecipeOutput);
 
+        // Items
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ETERNAL_STEAK.get())
                 .pattern("SSS")
                 .pattern("SBS")

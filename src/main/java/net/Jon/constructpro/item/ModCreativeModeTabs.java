@@ -51,6 +51,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MEASUREMENT_TOOL.get());
                         output.accept(ModItems.TIMBER_AXE.get());
                         output.accept(ModItems.Hazard_Alert.get());
+                        output.accept(ModItems.PATTERN_STENCIL.get());
+                        output.accept(ModItems.TIME_SHIFTER.get());
 
                         // Tools
                         output.accept(ModItems.CELESTIAL_SWORD.get());
@@ -74,6 +76,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.VOLCANIC_AXE.get());
                         output.accept(ModItems.VOLCANIC_SHOVEL.get());
                         output.accept(ModItems.VOLCANIC_HOE.get());
+                        output.accept(ModItems.AETHERIUM_SWORD.get());
+                        output.accept(ModItems.AETHERIUM_PICKAXE.get());
+                        output.accept(ModItems.AETHERIUM_AXE.get());
+                        output.accept(ModItems.AETHERIUM_SHOVEL.get());
+                        output.accept(ModItems.AETHERIUM_HOE.get());
 
                         // Combat items
                         output.accept(ModItems.FOSSILIZED_AMBER_HELMET.get());
