@@ -17,6 +17,9 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
+                    .put(ModArmorMaterials.AETHERIUM_ARMOR_MATERIAL,
+                            List.of(new MobEffectInstance(MobEffects.NIGHT_VISION, 200, 1, false, false),
+                                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1, false, false)))
                     .put(ModArmorMaterials.FOSSILIZED_AMBER_ARMOR_MATERIAL,
                             List.of(new MobEffectInstance(MobEffects.NIGHT_VISION, 200, 1, false, false),
                                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 1, false, false)))

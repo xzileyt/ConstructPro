@@ -163,6 +163,12 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
     // ashwood
+    public static final RegistryObject<RotatedPillarBlock> ASHWOOD_LOG = registerBlock("ashwood_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 5.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> ashwood_planks = registerBlock("ashwood_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
@@ -197,6 +203,12 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
     // lumenwood
+    public static final RegistryObject<RotatedPillarBlock> LUMENWOOD_LOG = registerBlock("lumenwood_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 5.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> lumenwood_planks = registerBlock("lumenwood_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
@@ -231,6 +243,12 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
     // ebonywood
+    public static final RegistryObject<RotatedPillarBlock> EBONYWOOD_LOG = registerBlock("ebonywood_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 5.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> ebonywood_planks = registerBlock("ebonywood_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
@@ -265,6 +283,12 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
     // charwood
+    public static final RegistryObject<RotatedPillarBlock> CHARWOOD_LOG = registerBlock("charwood_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 5.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> charwood_planks = registerBlock("charwood_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));
@@ -299,6 +323,12 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
     // moonwood
+    public static final RegistryObject<RotatedPillarBlock> MOONWOOD_LOG = registerBlock("moonwood_log",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 5.0f)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> moonwood_planks = registerBlock("moonwood_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops()));

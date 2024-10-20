@@ -66,6 +66,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STARLITE_SHOVEL.get());
                         output.accept(ModItems.STARLITE_HOE.get());
                         output.accept(ModItems.CELESTIAL_HAMMER.get());
+                        output.accept(ModItems.CELESTIAL_BOW.get());
                         output.accept(ModItems.MOLTEN_SWORD.get());
                         output.accept(ModItems.MOLTEN_PICKAXE.get());
                         output.accept(ModItems.MOLTEN_AXE.get());
@@ -108,6 +109,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STARLITE_LEGGINGS.get());
                         output.accept(ModItems.STARLITE_BOOTS.get());
 
+                        output.accept(ModItems.AETHERIUM_HELMET.get());
+                        output.accept(ModItems.AETHERIUM_CHESTPLATE.get());
+                        output.accept(ModItems.AETHERIUM_LEGGINGS.get());
+                        output.accept(ModItems.AETHERIUM_BOOTS.get());
 
                         // Mob Armors
                         output.accept(ModItems.CELESTIAL_HORSE_ARMOR.get());
@@ -340,6 +345,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.YELLOW_WARPED_WART_BLOCK.get());
                         output.accept(ModBlocks.DRY_HAY_BALE.get());
                         output.accept(ModBlocks.VOLCANIC_DEBRIS.get());
+                        output.accept(ModBlocks.ASHWOOD_LOG.get());
+                        output.accept(ModBlocks.CHARWOOD_LOG.get());
+                        output.accept(ModBlocks.LUMENWOOD_LOG.get());
+                        output.accept(ModBlocks.EBONYWOOD_LOG.get());
+                        output.accept(ModBlocks.MOONWOOD_LOG.get());
 
                     }).build());
 

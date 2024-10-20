@@ -299,6 +299,11 @@ public class ConstructPro {
             event.accept(ModBlocks.YELLOW_WARPED_WART_BLOCK);
             event.accept(ModBlocks.DRY_HAY_BALE);
             event.accept(ModBlocks.VOLCANIC_DEBRIS);
+            event.accept(ModBlocks.ASHWOOD_LOG);
+            event.accept(ModBlocks.CHARWOOD_LOG);
+            event.accept(ModBlocks.LUMENWOOD_LOG);
+            event.accept(ModBlocks.EBONYWOOD_LOG);
+            event.accept(ModBlocks.MOONWOOD_LOG);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
@@ -373,6 +378,11 @@ public class ConstructPro {
             event.accept(ModItems.STARLITE_CHESTPLATE.get());
             event.accept(ModItems.STARLITE_LEGGINGS.get());
             event.accept(ModItems.STARLITE_BOOTS.get());
+            event.accept(ModItems.CELESTIAL_BOW.get());
+            event.accept(ModItems.AETHERIUM_HELMET.get());
+            event.accept(ModItems.AETHERIUM_CHESTPLATE.get());
+            event.accept(ModItems.AETHERIUM_LEGGINGS.get());
+            event.accept(ModItems.AETHERIUM_BOOTS.get());
         }
     }
 

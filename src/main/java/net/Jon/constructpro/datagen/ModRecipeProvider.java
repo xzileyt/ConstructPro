@@ -1176,8 +1176,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         // Armor
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CELESTIAL_HELMET.get())
                 .pattern("MMM")
-                .pattern("M M")  // Use 3 spaces for consistency
-                .pattern("   ")  // Empty row still needs 3 spaces
+                .pattern("M M")
+                .pattern("   ")
                 .define('M', ModItems.CELESTIAL.get())
                 .unlockedBy("has_celestial", has(ModItems.CELESTIAL.get()))
                 .save(pRecipeOutput);
@@ -1201,15 +1201,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CELESTIAL_BOOTS.get())
                 .pattern("M M")
                 .pattern("M M")
-                .pattern("   ")  // 3 spaces for the empty row
+                .pattern("   ")
                 .define('M', ModItems.CELESTIAL.get())
                 .unlockedBy("has_celestial", has(ModItems.CELESTIAL.get()))
                 .save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FOSSILIZED_AMBER_HELMET.get())
                 .pattern("MMM")
-                .pattern("M M")  // Use 3 spaces for consistency
-                .pattern("   ")  // Empty row still needs 3 spaces
+                .pattern("M M")
+                .pattern("   ")
                 .define('M', ModItems.FossilizedAmber.get())
                 .unlockedBy("has_fossilized_amber", has(ModItems.FossilizedAmber.get()))
                 .save(pRecipeOutput);
@@ -1233,15 +1233,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.FOSSILIZED_AMBER_BOOTS.get())
                 .pattern("M M")
                 .pattern("M M")
-                .pattern("   ")  // 3 spaces for the empty row
+                .pattern("   ")
                 .define('M', ModItems.FossilizedAmber.get())
                 .unlockedBy("has_fossilized_amber", has(ModItems.FossilizedAmber.get()))
                 .save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MOLTEN_HELMET.get())
                 .pattern("MMM")
-                .pattern("M M")  // Use 3 spaces for consistency
-                .pattern("   ")  // Empty row still needs 3 spaces
+                .pattern("M M")
+                .pattern("   ")
                 .define('M', ModItems.Molten.get())
                 .unlockedBy("has_molten", has(ModItems.Molten.get()))
                 .save(pRecipeOutput);
@@ -1265,15 +1265,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MOLTEN_BOOTS.get())
                 .pattern("M M")
                 .pattern("M M")
-                .pattern("   ")  // 3 spaces for the empty row
+                .pattern("   ")
                 .define('M', ModItems.Molten.get())
                 .unlockedBy("has_molten", has(ModItems.Molten.get()))
                 .save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.VOLCANIC_HELMET.get())
                 .pattern("MMM")
-                .pattern("M M")  // Use 3 spaces for consistency
-                .pattern("   ")  // Empty row still needs 3 spaces
+                .pattern("M M")
+                .pattern("   ")
                 .define('M', ModItems.volcanic_ingot.get())
                 .unlockedBy("has_volcanic_ingot", has(ModItems.volcanic_ingot.get()))
                 .save(pRecipeOutput);
@@ -1297,15 +1297,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.VOLCANIC_BOOTS.get())
                 .pattern("M M")
                 .pattern("M M")
-                .pattern("   ")  // 3 spaces for the empty row
+                .pattern("   ")
                 .define('M', ModItems.volcanic_ingot.get())
                 .unlockedBy("has_volcanic_ingot", has(ModItems.volcanic_ingot.get()))
                 .save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STARLITE_HELMET.get())
                 .pattern("MMM")
-                .pattern("M M")  // Use 3 spaces for consistency
-                .pattern("   ")  // Empty row still needs 3 spaces
+                .pattern("M M")
+                .pattern("   ")
                 .define('M', ModItems.STARLITE.get())
                 .unlockedBy("has_starlite_ingot", has(ModItems.STARLITE.get()))
                 .save(pRecipeOutput);
@@ -1329,9 +1329,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STARLITE_BOOTS.get())
                 .pattern("M M")
                 .pattern("M M")
-                .pattern("   ")  // 3 spaces for the empty row
+                .pattern("   ")
                 .define('M', ModItems.STARLITE.get())
                 .unlockedBy("has_starlite_ingot", has(ModItems.STARLITE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AETHERIUM_HELMET.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("   ")
+                .define('M', ModItems.aetherium_ingot.get())
+                .unlockedBy("has_aetherium", has(ModItems.aetherium_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AETHERIUM_CHESTPLATE.get())
+                .pattern("M M")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', ModItems.aetherium_ingot.get())
+                .unlockedBy("has_aetherium", has(ModItems.aetherium_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AETHERIUM_LEGGINGS.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("M M")
+                .define('M', ModItems.aetherium_ingot.get())
+                .unlockedBy("has_aetherium", has(ModItems.aetherium_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AETHERIUM_BOOTS.get())
+                .pattern("M M")
+                .pattern("M M")
+                .pattern("   ")
+                .define('M', ModItems.aetherium_ingot.get())
+                .unlockedBy("has_aetherium", has(ModItems.aetherium_ingot.get()))
                 .save(pRecipeOutput);
 
         // Mob Armor

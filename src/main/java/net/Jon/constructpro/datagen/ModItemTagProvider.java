@@ -42,7 +42,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.STARLITE_HELMET.get())
                 .add(ModItems.STARLITE_CHESTPLATE.get())
                 .add(ModItems.STARLITE_LEGGINGS.get())
-                .add(ModItems.STARLITE_BOOTS.get());
+                .add(ModItems.STARLITE_BOOTS.get())
+                .add(ModItems.AETHERIUM_HELMET.get())
+                .add(ModItems.AETHERIUM_CHESTPLATE.get())
+                .add(ModItems.AETHERIUM_LEGGINGS.get())
+                .add(ModItems.AETHERIUM_BOOTS.get());
 
 
     }

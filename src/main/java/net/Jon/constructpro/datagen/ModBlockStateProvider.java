@@ -39,6 +39,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // Register log blocks
         logBlock(ModBlocks.LAVENDERWOOD_LOG.get(), "lavenderwood_log");
         logBlock(ModBlocks.AMBERWOOD_LOG.get(), "amberwood_log");
+        logBlock(ModBlocks.ASHWOOD_LOG.get(), "ashwood_log");
+        logBlock(ModBlocks.CHARWOOD_LOG.get(), "charwood_log");
+        logBlock(ModBlocks.LUMENWOOD_LOG.get(), "lumenwood_log");
+        logBlock(ModBlocks.EBONYWOOD_LOG.get(), "ebonywood_log");
+        logBlock(ModBlocks.MOONWOOD_LOG.get(), "moonwood_log");
 
         // Register blocks
         pillarBlock((RotatedPillarBlock) ModBlocks.DRY_HAY_BALE.get(), "dry_hay_bale");

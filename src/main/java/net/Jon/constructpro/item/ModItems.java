@@ -111,6 +111,8 @@ public class ModItems {
     public static final RegistryObject<Item> CELESTIAL_HAMMER = ITEMS.register("celestial_hammer",
             () -> new HammerItem(ModToolTiers.CELESTIAL, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.CELESTIAL, 7, -3.5f))));
+    public static final RegistryObject<Item> CELESTIAL_BOW = ITEMS.register("celestial_bow",
+            () -> new BowItem(new Item.Properties().stacksTo(1).durability(500)));
 
     // Molten tools
     public static final RegistryObject<Item> MOLTEN_SWORD = ITEMS.register("molten_sword",
@@ -235,17 +237,30 @@ public class ModItems {
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(55))));
 
     public static final RegistryObject<Item> STARLITE_HELMET = ITEMS.register("starlite_helmet",
-            () -> new ModArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.STARLITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(60))));
     public static final RegistryObject<Item> STARLITE_CHESTPLATE = ITEMS.register("starlite_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+            () -> new ArmorItem(ModArmorMaterials.STARLITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(60))));
     public static final RegistryObject<Item> STARLITE_LEGGINGS = ITEMS.register("starlite_leggings",
-            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+            () -> new ArmorItem(ModArmorMaterials.STARLITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(60))));
     public static final RegistryObject<Item> STARLITE_BOOTS = ITEMS.register("starlite_boots",
-            () -> new ArmorItem(ModArmorMaterials.VOOLCANIC_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+            () -> new ArmorItem(ModArmorMaterials.STARLITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(60))));
+
+    public static final RegistryObject<Item> AETHERIUM_HELMET = ITEMS.register("aetherium_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.AETHERIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(25))));
+    public static final RegistryObject<Item> AETHERIUM_CHESTPLATE = ITEMS.register("aetherium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.AETHERIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(25))));
+    public static final RegistryObject<Item> AETHERIUM_LEGGINGS = ITEMS.register("aetherium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.AETHERIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(25))));
+    public static final RegistryObject<Item> AETHERIUM_BOOTS = ITEMS.register("aetherium_boots",
+            () -> new ArmorItem(ModArmorMaterials.AETHERIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(25))));
 
     // Mob Armor
     public static final RegistryObject<Item> CELESTIAL_HORSE_ARMOR = ITEMS.register("celestial_horse_armor",

@@ -243,6 +243,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.PURPLE_WARPED_WART_BLOCK.get());
         dropSelf(ModBlocks.YELLOW_WARPED_WART_BLOCK.get());
         dropSelf(ModBlocks.DRY_HAY_BALE.get());
+        dropSelf(ModBlocks.ASHWOOD_LOG.get());
+        dropSelf(ModBlocks.CHARWOOD_LOG.get());
+        dropSelf(ModBlocks.LUMENWOOD_LOG.get());
+        dropSelf(ModBlocks.EBONYWOOD_LOG.get());
+        dropSelf(ModBlocks.MOONWOOD_LOG.get());
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),

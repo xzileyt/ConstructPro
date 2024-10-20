@@ -1,0 +1,6 @@
+{
+    "parent": "constructpro:item/celestial_bow",
+    "textures": {
+        "layer0": "constructpro:item/celestial_bow_pulling_1"
+    }
+}

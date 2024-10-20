@@ -105,6 +105,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         // Wood logs
         simpleBlockItem(ModBlocks.LAVENDERWOOD_LOG);
         simpleBlockItem(ModBlocks.AMBERWOOD_LOG);
+        simpleBlockItem(ModBlocks.ASHWOOD_LOG);
+        simpleBlockItem(ModBlocks.CHARWOOD_LOG);
+        simpleBlockItem(ModBlocks.LUMENWOOD_LOG);
+        simpleBlockItem(ModBlocks.EBONYWOOD_LOG);
+        simpleBlockItem(ModBlocks.MOONWOOD_LOG);
 
         // Custom blocks
         simpleBlockItem(ModBlocks.HEIGHT_MARKER);
@@ -184,6 +189,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.STARLITE_CHESTPLATE);
         trimmedArmorItem(ModItems.STARLITE_LEGGINGS);
         trimmedArmorItem(ModItems.STARLITE_BOOTS);
+
+        trimmedArmorItem(ModItems.AETHERIUM_HELMET);
+        trimmedArmorItem(ModItems.AETHERIUM_CHESTPLATE);
+        trimmedArmorItem(ModItems.AETHERIUM_LEGGINGS);
+        trimmedArmorItem(ModItems.AETHERIUM_BOOTS);
 
 
         // Mob Armor
