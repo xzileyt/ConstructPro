@@ -38,6 +38,7 @@ public class ConstructPro {
         ModDataComponentTypes.register(modEventBus);
         ModSounds.SOUNDS.register(modEventBus);
 
+
         // Enchantments
 
         // Dimensions
@@ -57,7 +58,6 @@ public class ConstructPro {
     private void commonSetup(final FMLCommonSetupEvent event) {
         // Common setup code
     }
-
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         // Add items to creative tabs
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
@@ -304,6 +304,33 @@ public class ConstructPro {
             event.accept(ModBlocks.LUMENWOOD_LOG);
             event.accept(ModBlocks.EBONYWOOD_LOG);
             event.accept(ModBlocks.MOONWOOD_LOG);
+            event.accept(ModBlocks.COMPRESSED_ANDESITE);
+            event.accept(ModBlocks.COMPRESSED_CHISELED_STONE_BRICKS);
+            event.accept(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE);
+            event.accept(ModBlocks.COMPRESSED_COBBLESTONE);
+            event.accept(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_BRICKS);
+            event.accept(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_TILES);
+            event.accept(ModBlocks.COMPRESSED_DEEPSLATE);
+            event.accept(ModBlocks.COMPRESSED_DEEPSLATE_BRICKS);
+            event.accept(ModBlocks.COMPRESSED_DIORITE);
+            event.accept(ModBlocks.COMPRESSED_GRANITE);
+            event.accept(ModBlocks.COMPRESSED_GRAVEL);
+            event.accept(ModBlocks.COMPRESSED_MOSS_BLOCK);
+            event.accept(ModBlocks.COMPRESSED_MOSSY_COBBLESTONE);
+            event.accept(ModBlocks.COMPRESSED_MOSSY_STONE_BRICKS);
+            event.accept(ModBlocks.COMPRESSED_MUD);
+            event.accept(ModBlocks.COMPRESSED_MUD_BRICKS);
+            event.accept(ModBlocks.COMPRESSED_POLISHED_ANDESITE);
+            event.accept(ModBlocks.COMPRESSED_POLISHED_DEEPSLATE);
+            event.accept(ModBlocks.COMPRESSED_POLISHED_DIORITE);
+            event.accept(ModBlocks.COMPRESSED_POLISHED_GRANITE);
+            event.accept(ModBlocks.COMPRESSED_POLISHED_TUFF);
+            event.accept(ModBlocks.COMPRESSED_SAND);
+            event.accept(ModBlocks.COMPRESSED_STONE);
+            event.accept(ModBlocks.COMPRESSED_STONE_BRICKS);
+            event.accept(ModBlocks.COMPRESSED_TERRACOTTA);
+            event.accept(ModBlocks.COMPRESSED_TUFF);
+
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.celestial_ore);
@@ -355,6 +382,7 @@ public class ConstructPro {
             event.accept(ModItems.AETHERIUM_AXE.get());
             event.accept(ModItems.AETHERIUM_SHOVEL.get());
             event.accept(ModItems.AETHERIUM_HOE.get());
+            event.accept(ModItems.COMPRESSION_TOOL.get());
         }
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.CELESTIAL_HELMET.get());

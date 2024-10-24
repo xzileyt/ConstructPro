@@ -856,6 +856,346 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_wheat", has(Items.WHEAT))
                 .save(pRecipeOutput);
 
+        // Blocks > Compressed Blocks
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_ANDESITE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.ANDESITE)
+                .unlockedBy("has_andesite", has(Blocks.ANDESITE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHISELED_STONE_BRICKS.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.CHISELED_STONE_BRICKS)
+                .unlockedBy("has_chiseled_stone_bricks", has(Blocks.CHISELED_STONE_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_COBBLED_DEEPSLATE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.COBBLED_DEEPSLATE)
+                .unlockedBy("has_cobbled_deepslate", has(Blocks.COBBLED_DEEPSLATE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_COBBLESTONE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.COBBLESTONE)
+                .unlockedBy("has_cobblestone", has(Blocks.COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_BRICKS.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.CRACKED_DEEPSLATE_BRICKS)
+                .unlockedBy("has_cracked_deepslate_bricks", has(Blocks.CRACKED_DEEPSLATE_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_TILES.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.CRACKED_DEEPSLATE_TILES)
+                .unlockedBy("has_cracked_deepslate_tiles", has(Blocks.CRACKED_DEEPSLATE_TILES))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_DEEPSLATE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.DEEPSLATE)
+                .unlockedBy("has_deepslate", has(Blocks.DEEPSLATE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_DEEPSLATE_BRICKS.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.DEEPSLATE_BRICKS)
+                .unlockedBy("has_deepslate_bricks", has(Blocks.DEEPSLATE_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_DIORITE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.DIORITE)
+                .unlockedBy("has_diorite", has(Blocks.DIORITE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_GRANITE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.GRANITE)
+                .unlockedBy("has_granite", has(Blocks.GRANITE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_GRAVEL.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.GRAVEL)
+                .unlockedBy("has_gravel", has(Blocks.GRAVEL))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_MOSS_BLOCK.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.MOSS_BLOCK)
+                .unlockedBy("has_moss_block", has(Blocks.MOSS_BLOCK))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_MOSSY_STONE_BRICKS.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.MOSSY_STONE_BRICKS)
+                .unlockedBy("has_mossy_stone_bricks", has(Blocks.MOSSY_STONE_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_MOSSY_COBBLESTONE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.MOSSY_COBBLESTONE)
+                .unlockedBy("has_mossy_cobblestone", has(Blocks.MOSSY_COBBLESTONE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_MUD.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.MUD)
+                .unlockedBy("has_mud", has(Blocks.MUD))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_MUD_BRICKS.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.MUD_BRICKS)
+                .unlockedBy("has_mud_bricks", has(Blocks.MUD_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_POLISHED_ANDESITE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.POLISHED_ANDESITE)
+                .unlockedBy("has_polished_andesite", has(Blocks.POLISHED_ANDESITE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_POLISHED_DEEPSLATE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.POLISHED_DEEPSLATE)
+                .unlockedBy("has_polished_deepslate", has(Blocks.POLISHED_DEEPSLATE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_POLISHED_DIORITE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.POLISHED_DIORITE)
+                .unlockedBy("has_polished_diorite", has(Blocks.POLISHED_DIORITE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_POLISHED_GRANITE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.POLISHED_GRANITE)
+                .unlockedBy("has_polished_granite", has(Blocks.POLISHED_GRANITE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_POLISHED_TUFF.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.POLISHED_TUFF)
+                .unlockedBy("has_polished_tuff", has(Blocks.POLISHED_TUFF))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SAND.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.SAND)
+                .unlockedBy("has_sand", has(Blocks.SAND))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_STONE.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.STONE)
+                .unlockedBy("has_stone", has(Blocks.STONE))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_STONE_BRICKS.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.STONE_BRICKS)
+                .unlockedBy("has_stone_bricks", has(Blocks.STONE_BRICKS))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_TERRACOTTA.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.TERRACOTTA)
+                .unlockedBy("has_terracotta", has(Blocks.TERRACOTTA))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_TUFF.get(),1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Blocks.TUFF)
+                .unlockedBy("has_tuff", has(Blocks.TUFF))
+                .save(pRecipeOutput);
+
+        // Compressed Blocks > Blocks
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.ANDESITE,9)
+                .requires(ModBlocks.COMPRESSED_ANDESITE.get())
+                .unlockedBy("has_compressed_andesite", has(ModBlocks.COMPRESSED_ANDESITE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.CHISELED_STONE_BRICKS,9)
+                .requires(ModBlocks.COMPRESSED_CHISELED_STONE_BRICKS.get())
+                .unlockedBy("has_compressed_chiseled_stone_bricks", has(ModBlocks.COMPRESSED_CHISELED_STONE_BRICKS.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.COBBLED_DEEPSLATE,9)
+                .requires(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE.get())
+                .unlockedBy("has_compressed_cobbled_deepslate", has(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.COBBLESTONE,9)
+                .requires(ModBlocks.COMPRESSED_COBBLESTONE.get())
+                .unlockedBy("has_compressed_cobblestone", has(ModBlocks.COMPRESSED_COBBLESTONE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_DEEPSLATE_BRICKS,9)
+                .requires(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_BRICKS.get())
+                .unlockedBy("has_compressed_cracked_deepslate_bricks", has(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_BRICKS.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.CRACKED_DEEPSLATE_TILES,9)
+                .requires(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_TILES.get())
+                .unlockedBy("has_compressed_cracked_deepslate_tiles", has(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_TILES.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.DEEPSLATE,9)
+                .requires(ModBlocks.COMPRESSED_DEEPSLATE.get())
+                .unlockedBy("has_compressed_deepslate", has(ModBlocks.COMPRESSED_DEEPSLATE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.DEEPSLATE_BRICKS,9)
+                .requires(ModBlocks.COMPRESSED_DEEPSLATE_BRICKS.get())
+                .unlockedBy("has_compressed_deepslate_bricks", has(ModBlocks.COMPRESSED_DEEPSLATE_BRICKS.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.DIORITE,9)
+                .requires(ModBlocks.COMPRESSED_DIORITE.get())
+                .unlockedBy("has_compressed_diorite", has(ModBlocks.COMPRESSED_DIORITE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.GRANITE,9)
+                .requires(ModBlocks.COMPRESSED_GRANITE.get())
+                .unlockedBy("has_compressed_granite", has(ModBlocks.COMPRESSED_GRANITE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.GRAVEL,9)
+                .requires(ModBlocks.COMPRESSED_GRAVEL.get())
+                .unlockedBy("has_compressed_gravel", has(ModBlocks.COMPRESSED_GRAVEL.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSS_BLOCK,9)
+                .requires(ModBlocks.COMPRESSED_MOSS_BLOCK.get())
+                .unlockedBy("has_compressed_moss_block", has(ModBlocks.COMPRESSED_MOSS_BLOCK.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_COBBLESTONE,9)
+                .requires(ModBlocks.COMPRESSED_MOSSY_COBBLESTONE.get())
+                .unlockedBy("has_compressed_mossy_cobblestone", has(ModBlocks.COMPRESSED_MOSSY_COBBLESTONE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.MOSSY_STONE_BRICKS,9)
+                .requires(ModBlocks.COMPRESSED_MOSSY_STONE_BRICKS.get())
+                .unlockedBy("has_compressed_mossy_stone_bricks", has(ModBlocks.COMPRESSED_MOSSY_STONE_BRICKS.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.MUD,9)
+                .requires(ModBlocks.COMPRESSED_MUD.get())
+                .unlockedBy("has_compressed_mud", has(ModBlocks.COMPRESSED_MUD.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.MUD_BRICKS,9)
+                .requires(ModBlocks.COMPRESSED_MUD_BRICKS.get())
+                .unlockedBy("has_compressed_mud_bricks", has(ModBlocks.COMPRESSED_MUD_BRICKS.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.POLISHED_ANDESITE,9)
+                .requires(ModBlocks.COMPRESSED_POLISHED_ANDESITE.get())
+                .unlockedBy("has_compressed_polished_andesite", has(ModBlocks.COMPRESSED_POLISHED_ANDESITE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.POLISHED_DEEPSLATE,9)
+                .requires(ModBlocks.COMPRESSED_POLISHED_DEEPSLATE.get())
+                .unlockedBy("has_compressed_polished_deepslate", has(ModBlocks.COMPRESSED_POLISHED_DEEPSLATE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.POLISHED_DIORITE,9)
+                .requires(ModBlocks.COMPRESSED_POLISHED_DIORITE.get())
+                .unlockedBy("has_compressed_polished_diorite", has(ModBlocks.COMPRESSED_POLISHED_DIORITE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.POLISHED_GRANITE,9)
+                .requires(ModBlocks.COMPRESSED_POLISHED_GRANITE.get())
+                .unlockedBy("has_compressed_polished_granite", has(ModBlocks.COMPRESSED_POLISHED_GRANITE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.POLISHED_TUFF,9)
+                .requires(ModBlocks.COMPRESSED_POLISHED_TUFF.get())
+                .unlockedBy("has_compressed_polished_tuff", has(ModBlocks.COMPRESSED_POLISHED_TUFF.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.SAND,9)
+                .requires(ModBlocks.COMPRESSED_SAND.get())
+                .unlockedBy("has_compressed_sand", has(ModBlocks.COMPRESSED_SAND.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.STONE,9)
+                .requires(ModBlocks.COMPRESSED_STONE.get())
+                .unlockedBy("has_compressed_stone", has(ModBlocks.COMPRESSED_STONE.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.STONE_BRICKS,9)
+                .requires(ModBlocks.COMPRESSED_STONE_BRICKS.get())
+                .unlockedBy("has_compressed_stone_bricks", has(ModBlocks.COMPRESSED_STONE_BRICKS.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.TERRACOTTA,9)
+                .requires(ModBlocks.COMPRESSED_TERRACOTTA.get())
+                .unlockedBy("has_compressed_terracotta", has(ModBlocks.COMPRESSED_TERRACOTTA.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Blocks.TUFF,9)
+                .requires(ModBlocks.COMPRESSED_TUFF.get())
+                .unlockedBy("has_compressed_tuff", has(ModBlocks.COMPRESSED_TUFF.get()))
+                .save(pRecipeOutput);
+
 
         // Wood logs
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.lavenderwood_planks.get(), 4)

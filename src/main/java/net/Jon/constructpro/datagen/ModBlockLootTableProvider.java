@@ -248,6 +248,33 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LUMENWOOD_LOG.get());
         dropSelf(ModBlocks.EBONYWOOD_LOG.get());
         dropSelf(ModBlocks.MOONWOOD_LOG.get());
+        dropSelf(ModBlocks.COMPRESSED_ANDESITE.get());
+        dropSelf(ModBlocks.COMPRESSED_CHISELED_STONE_BRICKS.get());
+        dropSelf(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE.get());
+        dropSelf(ModBlocks.COMPRESSED_COBBLESTONE.get());
+        dropSelf(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_BRICKS.get());
+        dropSelf(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_TILES.get());
+        dropSelf(ModBlocks.COMPRESSED_DEEPSLATE.get());
+        dropSelf(ModBlocks.COMPRESSED_DEEPSLATE_BRICKS.get());
+        dropSelf(ModBlocks.COMPRESSED_DIORITE.get());
+        dropSelf(ModBlocks.COMPRESSED_GRANITE.get());
+        dropSelf(ModBlocks.COMPRESSED_GRAVEL.get());
+        dropSelf(ModBlocks.COMPRESSED_MOSS_BLOCK.get());
+        dropSelf(ModBlocks.COMPRESSED_MOSSY_COBBLESTONE.get());
+        dropSelf(ModBlocks.COMPRESSED_MOSSY_STONE_BRICKS.get());
+        dropSelf(ModBlocks.COMPRESSED_MUD.get());
+        dropSelf(ModBlocks.COMPRESSED_MUD_BRICKS.get());
+        dropSelf(ModBlocks.COMPRESSED_POLISHED_ANDESITE.get());
+        dropSelf(ModBlocks.COMPRESSED_POLISHED_DEEPSLATE.get());
+        dropSelf(ModBlocks.COMPRESSED_POLISHED_GRANITE.get());
+        dropSelf(ModBlocks.COMPRESSED_POLISHED_DIORITE.get());
+        dropSelf(ModBlocks.COMPRESSED_POLISHED_TUFF.get());
+        dropSelf(ModBlocks.COMPRESSED_SAND.get());
+        dropSelf(ModBlocks.COMPRESSED_STONE.get());
+        dropSelf(ModBlocks.COMPRESSED_STONE_BRICKS.get());
+        dropSelf(ModBlocks.COMPRESSED_TERRACOTTA.get());
+        dropSelf(ModBlocks.COMPRESSED_TUFF.get());
+
 
         // Ores
         this.add(ModBlocks.celestial_ore.get(),

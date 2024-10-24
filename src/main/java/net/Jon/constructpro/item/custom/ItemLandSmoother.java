@@ -38,43 +38,24 @@ public class ItemLandSmoother extends Item {
 
     public void smoothTerrain(Level world, BlockPos start, int radius) {
         List<BlockPos> affectedBlocks = new ArrayList<>();
-        int totalHeight = 0;
-        int count = 0;
 
-        // Collect heights and positions of blocks in the specified radius
+        // Collect positions of blocks at the first layer in the specified radius
         for (int x = -radius; x <= radius; x++) {
             for (int z = -radius; z <= radius; z++) {
                 BlockPos pos = start.offset(x, 0, z);
                 BlockState state = world.getBlockState(pos);
 
-                // Only consider valid blocks for smoothing (grass or dirt)
-                if (state.is(Blocks.GRASS_BLOCK) || state.is(Blocks.DIRT)) {
+                // Only consider valid blocks for smoothing (grass or dirt) at Y-level 0
+                if ((state.is(Blocks.GRASS_BLOCK) || state.is(Blocks.DIRT)) && pos.getY() == 0) {
                     affectedBlocks.add(pos);
-                    totalHeight += pos.getY(); // Use the Y-coordinate
-                    count++;
                 }
             }
         }
 
-        // Avoid division by zero if no blocks are found
-        if (count == 0) {
-            return;
-        }
-
-        // Calculate the average height of the collected blocks
-        int averageHeight = totalHeight / count;
-
-        // Update the blocks to create a slope
+        // Update the blocks to create a flat surface
         for (BlockPos pos : affectedBlocks) {
-            int distance = Math.max(Math.abs(pos.getX() - start.getX()), Math.abs(pos.getZ() - start.getZ()));
-            // Calculate target height based on the average height and distance
-            int targetHeight = averageHeight - (distance / 2);
-
-            // Replace the block if it's below the target height
-            if (pos.getY() < targetHeight) {
-                BlockState newBlockState = targetHeight > averageHeight ? Blocks.GRASS_BLOCK.defaultBlockState() : Blocks.DIRT.defaultBlockState();
-                world.setBlock(pos, newBlockState, 3); // Replace with the desired block
-            }
+            BlockState newBlockState = Blocks.GRASS_BLOCK.defaultBlockState(); // Replace with the desired block
+            world.setBlock(pos, newBlockState, 3); // Replace with the desired block
         }
     }
 
@@ -87,6 +68,5 @@ public class ItemLandSmoother extends Item {
         }
 
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
-
     }
 }

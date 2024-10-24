@@ -90,6 +90,8 @@ public class ModItems {
             () -> new HazardAlertItem(new Item.Properties().stacksTo(1).durability(500)));
     public static final RegistryObject<Item> TIME_SHIFTER = ITEMS.register("time_shifter",
             () -> new TimeShifter(new Item.Properties().stacksTo(1), 1000));
+    public static final RegistryObject<Item> COMPRESSION_TOOL = ITEMS.register("compression_tool",
+            () -> new Item(new Item.Properties().stacksTo(1).durability(1500)));
 
 
     // Celestial tools

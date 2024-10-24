@@ -275,6 +275,32 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PINK_WARPED_WART_BLOCK);
         blockWithItem(ModBlocks.PURPLE_WARPED_WART_BLOCK);
         blockWithItem(ModBlocks.YELLOW_WARPED_WART_BLOCK);
+        blockWithItem(ModBlocks.COMPRESSED_ANDESITE);
+        blockWithItem(ModBlocks.COMPRESSED_CHISELED_STONE_BRICKS);
+        blockWithItem(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE);
+        blockWithItem(ModBlocks.COMPRESSED_COBBLESTONE);
+        blockWithItem(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_BRICKS);
+        blockWithItem(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_TILES);
+        blockWithItem(ModBlocks.COMPRESSED_DEEPSLATE);
+        blockWithItem(ModBlocks.COMPRESSED_DEEPSLATE_BRICKS);
+        blockWithItem(ModBlocks.COMPRESSED_DIORITE);
+        blockWithItem(ModBlocks.COMPRESSED_GRANITE);
+        blockWithItem(ModBlocks.COMPRESSED_GRAVEL);
+        blockWithItem(ModBlocks.COMPRESSED_MOSS_BLOCK);
+        blockWithItem(ModBlocks.COMPRESSED_MOSSY_COBBLESTONE);
+        blockWithItem(ModBlocks.COMPRESSED_MOSSY_STONE_BRICKS);
+        blockWithItem(ModBlocks.COMPRESSED_MUD);
+        blockWithItem(ModBlocks.COMPRESSED_MUD_BRICKS);
+        blockWithItem(ModBlocks.COMPRESSED_POLISHED_ANDESITE);
+        blockWithItem(ModBlocks.COMPRESSED_POLISHED_DEEPSLATE);
+        blockWithItem(ModBlocks.COMPRESSED_POLISHED_DIORITE);
+        blockWithItem(ModBlocks.COMPRESSED_POLISHED_GRANITE);
+        blockWithItem(ModBlocks.COMPRESSED_POLISHED_TUFF);
+        blockWithItem(ModBlocks.COMPRESSED_SAND);
+        blockWithItem(ModBlocks.COMPRESSED_STONE);
+        blockWithItem(ModBlocks.COMPRESSED_STONE_BRICKS);
+        blockWithItem(ModBlocks.COMPRESSED_TERRACOTTA);
+        blockWithItem(ModBlocks.COMPRESSED_TUFF);
 
         // Ores
         blockWithItem(ModBlocks.celestial_ore);

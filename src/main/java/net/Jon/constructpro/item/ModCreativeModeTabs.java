@@ -53,6 +53,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.Hazard_Alert.get());
                         output.accept(ModItems.PATTERN_STENCIL.get());
                         output.accept(ModItems.TIME_SHIFTER.get());
+                        output.accept(ModItems.COMPRESSION_TOOL.get());
 
                         // Tools
                         output.accept(ModItems.CELESTIAL_SWORD.get());
@@ -350,6 +351,32 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LUMENWOOD_LOG.get());
                         output.accept(ModBlocks.EBONYWOOD_LOG.get());
                         output.accept(ModBlocks.MOONWOOD_LOG.get());
+                        output.accept(ModBlocks.COMPRESSED_ANDESITE.get());
+                        output.accept(ModBlocks.COMPRESSED_CHISELED_STONE_BRICKS.get());
+                        output.accept(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE.get());
+                        output.accept(ModBlocks.COMPRESSED_COBBLESTONE.get());
+                        output.accept(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_TILES.get());
+                        output.accept(ModBlocks.COMPRESSED_CRACKED_DEEPSLATE_BRICKS.get());
+                        output.accept(ModBlocks.COMPRESSED_DEEPSLATE.get());
+                        output.accept(ModBlocks.COMPRESSED_DEEPSLATE_BRICKS.get());
+                        output.accept(ModBlocks.COMPRESSED_DIORITE.get());
+                        output.accept(ModBlocks.COMPRESSED_GRANITE.get());
+                        output.accept(ModBlocks.COMPRESSED_GRAVEL.get());
+                        output.accept(ModBlocks.COMPRESSED_MOSS_BLOCK.get());
+                        output.accept(ModBlocks.COMPRESSED_MOSSY_COBBLESTONE.get());
+                        output.accept(ModBlocks.COMPRESSED_MOSSY_STONE_BRICKS.get());
+                        output.accept(ModBlocks.COMPRESSED_MUD.get());
+                        output.accept(ModBlocks.COMPRESSED_MUD_BRICKS.get());
+                        output.accept(ModBlocks.COMPRESSED_POLISHED_ANDESITE.get());
+                        output.accept(ModBlocks.COMPRESSED_POLISHED_DIORITE.get());
+                        output.accept(ModBlocks.COMPRESSED_POLISHED_GRANITE.get());
+                        output.accept(ModBlocks.COMPRESSED_POLISHED_DEEPSLATE.get());
+                        output.accept(ModBlocks.COMPRESSED_POLISHED_TUFF.get());
+                        output.accept(ModBlocks.COMPRESSED_SAND.get());
+                        output.accept(ModBlocks.COMPRESSED_STONE.get());
+                        output.accept(ModBlocks.COMPRESSED_STONE_BRICKS.get());
+                        output.accept(ModBlocks.COMPRESSED_TERRACOTTA.get());
+                        output.accept(ModBlocks.COMPRESSED_TUFF.get());
 
                     }).build());
 

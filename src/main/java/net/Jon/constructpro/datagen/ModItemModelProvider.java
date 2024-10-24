@@ -133,6 +133,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.Hazard_Alert.get());
         basicItem(ModItems.PATTERN_STENCIL.get());
         basicItem(ModItems.TIME_SHIFTER.get());
+        basicItem(ModItems.COMPRESSION_TOOL.get());
 
         handheldItem(ModItems.CELESTIAL_SWORD);
         handheldItem(ModItems.CELESTIAL_PICKAXE);

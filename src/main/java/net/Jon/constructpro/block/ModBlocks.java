@@ -980,6 +980,166 @@ public class ModBlocks {
                     .sound(SoundType.GLASS)));
 
 
+    // Compressed Blocks
+    public static final RegistryObject<Block> COMPRESSED_COBBLESTONE = registerBlock("compressed_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_STONE = registerBlock("compressed_stone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_ANDESITE = registerBlock("compressed_andesite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_DIORITE = registerBlock("compressed_diorite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_GRANITE = registerBlock("compressed_granite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE = registerBlock("compressed_deepslate",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.DEEPSLATE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_COBBLED_DEEPSLATE = registerBlock("compressed_cobbled_deepslate",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.DEEPSLATE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_SAND = registerBlock("compressed_sand",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.SAND)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_GRAVEL = registerBlock("compressed_gravel",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.GRAVEL)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_CHISELED_STONE_BRICKS = registerBlock("compressed_chiseled_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_CRACKED_DEEPSLATE_TILES = registerBlock("compressed_cracked_deepslate_tiles",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.DEEPSLATE_TILES)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_CRACKED_DEEPSLATE_BRICKS = registerBlock("compressed_cracked_deepslate_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.DEEPSLATE_BRICKS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_DEEPSLATE_BRICKS = registerBlock("compressed_deepslate_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.DEEPSLATE_BRICKS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_MOSS_BLOCK = registerBlock("compressed_moss_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.MOSS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_MOSSY_COBBLESTONE = registerBlock("compressed_mossy_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_MOSSY_STONE_BRICKS = registerBlock("compressed_mossy_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_MUD = registerBlock("compressed_mud",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.MUD)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_MUD_BRICKS = registerBlock("compressed_mud_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.MUD_BRICKS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_ANDESITE = registerBlock("compressed_polished_andesite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_DEEPSLATE = registerBlock("compressed_polished_deepslate",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.POLISHED_DEEPSLATE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_DIORITE = registerBlock("compressed_polished_diorite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_GRANITE = registerBlock("compressed_polished_granite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_POLISHED_TUFF = registerBlock("compressed_polished_tuff",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.POLISHED_TUFF)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_TERRACOTTA = registerBlock("compressed_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_TUFF = registerBlock("compressed_tuff",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.TUFF)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> COMPRESSED_STONE_BRICKS = registerBlock("compressed_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f,6.0f)
+                    .sound(SoundType.STONE)
+                    .requiresCorrectToolForDrops()));
+
+
+    // Special Blocks
+
 
 
     // Ores
