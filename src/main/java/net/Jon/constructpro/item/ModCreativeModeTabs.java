@@ -51,9 +51,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MEASUREMENT_TOOL.get());
                         output.accept(ModItems.TIMBER_AXE.get());
                         output.accept(ModItems.Hazard_Alert.get());
-                        output.accept(ModItems.PATTERN_STENCIL.get());
+                        //output.accept(ModItems.PATTERN_STENCIL.get());
                         output.accept(ModItems.TIME_SHIFTER.get());
                         output.accept(ModItems.COMPRESSION_TOOL.get());
+                        output.accept(ModItems.BLOCK_POLISHER.get());
 
                         // Tools
                         output.accept(ModItems.CELESTIAL_SWORD.get());
@@ -83,6 +84,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AETHERIUM_AXE.get());
                         output.accept(ModItems.AETHERIUM_SHOVEL.get());
                         output.accept(ModItems.AETHERIUM_HOE.get());
+                        output.accept(ModItems.SOLISITE_SWORD.get());
+                        output.accept(ModItems.SOLISITE_PICKAXE.get());
+                        output.accept(ModItems.SOLISITE_AXE.get());
+                        output.accept(ModItems.SOLISITE_SHOVEL.get());
+                        output.accept(ModItems.SOLISITE_HOE.get());
 
                         // Combat items
                         output.accept(ModItems.FOSSILIZED_AMBER_HELMET.get());
@@ -114,6 +120,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AETHERIUM_CHESTPLATE.get());
                         output.accept(ModItems.AETHERIUM_LEGGINGS.get());
                         output.accept(ModItems.AETHERIUM_BOOTS.get());
+
+                        output.accept(ModItems.SOLISITE_HELMET.get());
+                        output.accept(ModItems.SOLISITE_CHESTPLATE.get());
+                        output.accept(ModItems.SOLISITE_LEGGINGS.get());
+                        output.accept(ModItems.SOLISITE_BOOTS.get());
 
                         // Mob Armors
                         output.accept(ModItems.CELESTIAL_HORSE_ARMOR.get());

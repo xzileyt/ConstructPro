@@ -20,6 +20,8 @@ public class ModTags {
         public static final TagKey<Block> INCORRECT_FOR_VOLCANIC_TOOL = createTag("incorrect_for_volcanic_tool");
         public static final TagKey<Block> NEEDS_AETHERIUM_TOOL = createTag("needs_aetherium_tool");
         public static final TagKey<Block> INCORRECT_FOR_AETHERIUM_TOOL = createTag("incorrect_for_aetherium_tool");
+        public static final TagKey<Block> NEEDS_SOLISITE_TOOL = createTag("needs_solisite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_SOLISITE_TOOL = createTag("incorrect_for_solisite_tool");
         public static final TagKey<Block> NEEDS_TIMBER_TOOL = createTag("needs_timber_tool"); // Added
         public static final TagKey<Block> INCORRECT_FOR_TIMBER_TOOL = createTag("incorrect_for_timber_tool"); // Added
 

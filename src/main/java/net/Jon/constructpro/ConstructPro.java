@@ -38,6 +38,8 @@ public class ConstructPro {
         ModDataComponentTypes.register(modEventBus);
         ModSounds.SOUNDS.register(modEventBus);
 
+        // Mobs
+
 
         // Enchantments
 
@@ -383,6 +385,12 @@ public class ConstructPro {
             event.accept(ModItems.AETHERIUM_SHOVEL.get());
             event.accept(ModItems.AETHERIUM_HOE.get());
             event.accept(ModItems.COMPRESSION_TOOL.get());
+            event.accept(ModItems.SOLISITE_SWORD.get());
+            event.accept(ModItems.SOLISITE_PICKAXE.get());
+            event.accept(ModItems.SOLISITE_AXE.get());
+            event.accept(ModItems.SOLISITE_SHOVEL.get());
+            event.accept(ModItems.SOLISITE_HOE.get());
+            event.accept(ModItems.BLOCK_POLISHER.get());
         }
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.CELESTIAL_HELMET.get());
@@ -411,6 +419,10 @@ public class ConstructPro {
             event.accept(ModItems.AETHERIUM_CHESTPLATE.get());
             event.accept(ModItems.AETHERIUM_LEGGINGS.get());
             event.accept(ModItems.AETHERIUM_BOOTS.get());
+            event.accept(ModItems.SOLISITE_HELMET.get());
+            event.accept(ModItems.SOLISITE_CHESTPLATE.get());
+            event.accept(ModItems.SOLISITE_LEGGINGS.get());
+            event.accept(ModItems.SOLISITE_BOOTS.get());
         }
     }
 

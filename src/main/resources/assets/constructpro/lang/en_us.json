@@ -30,9 +30,10 @@
   "item.constructpro.measurement_tool": "Measurement Tool",
   "item.constructpro.timber_axe": "Timber Axe - [WIP]",
   "item.constructpro.hazard_alert": "Hazard Alert",
-  "item.constructpro.pattern_stencil": "Pattern Stencil - [WIP]",
+  "item.constructpro.pattern_stencil": "Pattern Stencil",
   "item.constructpro.time_shifter": "Time Shifter",
   "item.constructpro.compression_tool": "Compression Tool - [WIP]",
+  "item.constructpro.block_polisher": "Block Polisher",
 
   "item.constructpro.celestial_sword": "Celestial Sword",
   "item.constructpro.celestial_pickaxe": "Celestial Pickaxe",
@@ -62,6 +63,11 @@
   "item.constructpro.aetherium_shovel": "Aetherium Shovel",
   "item.constructpro.aetherium_hoe": "Aetherium Hoe",
   "item.constructpro.celestial_bow": "Celestial Bow",
+  "item.constructpro.solisite_sword": "Solisite Sword",
+  "item.constructpro.solisite_pickaxe": "Solisite Pickaxe",
+  "item.constructpro.solisite_axe": "Solisite Axe",
+  "item.constructpro.solisite_shovel": "Solisite Shovel",
+  "item.constructpro.solisite_hoe": "Solisite Hoe",
 
   "item.constructpro.celestial_helmet": "Celestial Helmet",
   "item.constructpro.celestial_chestplate": "Celestial Chestplate",
@@ -87,6 +93,10 @@
   "item.constructpro.aetherium_chestplate": "Aetherium Chestplate",
   "item.constructpro.aetherium_leggings": "Aetherium Leggings",
   "item.constructpro.aetherium_boots": "Aetherium Boots",
+  "item.constructpro.solisite_helmet": "Solisite Helmet",
+  "item.constructpro.solisite_chestplate": "Solisite Chestplate",
+  "item.constructpro.solisite_leggings": "Solisite Leggings",
+  "item.constructpro.solisite_boots": "Solisite Boots",
 
   "item.constructpro.eternal_steak": "Eternal Steak",
 
@@ -373,6 +383,9 @@
   "tooltip.constructpro.time_shifter": "Press §eShift§r for more Information!",
   "tooltip.constructpro.compression_tool.shift_down": "This tool Compresses block to save inventory space",
   "tooltip.constructpro.compression_tool": "Press §eShift§r for more Information!",
+  "tooltip.constructpro.block_polisher.shift_down": "This tool Replaces the block with its polished version.",
+  "tooltip.constructpro.block_polisher": "Press §eShift§r for more Information!",
+
 
   "creativetab.ConstructPro.constructpro_items": "ConstructPro Items",
   "creativetab.ConstructPro.constructpro_blocks": "ConstructPro Blocks"

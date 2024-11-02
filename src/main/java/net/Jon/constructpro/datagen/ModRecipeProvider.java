@@ -1706,6 +1706,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_aetherium", has(ModItems.aetherium_ingot.get()))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SOLISITE_HELMET.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("   ")
+                .define('M', ModItems.solisite_ingot.get())
+                .unlockedBy("has_solisite", has(ModItems.solisite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SOLISITE_CHESTPLATE.get())
+                .pattern("M M")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', ModItems.solisite_ingot.get())
+                .unlockedBy("has_solisite", has(ModItems.solisite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SOLISITE_LEGGINGS.get())
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("M M")
+                .define('M', ModItems.solisite_ingot.get())
+                .unlockedBy("has_solisite", has(ModItems.solisite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SOLISITE_BOOTS.get())
+                .pattern("M M")
+                .pattern("M M")
+                .pattern("   ")
+                .define('M', ModItems.solisite_ingot.get())
+                .unlockedBy("has_solisite", has(ModItems.solisite_ingot.get()))
+                .save(pRecipeOutput);
+
         // Mob Armor
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.CELESTIAL_HORSE_ARMOR.get(), 1)
                 .pattern("C  ")
@@ -1952,6 +1984,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.REDSTONE_TORCH), has(Items.REDSTONE_TORCH))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AETHERIUM_SWORD.get())
+                .pattern(" M ")
+                .pattern(" M ")
+                .pattern(" S ")
+                .define('M', ModItems.aetherium_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.aetherium_ingot.get()), has(ModItems.aetherium_ingot.get()))
+                .save(pRecipeOutput);
+        
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AETHERIUM_PICKAXE.get())
                 .pattern("MMM")
                 .pattern(" S ")
@@ -2011,7 +2052,62 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.REDSTONE_BLOCK), has(Items.REDSTONE_BLOCK))
                 .save(pRecipeOutput);
 
-        // Items
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SOLISITE_SWORD.get())
+                .pattern(" M ")
+                .pattern(" M ")
+                .pattern(" S ")
+                .define('M', ModItems.solisite_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.solisite_ingot.get()), has(ModItems.solisite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SOLISITE_PICKAXE.get())
+                .pattern("MMM")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.solisite_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.solisite_ingot.get()), has(ModItems.solisite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SOLISITE_AXE.get())
+                .pattern("MM ")
+                .pattern("MS ")
+                .pattern(" S ")
+                .define('M', ModItems.solisite_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.solisite_ingot.get()), has(ModItems.solisite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SOLISITE_SHOVEL.get())
+                .pattern(" M ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.solisite_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.solisite_ingot.get()), has(ModItems.solisite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SOLISITE_HOE.get())
+                .pattern("MM ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('M', ModItems.solisite_ingot.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.solisite_ingot.get()), has(ModItems.solisite_ingot.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLOCK_POLISHER.get(),1)
+                .pattern("W  ")
+                .pattern("WS ")
+                .pattern("   ")
+                .define('W', Blocks.OAK_PLANKS)
+                .define('S', Items.STRING)
+                .unlockedBy("has_oak_planks", has(Blocks.OAK_PLANKS))
+                .unlockedBy("has_string", has(Items.STRING))
+                .save(pRecipeOutput);
+
+        // Food Items
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ETERNAL_STEAK.get())
                 .pattern("SSS")
                 .pattern("SBS")

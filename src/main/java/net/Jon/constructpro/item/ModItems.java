@@ -87,12 +87,13 @@ public class ModItems {
     public static final RegistryObject<Item> Hazard_Alert = ITEMS.register("hazard_alert",
             () -> new HazardAlertItem(new Item.Properties().stacksTo(1).durability(255)));
     public static final RegistryObject<Item> PATTERN_STENCIL = ITEMS.register("pattern_stencil",
-            () -> new HazardAlertItem(new Item.Properties().stacksTo(1).durability(500)));
+            () -> new PatternStencil(new Item.Properties().stacksTo(1).durability(500)));
     public static final RegistryObject<Item> TIME_SHIFTER = ITEMS.register("time_shifter",
             () -> new TimeShifter(new Item.Properties().stacksTo(1), 1000));
     public static final RegistryObject<Item> COMPRESSION_TOOL = ITEMS.register("compression_tool",
             () -> new Item(new Item.Properties().stacksTo(1).durability(1500)));
-
+    public static final RegistryObject<Item> BLOCK_POLISHER = ITEMS.register("block_polisher",
+            () -> new BlockPolisher(new Item.Properties().stacksTo(1).durability(750)));
 
     // Celestial tools
     public static final RegistryObject<Item> CELESTIAL_SWORD = ITEMS.register("celestial_sword",
@@ -184,7 +185,24 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.AETHERIUM, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.AETHERIUM, 2, -2.0f))));
 
+    // SOLISITE tools
+    public static final RegistryObject<Item> SOLISITE_SWORD = ITEMS.register("solisite_sword",
+            () -> new SwordItem(ModToolTiers.SOLISITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SOLISITE, 8, -1.9f))));
+    public static final RegistryObject<Item> SOLISITE_AXE = ITEMS.register("solisite_axe",
+            () -> new AxeItem(ModToolTiers.SOLISITE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.SOLISITE, 10, -2.0f))));
+    public static final RegistryObject<Item> SOLISITE_PICKAXE = ITEMS.register("solisite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.SOLISITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.SOLISITE, 3.5f, -2.3f))));
+    public static final RegistryObject<Item> SOLISITE_SHOVEL = ITEMS.register("solisite_shovel",
+            () -> new ShovelItem(ModToolTiers.SOLISITE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.SOLISITE, 3.0f, -2.0f))));
+    public static final RegistryObject<Item> SOLISITE_HOE = ITEMS.register("solisite_hoe",
+            () -> new HoeItem(ModToolTiers.SOLISITE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.SOLISITE, 2, -2.0f))));
 
+    
     // Armor
     public static final RegistryObject<Item> FOSSILIZED_AMBER_HELMET = ITEMS.register("fossilized_amber_helmet",
             () -> new ModArmorItem(ModArmorMaterials.FOSSILIZED_AMBER_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
@@ -263,6 +281,19 @@ public class ModItems {
     public static final RegistryObject<Item> AETHERIUM_BOOTS = ITEMS.register("aetherium_boots",
             () -> new ArmorItem(ModArmorMaterials.AETHERIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(25))));
+
+    public static final RegistryObject<Item> SOLISITE_HELMET = ITEMS.register("solisite_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.SOLISITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(23))));
+    public static final RegistryObject<Item> SOLISITE_CHESTPLATE = ITEMS.register("solisite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.SOLISITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(23))));
+    public static final RegistryObject<Item> SOLISITE_LEGGINGS = ITEMS.register("solisite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.SOLISITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(23))));
+    public static final RegistryObject<Item> SOLISITE_BOOTS = ITEMS.register("solisite_boots",
+            () -> new ArmorItem(ModArmorMaterials.SOLISITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(23))));
 
     // Mob Armor
     public static final RegistryObject<Item> CELESTIAL_HORSE_ARMOR = ITEMS.register("celestial_horse_armor",

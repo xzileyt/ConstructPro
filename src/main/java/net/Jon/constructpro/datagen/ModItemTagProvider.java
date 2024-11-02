@@ -46,7 +46,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.AETHERIUM_HELMET.get())
                 .add(ModItems.AETHERIUM_CHESTPLATE.get())
                 .add(ModItems.AETHERIUM_LEGGINGS.get())
-                .add(ModItems.AETHERIUM_BOOTS.get());
+                .add(ModItems.AETHERIUM_BOOTS.get())
+                .add(ModItems.SOLISITE_HELMET.get())
+                .add(ModItems.SOLISITE_CHESTPLATE.get())
+                .add(ModItems.SOLISITE_LEGGINGS.get())
+                .add(ModItems.SOLISITE_BOOTS.get());
 
 
     }

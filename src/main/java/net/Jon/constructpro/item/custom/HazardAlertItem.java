@@ -30,8 +30,13 @@ public class HazardAlertItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        // Check if the player is sneaking
+        if (!player.isShiftKeyDown()) {
+            return new InteractionResultHolder<>(InteractionResult.FAIL, player.getItemInHand(hand));
+        }
+
         if (!level.isClientSide()) {
-            // Call the hazard scanning method when the player right-clicks
+            // Call the hazard scanning method when the player sneaks and right-clicks
             scanForHazards((ServerPlayer) player, level, player.blockPosition(), 20);
         }
 
@@ -89,6 +94,5 @@ public class HazardAlertItem extends Item {
         }
 
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
-
     }
 }

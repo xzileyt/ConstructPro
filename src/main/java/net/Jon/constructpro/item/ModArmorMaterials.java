@@ -72,6 +72,14 @@ public class ModArmorMaterials {
                         attribute.put(ArmorItem.Type.HELMET, 3);       // Iron: 2, Diamond: 3
                     }), 20, 6f, 0.1f, () -> ModItems.aetherium_ingot.get());
 
+    public static final Holder<ArmorMaterial> SOLISITE_ARMOR_MATERIAL = register("solisite", Util.make(new EnumMap<>(ArmorItem.Type.class),
+            attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 3);        // Iron: 2, Diamond: 3
+                attribute.put(ArmorItem.Type.LEGGINGS, 6);     // Iron: 5, Diamond: 6
+                attribute.put(ArmorItem.Type.CHESTPLATE, 8);   // Iron: 6, Diamond: 8
+                attribute.put(ArmorItem.Type.HELMET, 3);       // Iron: 2, Diamond: 3
+            }), 20, 3f, 0f, () -> ModItems.solisite_ingot.get());
+
 
 
 

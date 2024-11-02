@@ -27,4 +27,8 @@ public class ModToolTiers {
             ModTags.Blocks.NEEDS_AETHERIUM_TOOL, () -> Ingredient.of(ModItems.aetherium_ingot.get()),
             ModTags.Blocks.INCORRECT_FOR_AETHERIUM_TOOL);
 
+    public static final Tier SOLISITE = new ForgeTier(500,5.3f,4.5f,25,
+            ModTags.Blocks.NEEDS_SOLISITE_TOOL, () -> Ingredient.of(ModItems.solisite_ingot.get()),
+            ModTags.Blocks.INCORRECT_FOR_SOLISITE_TOOL);
+
 }

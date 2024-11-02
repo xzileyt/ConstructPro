@@ -1,0 +1,70 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "Head",
+					"pivot": [0.5, 14.81323, 0.78067],
+					"cubes": [
+						{"origin": [-2, 11, -3], "size": [5, 5, 6], "uv": [22, 32]},
+						{"origin": [-3, 13.96985, 0.17101], "size": [1, 3, 2], "pivot": [-2.5, 15.46985, 1.17101], "rotation": [-20, 0, 0], "uv": [32, 43]},
+						{"origin": [3, 13.96985, 0.17101], "size": [1, 3, 2], "pivot": [3.5, 15.46985, 1.17101], "rotation": [-20, 0, 0], "uv": [38, 43]}
+					]
+				},
+				{
+					"name": "Body",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Chest",
+					"parent": "Body",
+					"pivot": [0.5, 7.5, 0],
+					"cubes": [
+						{"origin": [-3, 4, -2], "size": [7, 7, 4], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "LeftLeg",
+					"parent": "Body",
+					"pivot": [2, 2, 0],
+					"cubes": [
+						{"origin": [1, 0, -1], "size": [2, 4, 2], "uv": [8, 43]}
+					]
+				},
+				{
+					"name": "RightLeg",
+					"parent": "Body",
+					"pivot": [-1, 2, 0],
+					"cubes": [
+						{"origin": [-2, 0, -1], "size": [2, 4, 2], "uv": [0, 43]}
+					]
+				},
+				{
+					"name": "LeftArm",
+					"parent": "Body",
+					"pivot": [5, 8, 0],
+					"cubes": [
+						{"origin": [4, 6, -1], "size": [2, 4, 2], "uv": [16, 43]}
+					]
+				},
+				{
+					"name": "RightArm",
+					"parent": "Body",
+					"pivot": [-4, 8, 0],
+					"cubes": [
+						{"origin": [-5, 6, -1], "size": [2, 4, 2], "uv": [24, 43]}
+					]
+				}
+			]
+		}
+	]
+}

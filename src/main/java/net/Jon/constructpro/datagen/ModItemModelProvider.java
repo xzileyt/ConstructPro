@@ -134,6 +134,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.PATTERN_STENCIL.get());
         basicItem(ModItems.TIME_SHIFTER.get());
         basicItem(ModItems.COMPRESSION_TOOL.get());
+        basicItem(ModItems.BLOCK_POLISHER.get());
 
         handheldItem(ModItems.CELESTIAL_SWORD);
         handheldItem(ModItems.CELESTIAL_PICKAXE);
@@ -161,6 +162,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.AETHERIUM_AXE);
         handheldItem(ModItems.AETHERIUM_SHOVEL);
         handheldItem(ModItems.AETHERIUM_HOE);
+        handheldItem(ModItems.SOLISITE_SWORD);
+        handheldItem(ModItems.SOLISITE_PICKAXE);
+        handheldItem(ModItems.SOLISITE_AXE);
+        handheldItem(ModItems.SOLISITE_SHOVEL);
+        handheldItem(ModItems.SOLISITE_HOE);
 
         // Food items
         basicItem(ModItems.ETERNAL_STEAK.get());
@@ -195,6 +201,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.AETHERIUM_CHESTPLATE);
         trimmedArmorItem(ModItems.AETHERIUM_LEGGINGS);
         trimmedArmorItem(ModItems.AETHERIUM_BOOTS);
+
+        trimmedArmorItem(ModItems.SOLISITE_HELMET);
+        trimmedArmorItem(ModItems.SOLISITE_CHESTPLATE);
+        trimmedArmorItem(ModItems.SOLISITE_LEGGINGS);
+        trimmedArmorItem(ModItems.SOLISITE_BOOTS);
 
 
         // Mob Armor
